@@ -15,17 +15,19 @@
 
 
           <div class="col mb-5" >
-              <div class="card h-100">
+              <div class="card  mh-50">
                   <!-- Product image-->
-                  <!-- <img class="card-img-top" src="{{}} alt="..." /> -->
+                  <img class="card-img-top" src="{{p.image}}" />
                   <!-- Product details-->
                   <div class="card-body p-4">
                       <div class="text-center">
                           <!-- Product name-->
                           <h5 class="fw-bolder">{{p.title}}</h5>
                           <!-- Product price-->
-                          {{p.price}}
-                          <p>        {{p.desc}}</p>
+                          {{p.price | currency :'EG':'symbol':'2.1-2' }}
+
+
+                            <p readMore="3" [readMoreOptions]="readMoreOption">{{p.desc}}</p>
                       </div>
 
                   </div>

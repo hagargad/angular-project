@@ -1,19 +1,17 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
+  "products": [
+    { "id": 1, "title": "Anistoona", "desc": "Anistoona play with Donia Samir Ghanim ","image":"assets/images/anistona.jpg" ,"price":"800"},
+
+    { "id": 2, "title": "Beyond Dance | D-CAF", "desc": "D-CAF’s 10th edition brings you a special night this year to push the boundaries of dance, video art, and the most creative intersections. ","image":"assets/images/beyond.jpg" ,"price":"300"},
+
+    { "id": 3, "title": "Live Vol. 4: Hamza Namira", "desc": "Al Manara Live Vol.4 ft. Hamza Namira on Thursday 27th of October","image":"assets/images/hamza_namira.jpg" ,"price":"400"},
+
+    { "id": 4, "title": "Yama fi elgerab ya 7awy", "desc": "In the atmosphere of the exciting  Alf Leila wa Leila  , our story revolves around Shehata the funny resourceful beggar, that was arrested in a robbery accident and led to  Al Moataser  who orders his hand to be cut off, but he changes his mind in the last minute and decides to use “Shehata” to kill the Caliph. The task of killing the Caliph turns into a journey full of surprises, its events escalate and intertwine in a breathtaking manner that provokes laughter and tears , and Shehata is always having a way for every impasse.","image":"assets/images/yama.jpg","price":"1000" }
+
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+
+  "about":[
+   {"title":"About us ","data":"The company is aimed at supplying entertainment houses, venue owners, event organizers and planners, with an easy and feasible solution to sell and market their tickets/invitations. The services provided do not end there; TicketsMarche also provides consultation and fraud protection as well as spectator entry monitoring and surveillance."}
+  ]
+
 }

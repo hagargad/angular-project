@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserModule} from '@angular/platform-browser';
+import { NgxsReadMoreModule } from '@minni/read-more';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,6 +26,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductsService } from './products/products.service';
+import { AboutService } from './about/about.service';
 
 @NgModule({
   declarations: [
@@ -53,10 +55,15 @@ import { ProductsService } from './products/products.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    NgxsReadMoreModule
+
   ],
   providers: [
-    // ProductsService
+    ProductsService,
+    AboutService
   ],
   bootstrap: [AppComponent]
 })

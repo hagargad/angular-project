@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
+import { NgxsReadMoreModule } from '@minni/read-more';
 import { ProductsService } from './products.service';
 
 @Component({
@@ -16,7 +17,8 @@ export class ProductsComponent implements OnInit {
   ngOnInit(): void {
     //fetching
     let that = this;
-    this.myservice.getProducts().subscribe({
+    this.myservice.getProducts().subscribe(
+      {
       next(data: any) {
         that.products = data;
       },
@@ -29,4 +31,17 @@ export class ProductsComponent implements OnInit {
   togglebtn(): void {
     this.addtocart = !this.addtocart;
   }
+
+  readMoreOption: NgxsReadMoreModule = {
+    readLessText: 'less',
+    readMoreText: 'more',
+    styles: {
+      color: "#666",
+    },
+    classes: ['custom-style', 'blog-style']
+  }
+
+
+
+  @Input() oneproduct:any;
 }
