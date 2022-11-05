@@ -1,0 +1,100 @@
+<header class="bg-dark py-5">
+  <div class="container px-4 px-lg-5 my-5">
+    <div class="text-center text-white">
+      <h1 class="display-4 fw-bolder">Reserve with us your show</h1>
+      <p class="lead fw-normal text-white-50 mb-0">
+        Select your preferred tickets
+      </p>
+    </div>
+  </div>
+</header>
+
+<!----Select box---->
+<div class="my-2 w-25">
+  <label for="" class="my-1">Categories:</label>
+  <select class="form-control">
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+  </select>
+</div>
+<!-- Section-->
+
+  <div class="container mt-5">
+    <div class="row justify-content-center ">
+      <div class="col-md-12 col-lg-12 col-xl-12" *ngFor="let p of products">
+         <div class="col-3 mb-5">
+          <div class="card h-100">
+            <!-- Product image-->
+            <img class="card-img-top" src="{{ p.image }}"
+
+            />
+            <!-- Product details-->
+            <div class="card-body">
+              <div class="text-center">
+                <!-- Product name-->
+                <h5 class="card-title">{{ p.title }}</h5>
+                <!-- Product price-->
+                {{ p.price | currency: "EG":"symbol":"2.1-2" }}
+
+                <p
+                  lass="card-text"
+                  readMore="3"
+                  [readMoreOptions]="readMoreOption"
+                >
+                  {{ p.desc }}
+                </p>
+              </div>
+            </div>
+            <!-- Product actions-->
+            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+              <div class="text-center">
+                <button
+                  class="btn btn-outline-dark mt-auto"
+                  (click)="togglebtn()"
+                >
+                  {{ addtocart ? "Remove From Cart" : "Add To Cart" }}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- <div class="col mb-5">
+              <div class="card h-100">
+
+                  <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
+
+                  <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+
+                  <div class="card-body p-4">
+                      <div class="text-center">
+
+                          <h5 class="fw-bolder">Special Item</h5>
+
+                          <div class="d-flex justify-content-center small text-warning mb-2">
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                              <div class="bi-star-fill"></div>
+                          </div>
+
+                          <span class="text-muted text-decoration-line-through">$20.00</span>
+                          $18.00
+                          <p>This is a product description</p>
+                      </div>
+                  </div>
+
+                  <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                      <div class="text-center">
+                        <button class="btn btn-outline-dark mt-auto" (click)="togglebtn()">{{addtocart ? 'Remove From Cart' : 'Add To Cart'}}</button>
+                      </div>
+                  </div>
+              </div>
+          </div> -->
+    </div>
+  </div>
+
+

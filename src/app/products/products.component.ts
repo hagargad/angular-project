@@ -8,40 +8,27 @@ import { ProductsService } from './products.service';
   styleUrls: ['./products.component.css'],
 })
 export class ProductsComponent implements OnInit {
-  addtocart: boolean = false;
 
-  constructor(private myservice: ProductsService) {}
 
-  products: any;
+  constructor() {}
+
+
 
   ngOnInit(): void {
     //fetching
-    let that = this;
-    this.myservice.getProducts().subscribe(
-      {
-      next(data: any) {
-        that.products = data;
-      },
-      error(err: any) {
-        console.log(err);
-      },
-    });
-  }
-
-  togglebtn(): void {
-    this.addtocart = !this.addtocart;
-  }
-
-  readMoreOption: NgxsReadMoreModule = {
-    readLessText: 'less',
-    readMoreText: 'more',
-    styles: {
-      color: "#666",
-    },
-    classes: ['custom-style', 'blog-style']
+    // let that = this;
+    // this.myservice.getProducts().subscribe(
+    //   {
+    //   next(data: any) {
+    //     that.products = data;
+    //   },
+    //   error(err: any) {
+    //     console.log(err);
+    //   },
+    // });
   }
 
 
 
-  @Input() oneproduct:any;
+
 }

@@ -27,6 +27,8 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductsService } from './products/products.service';
 import { AboutService } from './about/about.service';
+import { AllproductsComponent } from './allproducts/allproducts.component';
+import { ProductsdetailsComponent } from './productsdetails/productsdetails.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { AboutService } from './about/about.service';
     ProfileComponent,
     CheckoutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AllproductsComponent,
+    ProductsdetailsComponent
   ],
   imports: [
     BrowserModule,
