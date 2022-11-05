@@ -46,7 +46,7 @@ import { FooterComponent } from './footer/footer.component';
     ProfileComponent,
     CheckoutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,143 @@
+/*
+* Design by Robert Mayer:https://goo.gl/CJ7yC8
+*
+*I intentionally left out the line that was supposed to be below the subheader simply because I don't like how it looks.
+*
+* Chronicle Display Roman font was substituted for similar fonts from Google Fonts.
+*/
+
+body {
+  background-color: white;
+}
+.container-fluid{
+  /* margin: 30px 30px 30px 30px  ; */
+}
+.navbar bg-light{
+
+}
+nav{
+background-color: whitesmoke;
+padding: 40px 40px 40px 40px  ;
+width: 1500px;
+}
+span{
+    font-size: 30px;
+}
+.back{
+margin-left: 1050px;
+}
+#all{font-size: 40px;}
+.container{
+   margin: 100px 100px 100px 150px  ;
+
+}
+
+.wrapper {
+  height: 300px;
+  width: 1500px;
+  margin-bottom: 5px;
+  /* margin: 50px 50px  50px  50px   ; */
+  /* border-radius: 7px 7px 7px 7px; */
+  /* VIA CSS MATIC https://goo.gl/cIbnS */
+  /* -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15); */
+  /* -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15); */
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+img {
+  float: left;
+  height: 260px;
+  width: 370px;
+  margin: 17px auto;
+}
+
+.product-info {
+  float: left;
+  height: 300px;
+  width: 1080px;
+  border-radius: 0 7px 10px 7px;
+  background-color: white;
+}
+
+.product-text h1 {
+  margin: 0 0 0 38px;
+  padding-top: 20px;
+  font-size: 20px;
+  color: #474747;
+}
+
+.product-text h1,
+.product-price-btn p {
+  font-family: 'Bentham', serif;
+}
+
+.product-text h2 {
+  margin: 0 0 0 38px;
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #070707;
+  letter-spacing: 0.2em;
+  padding-top: 20px;
+
+}
+
+.product-text p {
+  margin: 0 0 0 38px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #060404;
+  line-height: 1.7em;
+  font-size: 18px;
+  font-weight: lighter;
+  overflow: hidden;
+  padding-top: 20px;
+  width: 300px;
+
+
+}
+
+.product-price-btn {
+  height: 103px;
+  width: 327px;
+  margin-bottom: 30px;
+  position: absolute;
+
+}
+
+.product-price-btn button {
+  /* float: right; */
+  display: inline-block;
+  height: 70px;
+  width: 300px;
+  margin: 0 40px 0 16px;
+  box-sizing: border-box;
+  border: transparent;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #FFC200;
+  background-color: #070a09;
+  cursor: pointer;
+  outline: none;
+  margin-left: 540px;
+  font: bold;
+  position: absolute;
+  left: 280px;
+  /* right: 100px; ; */
+  bottom: 50px;
+
+}
+
+.product-price-btn button:hover {
+  background-color: #FFC200;
+  color: #060404;
+}
+
+hr{
+  margin-top: 60px;
+  width: 100%;
+}

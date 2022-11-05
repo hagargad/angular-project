@@ -23,6 +23,8 @@ import { AdminProductsComponent } from './adminpanel/admin-products/admin-produc
 import { AdminRegisterComponent } from './adminpanel/admin-register/admin-register.component';
 import { ProductsComponent } from './products/products.component';
 
+
+
 const routes: Routes = [
   //main Routes
   {path:"about", component:AboutComponent},
@@ -35,6 +37,7 @@ const routes: Routes = [
   {path:"home", component:HomeComponent},
   {path:"contact", component:ContactComponent},
   {path:"checkout", component:CheckoutComponent},
+
 
   //Admin Routes
   {path:"admin-about", component:AdminAboutComponent},
