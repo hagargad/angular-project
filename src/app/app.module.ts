@@ -23,6 +23,12 @@ import { ProfileComponent } from './profile/profile.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+import { HttpClientModule }    from '@angular/common/http';
+import { ProjectService } from './services/project.service';
+import { UsersComponent } from './routing/users/users.component';
+import { RouterModule} from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -46,13 +52,20 @@ import { FooterComponent } from './footer/footer.component';
     ProfileComponent,
     CheckoutComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
+    RouterModule
   ],
-  providers: [],
+  providers: [
+    ProjectService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
