@@ -1,139 +1,8 @@
-/* @import '~bootstrap/dist/css/bootstrap.min.css'; */
 .show-less {
   height: 4rem;
   overflow: hidden;
   padding: 1rem;
 }
-/* br {
-  clear: both;
-}
-table {
-  display: table;
-  border-collapse: separate;
-  box-sizing: border-box;
-  text-indent: initial;
-  border-spacing: 2px;
-  border-color: transparent;
-  border-top-width: 0px;
-  border-right-width: 0px;
-  border-bottom-width: 0px;
-  border-collapse: separate;
-  text-indent: initial;
-  border-spacing: 2px;
-}
-tbody {
-  display: table-row-group;
-  vertical-align: middle;
-  border-color: inherit;
-}
-tr {
-  display: table-row;
-  vertical-align: inherit;
-  border-color: inherit
-}
-td {
-  display: table-cell;
-  vertical-align: inherit;
-}
-
-.gridBig {
-  width: 100%;
-  table-layout: fixed;
-}
-.gridBig tr {
-  height: 95px;
-}
-
-.gridBig-border {
-  border-bottom: 1px solid #1e1919;
-}
-.gridBig-td {
-  width: 25%;
-  position: relative;
-}
-.gridBig-image {
-  width: 100%;
-  height: auto;
-  float: left;
-  display: inline-block;
-  overflow: hidden;
-  text-align: left;
-  position: relative;
-}
-
-#cntOutCont,
-#cntOutFtr {
-  width: 100%;
-  text-align: center;
-}
-#cntInnCont {
-  background-color: #fff;
-}
-.cntInnContent {
-  width: 100%;
-  padding: 0;
-  max-width: 1105px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: visible;
-  position: relative;
-  text-align: left;
-  display: inline-block;
-}
-
-.navigator {
-  background-color: #f3f3f4;
-  padding: 25px 2.5%;
-  margin-bottom: 30px;
-  position: relative;
-}
-.arrow_yellowBack {
-  background: url(../../assets/images/arrow_yellowBack.png) left no-repeat;
-  padding-left: 50px;
-  display: inline-block;
-}
-.link_1 .arrow_yellowBack {
-  color: #ffc200;
-}
-.gridBig .border {
-  border-bottom: 1px solid #1e1919;
-}
-.gridBig-image .overBox {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 10;
-  width: 90%;
-  padding: 17px 5%;
-  background: #231f20;
-  background: -moz-linear-gradient(
-    top,
-    rgba(35, 31, 32, 1) 0%,
-    rgba(15, 13, 13, 1) 58%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgba(35, 31, 32, 1) 0%,
-    rgba(15, 13, 13, 1) 58%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(35, 31, 32, 1) 0%,
-    rgba(15, 13, 13, 1) 58%,
-    rgba(0, 0, 0, 0.8) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#231f20',endColorstr='#cc000000',GradientType=0 );
-}
-@media screen and (max-width: 1140px) {
-  .gridBig .image img {
-    width: auto;
-    height: 202px;
-    transform: translateX(-50%);
-    margin-left: 50%;
-  }
-} */
 /* ---- */
 @font-face {
   font-family: "akkurat_regularregular";
@@ -604,7 +473,7 @@ input[type="button"] {
   cursor: pointer;
 }
 .arrow_link_yellow {
-  background: url("./assets/images/icons/arrow_yellowBack.png") right no-repeat;
+  background: url("../../assets/images/arrow_yellowBack.png") right no-repeat;
   width: 100%;
   display: inline-block;
   padding-right: 35px;
@@ -708,10 +577,10 @@ input[type="button"] {
   color: #272525 !important;
 }
 .btn_1:hover .arrow_yellow {
-  background: url("./assets/images/icons/arrow_yellow.png") right no-repeat;
+  background: url("/img/tme-www/arrow_brown.png") right no-repeat;
 }
 .btn_1:hover .arrow_yellowBack {
-  background: url("./assets/images/icons/arrow_yellowBack.png") left no-repeat;
+  background: url("/img/tme-www/arrow_brownBack.png") left no-repeat;
 }
 .btn_1.small {
   padding: 8px;
@@ -740,7 +609,7 @@ input[type="button"] {
   color: #ffc200 !important;
 }
 .btn_2:hover .arrow_brown {
-  background: url("./assets/images/icons/arrow_yellow.png") right no-repeat;
+  background: url("/img/tme-www/arrow_yellow.png") right no-repeat;
 }
 .btn_2.small {
   padding: 8px;
@@ -862,25 +731,25 @@ input[type="button"] {
   display: inline-block;
 }
 .icoMenu a {
-  background: url("./assets/images/icons/icoMenu.png") top no-repeat;
+  background: url("/img/tme-www/icoMenu.png") top no-repeat;
 }
 li.selected.icoMenu a {
   background-image: url("/img/tme-www/icoMenuSelected.png");
 }
 .icoBasket a {
-  background: url("./assets/images/icons/icoBasket.png") top no-repeat;
+  background: url("/img/tme-www/icoBasket.png") top no-repeat;
 }
 .icoAccount a {
-  background: url("./assets/images/icons/icoAccount.png") top no-repeat;
+  background: url("/img/tme-www/icoAccount.png") top no-repeat;
 }
 .icoAccountLogged a {
   background: url("/img/tme-www/icoAccountLogged.png") top no-repeat;
 }
 .icoVenue a {
-  background: url("./assets/images/icons/icoVenue.png") top no-repeat;
+  background: url("/img/tme-www/icoVenue.png") top no-repeat;
 }
 .icoArab a {
-  background: url("./assets/images/icons/icoArab.png") top no-repeat;
+  background: url("/img/tme-www/icoArab.png") top no-repeat;
 }
 .icoEng a {
   background: url("/img/tme-www/icoEng.png") top no-repeat;
@@ -1425,10 +1294,10 @@ li.selected.icoMenu a {
   border-left: 1px solid #49494b;
 }
 .icoFacebook:hover {
-  background: url("./assets/images/icons/icoFacebook.png") center no-repeat;
+  background: url("/img/tme-www/icoFacebook_o.png") center no-repeat;
 }
 .icoTwitter {
-  background: url("./assets/images/icons/icoTwitter.png") center no-repeat;
+  background: url("/img/tme-www/icoTwitter.png") center no-repeat;
   width: 70px;
   height: 56px;
   display: inline-block;
@@ -1437,7 +1306,7 @@ li.selected.icoMenu a {
   border-right: 1px solid #49494b;
 }
 .icoTwitter:hover {
-  background: url("./assets/images/icons/icoTwitter.png") center no-repeat;
+  background: url("/img/tme-www/icoTwitter_o.png") center no-repeat;
 }
 .myMenu {
   width: 16.66%;

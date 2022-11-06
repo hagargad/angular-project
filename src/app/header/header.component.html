@@ -1,1 +1,182 @@
-<p>header works!</p>
+<!-- Responsive navbar-->
+<header id="cntOutHdr">
+  <div id="cntInnHdr">
+    <script>
+      !(function (w, d, t) {
+        w.TiktokAnalyticsObject = t;
+        var ttq = (w[t] = w[t] || []);
+        (ttq.methods = [
+          "page",
+          "track",
+          "identify",
+          "instances",
+          "debug",
+          "on",
+          "off",
+          "once",
+          "ready",
+          "alias",
+          "group",
+          "enableCookie",
+          "disableCookie",
+        ]),
+          (ttq.setAndDefer = function (t, e) {
+            t[e] = function () {
+              t.push([e].concat(Array.prototype.slice.call(arguments, 0)));
+            };
+          });
+        for (var i = 0; i < ttq.methods.length; i++)
+          ttq.setAndDefer(ttq, ttq.methods[i]);
+        (ttq.instance = function (t) {
+          for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)
+            ttq.setAndDefer(e, ttq.methods[n]);
+          return e;
+        }),
+          (ttq.load = function (e, n) {
+            var i = "https://analytics.tiktok.com/i18n/pixel/events.js";
+            (ttq._i = ttq._i || {}),
+              (ttq._i[e] = []),
+              (ttq._i[e]._u = i),
+              (ttq._t = ttq._t || {}),
+              (ttq._t[e] = +new Date()),
+              (ttq._o = ttq._o || {}),
+              (ttq._o[e] = n || {});
+            var o = document.createElement("script");
+            (o.type = "text/javascript"),
+              (o.async = !0),
+              (o.src = i + "?sdkid=" + e + "&lib=" + t);
+            var a = document.getElementsByTagName("script")[0];
+            a.parentNode.insertBefore(o, a);
+          });
+
+        ttq.load("C6FM9IQO6DGUDE09U2R0");
+        ttq.page();
+      })(window, document, "ttq");
+    </script>
+    <div class="header">
+      <a title="TicketsMarche" href="/" class="logo">
+        <img alt="TicketsMarche" src="./assets/images/icons/TME.svg" />
+      </a>
+      <div id="menuSearch" class="searchCont">
+        <input
+          onkeyup="callSearch(this);"
+          placeholder="Search events, artists, venues..."
+          type="text"
+          name="cdKeyword"
+          class="tmeSearch"
+        />
+        <ul id="tmeLink"></ul>
+      </div>
+      <ul>
+        <li
+          onclick="$('#menuHeader').slideToggle(); $(this).toggleClass('selected');"
+          class="icoMenu"
+        >
+          <a title="Menu">&nbsp;</a>
+        </li>
+        <li
+          onclick="$('#menuSearch').slideToggle(); $(this).toggleClass('selected');"
+          class="icoHeaderSearch show630"
+        >
+          <a title="Search">&nbsp;</a>
+        </li>
+        <li class="icoBasket hide630">
+          <a href="/checkout_sc_19.html" title="Checkout">&nbsp;</a>
+        </li>
+        <li class="icoAccount hide630">
+          <a href="/personal-info.html" title="Personal Info">&nbsp;</a>
+        </li>
+        <li class="icoVenue hide630">
+          <a href="/locate-our-outlets.html" title="Locate Our Outlets"
+            >&nbsp;</a
+          >
+        </li>
+        <li class="icoArab hide630">
+          <a href="/?changeLanguageTo=ar" title="Arab">&nbsp;</a>
+        </li>
+      </ul>
+    </div>
+    <div id="menuHeader" element="principal" class="menuHeader">
+      <ul class="menuMobile show630">
+        <li class="icoBasket">
+          <a href="/checkout_sc_19.html" title="Checkout">&nbsp;</a>
+        </li>
+        <li class="icoAccount">
+          <a href="/personal-info.html" title="Personal Info">&nbsp;</a>
+        </li>
+        <li class="icoVenue">
+          <a href="/locate-our-outlets.html" title="Locate Our Outlets"
+            >&nbsp;</a
+          >
+        </li>
+        <li class="icoArab">
+          <a href="/?changeLanguageTo=ar" title="Arab">&nbsp;</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="text_18 hide630">That’s everything we’ve got</li>
+        <li>
+          <a
+            title="All Tickets on Sale"
+            href="/all-tickets-on-sale.html"
+            class="text_36"
+            >All Tickets on Sale</a
+          >
+        </li>
+        <li>
+          <a title="Hot Events" href="/hot-events.html" class="text_36"
+            >Hot Events</a
+          >
+        </li>
+        <li>
+          <a
+            title="Locate Our Outlets"
+            href="/locate-our-outlets.html"
+            class="text_36"
+            >Locate Our Outlets</a
+          >
+        </li>
+        <li>
+          <a
+            title="Ticket Your Event"
+            href="/ticket-your-event.html"
+            class="text_36"
+            >Ticket Your Event</a
+          >
+        </li>
+        <li>
+          <a title="FAQs" href="/faqs.html" class="text_36">FAQs</a>
+        </li>
+      </ul>
+      <ul>
+        <li class="text_18 hide630">Tickets Marche</li>
+        <li>
+          <a title="About us" href="/about-us-2177.html" class="text_36"
+            >About us</a
+          >
+        </li>
+        <li>
+          <a title="Our Policies" href="/our-policies.html" class="text_36"
+            >Our Policies</a
+          >
+        </li>
+        <li>
+          <a title="Contact Us" href="/contact-us.html" class="text_36"
+            >Contact Us</a
+          >
+        </li>
+        <li>
+          <a title="Careers" href="/careers-2179.html" class="text_36"
+            >Careers</a
+          >
+        </li>
+        <li class="text_18 hide630">Need Help?</li>
+        <li>
+          <span class="text_36 icoCustomerSupport">16826/+202 24637000</span>
+          <br />
+          <span class="text_18">10am - 10pm / Everyday</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
