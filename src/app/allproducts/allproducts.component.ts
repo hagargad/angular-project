@@ -21,7 +21,10 @@ export class AllproductsComponent implements OnInit {
   getProducts() {
     this.service.getAllProducts().subscribe((res: any) => {
       this.products = res;
-    });
+    }, error =>{
+     console.log("error.message");
+    }
+    );
   }
 
   togglebtn(): void {
