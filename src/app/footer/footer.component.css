@@ -1,0 +1,191 @@
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+p,
+blockquote,
+fieldset,
+input,
+textarea {
+    font-family: 'akkurat_regularregular';
+    font-style: normal;
+    font-variant: normal;
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+    color: #1e1919;
+}
+
+li {
+    list-style: none;
+}
+#cntOutFtr {
+    width: 100%;
+    text-align: center;
+}
+#cntInnFtr {
+    width: 100%;
+    padding: 0;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+    position: relative;
+    text-align: center;
+    /* display: inline-block; */
+}
+.footer_1 {
+    background-color: #e6e7e7;
+    padding: 42px 0 50px 0;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+.footer_1 .logo {
+    float: left;
+    margin-left: 70px;
+    margin-right: 60px;
+    margin-top: -12px;
+}
+
+.footer_1 .navigation {
+    float: left;
+}
+
+.footer_1 .navigation ul {
+    float: left;
+    width: 120px;
+    margin-right: 40px;
+}
+
+.footer_1 .navigation ul li a {
+    color: #b1b2b4;
+    font-size: 14px;
+    height: 26px;
+    line-height: 26px;
+    display: inline-block;
+}
+
+.footer_1 .navigation ul li a:hover {
+    color: #1e1919;
+}
+
+.footer_1 .customer {
+    float: left;
+}
+
+.footer_1 .customer span {
+    color: #b1b2b4;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.footer_1 .customer .phoneCustomer {
+    background: url("../../assets/icons/customer.png") left no-repeat;
+    padding-left: 30px;
+    font-size: 18px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.footer_1 .customer .dhCustomer {
+    font-size: 12px;
+    margin-top: 5px;
+}
+.registerNewsletter {
+    background-color: #231f20;
+    width: 100%;
+    z-index: 1000;
+}
+
+.registerNewsletter p {
+    color: #6d6e72;
+    float: left;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.registerNewsletter .btn_1 {
+    float: right;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.icoFacebook {
+    background: url("../../assets/icons/icoFacebook.png") center no-repeat;
+    width: 70px;
+    height: 56px;
+    display: inline-block;
+    float: right;
+    border-left: 1px solid #49494b;
+}
+
+.icoFacebook:hover {
+    background: url("../../assets/icons/icoFacebook_o.png") center no-repeat;
+}
+
+.icoTwitter {
+    background: url("../../assets/icons/icoTwitter.png") center no-repeat;
+    width: 70px;
+    height: 56px;
+    display: inline-block;
+    float: right;
+    border-left: 1px solid #49494b;
+    border-right: 1px solid #49494b;
+}
+
+.icoTwitter:hover {
+    background: url("../../assets/icons/icoTwitter_o.png") center no-repeat;
+}
+.btn_1 {
+    font-family: 'akkuratbold';
+    background-color: #1e1919;
+    display: inline-block;
+    min-height: 20px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    color: #ffc200 !important;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    line-height: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+}
+
+.btn_1:hover {
+    background-color: #ffc200;
+    color: #272525 !important;
+}
+
+.btn_1:hover .arrow_yellow {
+    background: url("../../assets/icons/arrow_brown.png") right no-repeat;
+}
+.arrow_yellow {
+    background: url("../../assets/icons/arrow_yellow.png") right no-repeat;
+    padding-right: 50px;
+    display: inline-block;
+}
+
+.arrow_brown {
+    background: url("../../assets/icons/arrow_brown.png") right no-repeat;
+    padding-right: 50px;
+    display: inline-block;
+}
