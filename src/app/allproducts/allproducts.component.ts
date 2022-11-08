@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../products/products.service';
-import { NgxsReadMoreModule } from '@minni/read-more';
+// import { NgxsReadMoreModule } from '@minni/read-more';
 
 @Component({
   selector: 'app-allproducts',
@@ -31,14 +31,14 @@ export class AllproductsComponent implements OnInit {
     this.addtocart = !this.addtocart;
   }
 
-  readMoreOption: NgxsReadMoreModule = {
-    readLessText: 'less',
-    readMoreText: 'more',
-    styles: {
-      color: '#666',
-    },
-    classes: ['custom-style', 'blog-style'],
-  };
+  // readMoreOption: NgxsReadMoreModule = {
+  //   readLessText: 'less',
+  //   readMoreText: 'more',
+  //   styles: {
+  //     color: '#666',
+  //   },
+  //   classes: ['custom-style', 'blog-style'],
+  // };
 
   // @Input() oneproduct:any;
 }
