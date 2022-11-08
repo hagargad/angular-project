@@ -1,10 +1,14 @@
 <p>login works!</p>
 <!-- <p>register works!</p> -->
 
-<form >
+<form [formGroup]="Userloginvalidation" (ngsubmit)="login()" action="POST">
+
   <label for="">E-mail :</label>
-  <input type="email" name="Email" ><br>
+  <input type="email" name="Email" formControlName="email"><br>
+
   <label for="">Password :</label>
-  <input type="password" name="password"><br>
+  <input type="password" name="password" formControlName="password"><br>
+
   <input type="submit" value="login" >
+
 </form>
