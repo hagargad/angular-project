@@ -10,7 +10,7 @@
       </div>
 
       <!-- Section-->
-      <div class="eventList cntInnContent" *ngFor="let p of products">
+      <div class="eventList cntInnContent" *ngFor="let p of products.products">
         <!-- table  -->
         <table cellspacing="0" cellpadding="0" border="0" class="gridBig">
           <tbody>
@@ -19,11 +19,11 @@
                 <div class="image">
                   <div class="overBox">
                     <p class="text_20">
-                      08 November<span class="show500">&nbsp;|&nbsp;18:55</span>
+                      {{ p.date }}<span class="show500">&nbsp;|&nbsp;18:55</span>
                     </p>
                   </div>
                   <img
-                    height="250"
+                    height="350"
                     id="14007"
                     src="{{ p.image }}"
                     width="350"
@@ -52,7 +52,7 @@
               <td class="border">
                 <div class="cell">
                   <span class="label">Date</span>
-                  <p class="text_18">08 November 2022 | 18:55</p>
+                  <p class="text_18">{{ p.date }} | {{ p.timing }}</p>
                 </div>
               </td>
               <td class="border">
