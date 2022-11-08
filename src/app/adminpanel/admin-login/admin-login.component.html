@@ -1,8 +1,12 @@
 
-<form >
+<form [formGroup]="adminLogin" (ngsubmit)="adminLog()" action="POST">
+
   <label for="">E-mail :</label>
-  <input type="email" name="Email" ><br>
+  <input type="email" name="Email" formControlName="Email"><br>
+
   <label for="">Password :</label>
-  <input type="password" name="password"><br>
+  <input type="password" name="password" formControlName="Password"><br>
+
   <input type="submit" value="login" >
+
 </form>

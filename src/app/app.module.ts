@@ -26,7 +26,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 import { ProjectService } from './services/project.service';
-import { UsersComponent } from './routing/users/users.component';
+// import { UsersComponent } from './routing/users/users.component';
 import { RouterModule} from '@angular/router';
 
 
@@ -53,7 +53,7 @@ import { RouterModule} from '@angular/router';
     CheckoutComponent,
     HeaderComponent,
     FooterComponent,
-    UsersComponent
+    // UsersComponent
   ],
   imports: [
     BrowserModule,

@@ -25,35 +25,35 @@ export class RegisterComponent implements OnInit {
   //     console.log("please enter your email");
   //   }
   // }
-  registerValidation = new FormGroup({
+  UserRegisterValidation = new FormGroup({
     FirstName : new FormControl('',Validators.required),
     LastName : new FormControl('',Validators.required),
-    E_mail : new FormControl('',Validators.email),
+    Email : new FormControl('',Validators.email),
     Password : new FormControl('',Validators.minLength(8)),
     ConfirmPass :new FormControl('',Validators.minLength(8))
   })
 
   get FnameValid(){
-    return this.registerValidation.controls.FirstName.valid;
+    return this.UserRegisterValidation.controls.FirstName.valid;
   }
 
   get LnameValid(){
-    return this.registerValidation.controls.LastName.valid;
+    return this.UserRegisterValidation.controls.LastName.valid;
   }
 
   get emailValid(){
-    return this.registerValidation.controls.E_mail.valid;
+    return this.UserRegisterValidation.controls.Email.valid;
   }
 
   get PassValid(){
-    return this.registerValidation.controls.Password.valid;
+    return this.UserRegisterValidation.controls.Password.valid;
   }
 
   get confirmValid(){
-    return this.registerValidation.controls.ConfirmPass.valid;
+    return this.UserRegisterValidation.controls.ConfirmPass.valid;
   }
 
   data(){
-    console.log(this.registerValidation);
+    // console.log(this.UserRegisterValidation);
   }
 }

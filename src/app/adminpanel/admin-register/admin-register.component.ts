@@ -41,7 +41,7 @@ export class AdminRegisterComponent implements OnInit {
   }
 
   data(){
-    console.log(this.registerAdminValidation);
+    // console.log(this.registerAdminValidation);
   }
 
 }
