@@ -56,6 +56,6 @@ export class RegisterComponent implements OnInit {
   }
 
   data(){
-    // console.log(this.UserRegisterValidation);
+    console.log(this.UserRegisterValidation);
   }
 }
