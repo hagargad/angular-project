@@ -4,7 +4,7 @@ import { ProductsService } from '../products/products.service';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
-// import db from '../../assets/db.json';
+
 
 // interface Product {
 //   id: Number;

@@ -1,5 +1,7 @@
-import { Component, OnInit,Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AboutService } from './about.service';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -7,22 +9,31 @@ import { AboutService } from './about.service';
 })
 export class AboutComponent implements OnInit {
 
-  constructor(private myservice: AboutService) { }
-  title:any;
-  data:any;
-  ngOnInit(): void {
-    //fetching
-    let that = this;
-    this.myservice.getData().subscribe(
-      {
-      next(title: any) {
-        that.title = title;
+  title: any;
+  body :any;
 
-      },
-      error(err: any) {
-        console.log(err);
-      },
-    });
+  constructor(private httpClient: HttpClient) { }
+  // title:any;
+  // data:any;
+  // ngOnInit(): void {
+  //   //fetching
+  //   let that = this;
+  //   this.myservice.getData().subscribe(
+  //     {
+  //     next(title: any) {
+  //       that.title = title;
+
+  //     },
+  //     error(err: any) {
+  //       console.log(err);
+  //     },
+  //   });
+  // }
+  ngOnInit(): void {
+    this.httpClient
+      .get<any>('assets/db.json')
+      .subscribe((data) => (this.title = data,
+        this.body =data));
   }
 
 
