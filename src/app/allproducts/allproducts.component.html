@@ -10,64 +10,67 @@
       </div>
 
       <!-- Section-->
-<div class="eventList cntInnContent" *ngFor="let p of products">
-<!-- table  -->
-<table cellspacing="0" cellpadding="0" border="0" class="gridBig">
-  <tbody>
-    <tr>
-      <td rowspan="2" class="border">
-        <div class="image">
-          <div class="overBox">
-            <p class="text_20">
-              08 November<span class="show500">&nbsp;|&nbsp;18:55</span>
-            </p>
-          </div>
-          <img
-            height="250"
-            id="14007"
-            src="{{ p.image }}"
-            width="350"
-          />
-        </div>
-      </td>
-      <td>
-        <div class="cell">
-          <span class="label">Art &amp; Theater</span>
-          <h3 class="text_20 bold">{{ p.title }}</h3>
-          <p
-          class="card-text"
-          readMore="3"
-          [readMoreOptions]="readMoreOption"
-        >
-          {{ p.desc }}
-        </p>
-        </div>
-      </td>
-      <td></td>
-      <td rowspan="2" class="border">
-        <div class="singleWishList"></div>
-        <a title="Book now Antigone" class="btn_1" href="#">
-          <span class="arrow_yellow">Book now</span>
-        </a>
-      </td>
-    </tr>
-    <tr class="hide500">
-      <td class="border">
-        <div class="cell">
-          <span class="label">Date</span>
-          <p class="text_18">08 November 2022 | 18:55</p>
-        </div>
-      </td>
-      <td class="border">
-        <div class="cell">
-          <span class="label">Price</span>
-          {{ p.price | currency: "EG":"symbol":"2.1-2" }}
-        </div>
-      </td>
-    </tr>
-    <tr class="rowSpace hide500">
-      <td colspan="4"></td>
-    </tr>
-  </tbody>
-</table>
+      <div class="eventList cntInnContent" *ngFor="let p of products">
+        <!-- table  -->
+        <table cellspacing="0" cellpadding="0" border="0" class="gridBig">
+          <tbody>
+            <tr>
+              <td rowspan="2" class="border">
+                <div class="image">
+                  <div class="overBox">
+                    <p class="text_20">
+                      08 November<span class="show500">&nbsp;|&nbsp;18:55</span>
+                    </p>
+                  </div>
+                  <img
+                    height="250"
+                    id="14007"
+                    src="{{ p.image }}"
+                    width="350"
+                  />
+                </div>
+              </td>
+              <td>
+                <div class="cell">
+                  <span class="label">Art &amp; Theater</span>
+                  <h3 class="text_20 bold">{{ p.title }}</h3>
+                  <p
+                    class="card-text"
+                    readMore="3"
+                    [readMoreOptions]="readMoreOption"
+                  >
+                    {{ p.desc }}
+                  </p>
+                </div>
+              </td>
+              <td></td>
+              <td rowspan="2" class="border">
+                <div class="singleWishList"></div>
+                <a title="Book now Antigone" class="btn_1" href="#">
+                  <span class="arrow_yellow">Book now</span>
+                </a>
+              </td>
+            </tr>
+            <tr class="hide500">
+              <td class="border">
+                <div class="cell">
+                  <span class="label">Date</span>
+                  <p class="text_18">08 November 2022 | 18:55</p>
+                </div>
+              </td>
+              <td class="border">
+                <div class="cell">
+                  <span class="label">Price</span>
+                  {{ p.price | currency: "EG":"symbol":"2.1-2" }}
+                </div>
+              </td>
+            </tr>
+            <tr class="rowSpace hide500">
+              <td colspan="4"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
