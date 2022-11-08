@@ -29,6 +29,7 @@ import { ProductsService } from './products/products.service';
 import { AboutService } from './about/about.service';
 import { AllproductsComponent } from './allproducts/allproducts.component';
 import { ProductsdetailsComponent } from './productsdetails/productsdetails.component';
+import { ThepanelComponent } from './adminpanel/thepanel/thepanel.component';
 
 
 
@@ -56,7 +57,8 @@ import { ProductsdetailsComponent } from './productsdetails/productsdetails.comp
     HeaderComponent,
     FooterComponent,
     AllproductsComponent,
-    ProductsdetailsComponent
+    ProductsdetailsComponent,
+    ThepanelComponent
   ],
   imports: [
     BrowserModule,

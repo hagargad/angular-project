@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 //main routes
 import { AboutComponent } from './about/about.component';
-import { AdminComponent} from './admin/admin.component';
+import { AdminComponent } from './admin/admin.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { ContactComponent } from './contact/contact.component';
@@ -23,40 +23,39 @@ import { AdminLoginComponent } from './adminpanel/admin-login/admin-login.compon
 import { AdminProductsComponent } from './adminpanel/admin-products/admin-products.component';
 import { AdminRegisterComponent } from './adminpanel/admin-register/admin-register.component';
 import { ProductsComponent } from './products/products.component';
-
+import { ThepanelComponent } from './adminpanel/thepanel/thepanel.component';
 
 const routes: Routes = [
   //main Routes
 
-  {path:"about", component:AboutComponent},
-  {path:"products", component:ProductsComponent},
-  {path:"profile", component:ProfileComponent},
-  {path:"cart", component:CartComponent},
-  {path:"admin", component:AdminComponent},
-  {path:"register", component:RegisterComponent},
-  {path:"login", component:LoginComponent},
-  {path:"home", component:HomeComponent},
-  {path:"contact", component:ContactComponent},
-  {path:"checkout", component:CheckoutComponent},
-  {path:"allproducts", component:AllproductsComponent},
-
+  { path: 'about', component: AboutComponent },
+  { path: 'products', component: ProductsComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: 'cart', component: CartComponent },
+  { path: 'admin', component: AdminComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'checkout', component: CheckoutComponent },
+  { path: 'allproducts', component: AllproductsComponent },
+  { path: 'thepanel', component: ThepanelComponent },
 
   //Admin Routes
-  {path:"admin-about", component:AdminAboutComponent},
-  {path:"admin-cart", component:AdminCartComponent},
-  {path:"admin-contact", component:AdminContactComponent},
-  {path:"admin-control", component:AdminControlComponent},
-  {path:"admin-home", component: AdminHomeComponent},
-  {path:"admin-login", component: AdminLoginComponent},
-  {path:"admin-products", component: AdminProductsComponent},
-  {path:"admin-register", component:  AdminRegisterComponent},
+  { path: 'admin-about', component: AdminAboutComponent },
+  { path: 'admin-cart', component: AdminCartComponent },
+  { path: 'admin-contact', component: AdminContactComponent },
+  { path: 'admin-control', component: AdminControlComponent },
+  { path: 'admin-home', component: AdminHomeComponent },
+  { path: 'admin-login', component: AdminLoginComponent },
+  { path: 'admin-products', component: AdminProductsComponent },
+  { path: 'admin-register', component: AdminRegisterComponent },
 
-  {path:"**", redirectTo:"products",pathMatch:'full'},//404 not found
-
+  { path: '**', redirectTo: 'products', pathMatch: 'full' }, //404 not found
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
