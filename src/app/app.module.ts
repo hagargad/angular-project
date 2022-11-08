@@ -30,6 +30,8 @@ import { AboutService } from './about/about.service';
 import { AllproductsComponent } from './allproducts/allproducts.component';
 import { ProductsdetailsComponent } from './productsdetails/productsdetails.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -62,7 +64,9 @@ import { ProductsdetailsComponent } from './productsdetails/productsdetails.comp
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxsReadMoreModule
+    NgxsReadMoreModule,
+
+
 
   ],
   providers: [
@@ -72,3 +76,6 @@ import { ProductsdetailsComponent } from './productsdetails/productsdetails.comp
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
+

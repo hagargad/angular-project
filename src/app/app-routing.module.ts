@@ -24,6 +24,7 @@ import { AdminProductsComponent } from './adminpanel/admin-products/admin-produc
 import { AdminRegisterComponent } from './adminpanel/admin-register/admin-register.component';
 import { ProductsComponent } from './products/products.component';
 
+
 const routes: Routes = [
   //main Routes
 
@@ -39,6 +40,7 @@ const routes: Routes = [
   {path:"checkout", component:CheckoutComponent},
   {path:"allproducts", component:AllproductsComponent},
 
+
   //Admin Routes
   {path:"admin-about", component:AdminAboutComponent},
   {path:"admin-cart", component:AdminCartComponent},
@@ -48,6 +50,7 @@ const routes: Routes = [
   {path:"admin-login", component: AdminLoginComponent},
   {path:"admin-products", component: AdminProductsComponent},
   {path:"admin-register", component:  AdminRegisterComponent},
+
   {path:"**", redirectTo:"products",pathMatch:'full'},//404 not found
 
 ];
