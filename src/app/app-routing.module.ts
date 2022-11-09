@@ -39,9 +39,10 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'allproducts', component: AllproductsComponent },
-  { path: 'thepanel', component: ThepanelComponent },
+
 
   //Admin Routes
+  { path: 'thepanel', component: ThepanelComponent },
   { path: 'admin-about', component: AdminAboutComponent },
   { path: 'admin-cart', component: AdminCartComponent },
   { path: 'admin-contact', component: AdminContactComponent },
