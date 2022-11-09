@@ -182,3 +182,8 @@ label {
   text-transform: uppercase;
   cursor: pointer;
 }
+/* #cntPage {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f2f3f3;
+} */

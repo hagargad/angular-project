@@ -121,6 +121,11 @@ option {
   float: left;
   font-weight: bold;
 }
+/* #cntPage {
+  width: 100%;
+  overflow: hidden;
+  background-color: #f2f3f3;
+} */
 #cntInnCont {
   width: 100%;
   padding: 0;
@@ -305,4 +310,21 @@ input[type="button"] {
 }
 .g-recaptcha {
   display: inline-block;
+}
+.navigator .btn_2 {
+  float: right;
+  width: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 0 50px;
+}
+.navigator .link_1,
+.singleWishList .link_1,
+.myProfile .link_1 {
+  float: right;
+  height: 43px;
+  line-height: 43px;
+  font-weight: 700;
 }
