@@ -23,19 +23,19 @@
               <i class="bx bx-user nav_icon"></i>
               <span class="nav_name">About</span>
             </a>
-            <a routerLink="/admin-products"  class="nav_link">
+            <a routerLink="admin-products"  class="nav_link">
               <i class="bx bx-message-square-detail nav_icon"></i>
               <span class="nav_name">Products</span>
             </a>
-            <a routerLink="" class="nav_link">
+            <a routerLink="admin-control" class="nav_link">
               <i class="bx bx-bookmark nav_icon"></i>
               <span class="nav_name">Users List</span>
             </a>
-            <a hrouterLink="" class="nav_link">
+            <a routerLink="admin-login" class="nav_link">
               <i class="bx bx-folder nav_icon"></i>
               <span class="nav_name">Admins</span>
             </a>
-            <a routerLink="" class="nav_link">
+            <a routerLink="admin-contact" class="nav_link">
               <i class="bx bx-bar-chart-alt-2 nav_icon"></i>
               <span class="nav_name">Received Messages </span>
             </a>
@@ -52,9 +52,10 @@
       </nav>
     </div>
     <!--Container Main start-->
-    <div class="height-100 bg-light">
-      <h4>Main Components</h4>
+    <div>
+       <router-outlet></router-outlet>
     </div>
     <!--Container Main end-->
+
   </body>
 </html>

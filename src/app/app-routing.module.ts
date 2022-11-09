@@ -14,16 +14,16 @@ import { RegisterComponent } from './register/register.component';
 import { AllproductsComponent } from './allproducts/allproducts.component';
 
 //Admin routings
-import { AdminAboutComponent } from './adminpanel/admin-about/admin-about.component';
-import { AdminCartComponent } from './adminpanel/admin-cart/admin-cart.component';
-import { AdminContactComponent } from './adminpanel/admin-contact/admin-contact.component';
-import { AdminControlComponent } from './adminpanel/admin-control/admin-control.component';
-import { AdminHomeComponent } from './adminpanel/admin-home/admin-home.component';
-import { AdminLoginComponent } from './adminpanel/admin-login/admin-login.component';
-import { AdminProductsComponent } from './adminpanel/admin-products/admin-products.component';
-import { AdminRegisterComponent } from './adminpanel/admin-register/admin-register.component';
+import { AdminAboutComponent } from './admin/admin-about/admin-about.component';
+import { AdminCartComponent } from './admin/admin-cart/admin-cart.component';
+import { AdminContactComponent } from './admin/admin-contact/admin-contact.component';
+import { AdminControlComponent } from './admin/admin-control/admin-control.component';
+import { AdminHomeComponent } from './admin/admin-home/admin-home.component';
+import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
+import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
+import { AdminRegisterComponent } from './admin/admin-register/admin-register.component';
 import { ProductsComponent } from './products/products.component';
-import { ThepanelComponent } from './adminpanel/thepanel/thepanel.component';
+
 
 const routes: Routes = [
   //main Routes
@@ -32,7 +32,6 @@ const routes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'cart', component: CartComponent },
-  { path: 'admin', component: AdminComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
@@ -40,17 +39,21 @@ const routes: Routes = [
   { path: 'checkout', component: CheckoutComponent },
   { path: 'allproducts', component: AllproductsComponent },
 
-
   //Admin Routes
-  { path: 'thepanel', component: ThepanelComponent },
-  { path: 'admin-about', component: AdminAboutComponent },
-  { path: 'admin-cart', component: AdminCartComponent },
-  { path: 'admin-contact', component: AdminContactComponent },
-  { path: 'admin-control', component: AdminControlComponent },
-  { path: 'admin-home', component: AdminHomeComponent },
-  { path: 'admin-login', component: AdminLoginComponent },
-  { path: 'admin-products', component: AdminProductsComponent },
-  { path: 'admin-register', component: AdminRegisterComponent },
+  {
+    path: 'admin',
+    component: AdminComponent,
+    children: [
+      { path: 'admin-about', component: AdminAboutComponent },
+      { path: 'admin-cart', component: AdminCartComponent },
+      { path: 'admin-contact', component: AdminContactComponent },
+      { path: 'admin-control', component: AdminControlComponent },
+      { path: 'admin-home', component: AdminHomeComponent },
+      { path: 'admin-login', component: AdminLoginComponent },
+      { path: 'admin-products', component: AdminProductsComponent },
+      { path: 'admin-register', component: AdminRegisterComponent },
+    ],
+  },
 
   { path: '**', redirectTo: 'products', pathMatch: 'full' }, //404 not found
 ];
