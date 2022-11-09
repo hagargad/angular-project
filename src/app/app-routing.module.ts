@@ -23,13 +23,26 @@ import { AdminLoginComponent } from './adminpanel/admin-login/admin-login.compon
 import { AdminProductsComponent } from './adminpanel/admin-products/admin-products.component';
 import { AdminRegisterComponent } from './adminpanel/admin-register/admin-register.component';
 import { ProductsComponent } from './products/products.component';
+import { PersonalInfoComponent } from './profile/personal-info/personal-info.component';
+import { WatchListComponent } from './profile/watch-list/watch-list.component';
+import { YourEventComponent } from './profile/your-event/your-event.component';
+import { OrderListComponent } from './profile/order-list/order-list.component';
+import { AlertListComponent } from './profile/alert-list/alert-list.component';
 
 const routes: Routes = [
   //main Routes
 
   {path:"about", component:AboutComponent},
   {path:"products", component:ProductsComponent},
-  {path:"profile", component:ProfileComponent},
+  {path:"profile", component:ProfileComponent,
+  children:[
+    {path:"personalinfo/:id",component:PersonalInfoComponent},
+    {path:"watchlist/:id",component:WatchListComponent},
+    {path:"yourevent/:id",component:YourEventComponent},
+    {path:"orderlist/:id",component:OrderListComponent},
+    {path:"alertlist/:id",component:AlertListComponent},
+    {path:"**",component:PersonalInfoComponent}
+  ]},
   {path:"cart", component:CartComponent},
   {path:"admin", component:AdminComponent},
   {path:"register", component:RegisterComponent},
@@ -48,7 +61,7 @@ const routes: Routes = [
   {path:"admin-login", component: AdminLoginComponent},
   {path:"admin-products", component: AdminProductsComponent},
   {path:"admin-register", component:  AdminRegisterComponent},
-  {path:"**", redirectTo:"products",pathMatch:'full'},//404 not found
+  {path:"**", redirectTo:"home",pathMatch:'full'},//404 not found
 
 ];
 

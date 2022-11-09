@@ -29,7 +29,15 @@ import { ProductsService } from './products/products.service';
 import { AboutService } from './about/about.service';
 import { AllproductsComponent } from './allproducts/allproducts.component';
 import { ProductsdetailsComponent } from './productsdetails/productsdetails.component';
+import { PersonalInfoComponent } from './profile/personal-info/personal-info.component';
+import { YourEventComponent } from './profile/your-event/your-event.component';
+import { WatchListComponent } from './profile/watch-list/watch-list.component';
+import { OrderListComponent } from './profile/order-list/order-list.component';
+import { AlertListComponent } from './profile/alert-list/alert-list.component';
+import { HeaderProfComponent } from './profile/header-prof/header-prof.component';
+ 
 
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +62,13 @@ import { ProductsdetailsComponent } from './productsdetails/productsdetails.comp
     HeaderComponent,
     FooterComponent,
     AllproductsComponent,
-    ProductsdetailsComponent
+    ProductsdetailsComponent,
+    PersonalInfoComponent,
+    YourEventComponent,
+    WatchListComponent,
+    OrderListComponent,
+    AlertListComponent,
+    HeaderProfComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +76,8 @@ import { ProductsdetailsComponent } from './productsdetails/productsdetails.comp
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxsReadMoreModule
+    NgxsReadMoreModule,
+     
 
   ],
   providers: [

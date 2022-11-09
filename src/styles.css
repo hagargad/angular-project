@@ -673,7 +673,7 @@ input[type="button"] {
   border: 2px solid #aeaeae;
 }
 .arrow_yellowBack {
-  background: url("/img/tme-www/arrow_yellowBack.png") left no-repeat;
+  background: url("./assets/images/icons/arrow_yellowBack.png") left no-repeat;
   padding-left: 50px;
   display: inline-block;
 }
@@ -836,13 +836,13 @@ li.selected.icoMenu a {
   margin-bottom: 20px;
 }
 .icoCustomerSupport {
-  background: url("/img/tme-www/icoCustomerSupport.png") left no-repeat;
+  background: url("./assets/images/icons/icoCustomerSupport.png") left no-repeat;
   padding-left: 50px;
   height: 40px;
   line-height: 40px;
 }
 .icoCustomerSupportWA {
-  background: url("/img/tme-www/icoCustomerSupportWa.png") left no-repeat;
+  background: url("./assets/images/icons/icoCustomerSupportWa.png") left no-repeat;
   padding-left: 50px;
   height: 40px;
   line-height: 22px;
@@ -1345,40 +1345,40 @@ li.selected.icoMenu a {
   padding-left: 0 !important;
 }
 .my_personalInfo {
-  background: url("/img/tme-www/my_personalInfo.png") left no-repeat;
+  background: url("./assets/images/my_personalInfo.png") left no-repeat;
 }
 .myMenu ul li:hover .my_personalInfo {
-  background: url("/img/tme-www/my_personalInfoHover.png") left no-repeat;
+  background: url("./assets/images/my_personalInfoHover.png") left no-repeat;
 }
 .myMenu ul li.selected .my_personalInfo {
-  background: url("/img/tme-www/my_personalInfoSelected.png") left no-repeat;
+  background: url("./assets/images/my_personalInfoSelected.png") left no-repeat;
 }
 .my_futureBookings {
-  background: url("/img/tme-www/my_futureBookings.png") left no-repeat;
+  background: url("./assets/images/my_futureBookings.png") left no-repeat;
 }
 .myMenu ul li:hover .my_futureBookings {
-  background: url("/img/tme-www/my_futureBookingsHover.png") left no-repeat;
+  background: url("./assets/images/my_futureBookingsHover.png") left no-repeat;
 }
 .myMenu ul li.selected .my_futureBookings {
-  background: url("/img/tme-www/my_futureBookingsSelected.png") left no-repeat;
+  background: url("./assets/images/my_futureBookingsSelected.png") left no-repeat;
 }
 .my_theWatchList {
-  background: url("/img/tme-www/my_theWatchList.png") left no-repeat;
+  background: url("./assets/images/my_theWatchList.png") left no-repeat;
 }
 .myMenu ul li:hover .my_theWatchList {
-  background: url("/img/tme-www/my_theWatchListHover.png") left no-repeat;
+  background: url("./assets/images/my_theWatchListHover.png") left no-repeat;
 }
 .myMenu ul li.selected .my_theWatchList {
-  background: url("/img/tme-www/my_theWatchListSelected.png") left no-repeat;
+  background: url("./assets/images/my_theWatchListSelected.png") left no-repeat;
 }
 .my_showOrderList {
-  background: url("/img/tme-www/my_showOrderList.png") left no-repeat;
+  background: url("./assets/images/my_showOrderList.png") left no-repeat;
 }
 .myMenu ul li:hover .my_showOrderList {
-  background: url("/img/tme-www/my_showOrderListHover.png") left no-repeat;
+  background: url("./assets/images/my_showOrderListHover.png") left no-repeat;
 }
 .myMenu ul li.selected .my_showOrderList {
-  background: url("/img/tme-www/my_showOrderListSelected.png") left no-repeat;
+  background: url("./assets/images/my_showOrderListSelected.png") left no-repeat;
 }
 .myProfile {
   width: 80.34%;

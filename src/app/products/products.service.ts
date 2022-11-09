@@ -8,7 +8,7 @@ export class ProductsService {
 
 
 constructor(private http:HttpClient){}
-// private Base_URL = " https://fakestoreapi.com/products";
+ private Base_URL = " https://fakestoreapi.com/products";
 getAllProducts() {
   return this.http.get(environment.baseApi+'/products');
 }
