@@ -31,15 +31,3 @@ input[type=submit] {
   border-radius: 4px;
   background-color: #f8f8f8;
 }
-.inside-content {
-  width: 100%;
-  padding: 10px;
-  max-width: 1150px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: visible;
-  position: relative;
-  text-align: center;
-  display: inline-block;
-  margin-top: 92px;
-}

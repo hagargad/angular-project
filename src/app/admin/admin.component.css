@@ -154,3 +154,15 @@ a {
     padding-left: calc(var(--nav-width) + 188px);
   }
 }
+.inside-content {
+  width: 90%;
+  max-width: 1150px;
+  margin-left: 60px;
+  margin-right: 60px;
+  overflow: visible;
+  text-align: center;
+  display: inline-block;
+  margin-top: 20px;
+
+}
+
