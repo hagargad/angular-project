@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ProjectService } from '../services/project.service';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -7,24 +8,13 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private regUser: ProjectService) { }
 
   ngOnInit(): void {
+    // that = this;
+    // console.log(this.regUser);
   }
-  // FirstName:string ="";
-  // LastName:string ="";
-  // Email:string ="";
-  // password:any;
-  // ConfirmPass:any;
-  // signUp(){
-  //   if(this.FirstName == ""){
-  //     console.log("please enter your name");
-  //   }else if(this.LastName == ""){
-  //     console.log("please enter your lname");
-  //   }else if(this.Email == ""){
-  //     console.log("please enter your email");
-  //   }
-  // }
+
   UserRegisterValidation = new FormGroup({
     FirstName : new FormControl('',Validators.required),
     LastName : new FormControl('',Validators.required),
@@ -46,6 +36,9 @@ export class RegisterComponent implements OnInit {
   get emailValid(){
     return this.UserRegisterValidation.controls.Email.valid;
   }
+  get emailValue(){
+    return this.UserRegisterValidation.controls.Email.value;
+  }
 
   get PassValid(){
     return this.UserRegisterValidation.controls.Password.valid;
@@ -55,7 +48,20 @@ export class RegisterComponent implements OnInit {
     return this.UserRegisterValidation.controls.ConfirmPass.valid;
   }
 
+  users:any;
   data(){
-    console.log(this.UserRegisterValidation);
+  // console.log(this.UserRegisterValidation.value);
+  let newUser = this.regUser.addUsers(this.UserRegisterValidation.value).subscribe();
+
+  let that = this;
+  this.regUser.getUsers().subscribe({
+    next(data){
+      that.users = data
+      }
+    });
+    // console.log(this.users);
+    // for(let x of this.users){
+    //   console.log(x);
+    // }
   }
 }

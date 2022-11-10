@@ -21,7 +21,7 @@
     </div>
 
       <div class="register halfCheckout">
-        <form [formGroup]="UserRegisterValidation" (ngSubmit)="data()">
+        <form [formGroup]="UserRegisterValidation" (ngSubmit)="data() " >
           <div class="inputArea">
             <div class="row">
               <div class="cell twoOfFour">
@@ -84,8 +84,12 @@
             <div class="row">
               <div class="cell twoOfFour">
                 <label for="">Email :</label>
-                <input type="email" name="Email" formControlName="Email">
-                <!-- <div style="color: red;" *ngIf="emailValid ">*required</div> -->
+                <input type="email" name="Email" formControlName="Email" >
+
+                 <!-- <div *ngFor="let x of users">
+                <h1>{{x.email}}</h1>
+                  <div style="color: red;" *ngIf="emailValue != x.email">*required</div>
+                </div>  -->
 
                 <label for="">Re-Enter Email :</label>
                 <input type="email" name="Re-Email" formControlName="re_email"><br>
@@ -138,7 +142,7 @@
               </div>
             </div>
               <div class="row">
-                <button class="btn_2" type="submit" value="register" >
+                <button routerLink="home" class="btn_2" type="submit" value="register" >
                   <span class="arrow_brown">Register</span>
                 </button>
               </div>
@@ -147,3 +151,7 @@
       </div>
   </div>
 </div>
+<!-- <div *ngFor="let x of users">
+  <h1>{{x.email}}</h1>
+</div> -->
+<!-- <h1>{{emailValid}}</h1> -->

@@ -8,10 +8,10 @@ import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
-  {path:"/",component:HomeComponent},
+  {path:"home",component:HomeComponent},
   {path:"login",component:LoginComponent},
   {path:"register",component:RegisterComponent},
-  {path:"admin-register", component:  AdminRegisterComponent},
+  {path:"admin-register", component:AdminRegisterComponent},
   {path:"admin-login", component: AdminLoginComponent},
 
 ];
