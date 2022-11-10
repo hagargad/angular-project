@@ -37,7 +37,7 @@
                 <br clear="all" />
               </div>
               <div class="detail_2">
-                <h4 class="text_10">Art &amp; Theater</h4>
+                <h4 class="text_10">{{p.category}}</h4>
                 <h3 class="text_28">{{ p.title }}</h3>
               </div>
             </div>
@@ -47,7 +47,7 @@
           <div class="cntInnSmall">
             <div class="nmInfo oneOnThreeContent">
               <span class="text_10">INFO</span>
-              <br />Theatrical show
+              <br />{{p.category}}
             </div>
             <div
               id="nmText"
@@ -96,7 +96,7 @@
                   </td>
                   <td>
                     <div class="cell">
-                      <span class="label">Art &amp; Theater</span>
+                      <span class="label">{{p.category}}</span>
                       <h2 class="text_20 bold">{{p.title}}</h2>
                     </div>
                   </td>
@@ -104,7 +104,7 @@
                     <div class="cell">
                       <span class="label">Venue</span>
                       <h3 class="text_18">
-                        AUC Al Falaki Theatre,&nbsp;<b>Cairo</b>
+                       {{p.venue}},&nbsp;<b> {{p.city}}</b>
                       </h3>
                     </div>
                   </td>
@@ -163,7 +163,7 @@
                   </td>
                   <td>
                     <div class="cell">
-                      <span class="label">Art &amp; Theater</span>
+                      <span class="label">{{p.category}}</span>
                       <h2 class="text_20 bold">{{p.title}}</h2>
                     </div>
                   </td>
@@ -171,7 +171,7 @@
                     <div class="cell">
                       <span class="label">Venue</span>
                       <h3 class="text_18">
-                        AUC Al Falaki Theatre,&nbsp;<b>Cairo</b>
+                        {{p.venue}},&nbsp;<b> {{p.city}}</b>
                       </h3>
                     </div>
                   </td>
