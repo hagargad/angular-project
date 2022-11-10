@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,9 @@ import { Injectable } from '@angular/core';
 })
 export class ProjectService {
 
-  constructor() { }
+  constructor(private myUser:HttpClient) { }
+  private Base_URL = "https://fakestoreapi.com/users";
+  getUserInfo(){
+    return this.myUser.get(this.Base_URL);
+  }
 }

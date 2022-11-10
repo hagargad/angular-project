@@ -117,9 +117,7 @@ input:focus {
   background-color: #1e1919;
   color: #ffc200 !important;
 }
-/* .btn_2:hover .arrow_brown {
-  background: url("../../assets/images/arrow_yellowBack.png") right no-repeat;
-} */
+
 .btn_2.small {
   padding: 8px;
   width: auto;
@@ -187,3 +185,11 @@ label {
   overflow: hidden;
   background-color: #f2f3f3;
 } */
+.arrow_brown {
+  background: url("src/assets/images/icons/arrow_yellow.png") right no-repeat;
+  padding-right: 50px;
+  display: inline-block;
+}
+.btn_2:hover .arrow_brown {
+  background: url("src/assets/images/icons/arrow_yellow.png") right no-repeat;
+}

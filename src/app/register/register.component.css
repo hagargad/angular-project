@@ -328,3 +328,31 @@ input[type="button"] {
   line-height: 43px;
   font-weight: 700;
 }
+.link_1 .arrow_yellowBack {
+  color: #ffc200;
+}
+.link_1:hover {
+  text-decoration: underline;
+}
+.arrow_link_yellow {
+  background: url("src/assets/images/icons/arrow_yellowBack.png") right no-repeat;
+  width: 100%;
+  display: inline-block;
+  padding-right: 35px;
+}
+.btn_1:hover .arrow_yellowBack {
+  background: url("src/assets/images/icons/arrow_yellowBack.png") left no-repeat;
+}
+.arrow_yellowBack {
+  background: url("src/assets/images/icons/arrow_yellowBack.png") left no-repeat;
+  padding-left: 50px;
+  display: inline-block;
+}
+.arrow_brown {
+  background: url("src/assets/images/icons/arrow_yellow.png") right no-repeat;
+  padding-right: 50px;
+  display: inline-block;
+}
+.btn_2:hover .arrow_brown {
+  background: url("src/assets/images/icons/arrow_yellow.png") right no-repeat;
+}
