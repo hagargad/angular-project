@@ -12,6 +12,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AllproductsComponent } from './allproducts/allproducts.component';
+import { ProductsdetailsComponent } from './productsdetails/productsdetails.component';
 
 //Admin routings
 import { AdminAboutComponent } from './admin/admin-about/admin-about.component';
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'allproducts', component: AllproductsComponent },
+  { path: 'productsdetails', component: ProductsdetailsComponent },
 
   //Admin Routes
   {
