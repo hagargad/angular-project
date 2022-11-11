@@ -1,6 +1,4 @@
-
-    
-        
+  
     <div class="myProfile">
     <div class="account">
     <div class="link_1" onclick="document.location = 'historyBack.html'">
@@ -8,7 +6,10 @@
     </div>
     <img src="../../../assets/images/idMultimediaPhotoPlaceHolder.png" class="photo" alt="idMultimediaPhotoPlaceHolder">
     <div class="myDetail">
-    <p class="text_28">Hi, Omar<br>What your plans today?</p>
+    <p class="text_28" *ngIf="user;else anoth">Hi, {{user.name}}<br>What your plans today?</p>
+    <ng-template #anoth>
+        <p class="text_28">wait...</p>
+    </ng-template>
     <ul class="linkProfile">
     <li>
     <a title="Shipping Info" href="/shipping-info.html" class="link_2">Shipping Info</a>

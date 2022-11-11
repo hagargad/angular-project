@@ -1,0 +1,12 @@
+<div *ngFor="let s of users" class="alert alert-info text-center m-auto  w-50 mb-5" >
+        <h1>id:{{s.id}}</h1>
+        <h2>Name: {{s.name}}</h2> 
+        <h4>username: {{s.username}}</h4>
+        <h4>email: {{s.email}}</h4>
+        <h4>address: {{s.address.city}}</h4>
+        <h4>address: {{s.address.suite}}</h4>
+        <h4>phone: {{s.phone}}</h4>
+        <h3>website: {{s.website}}</h3>
+        <h3>company: {{s.company.name}}</h3>
+    </div>
+ 

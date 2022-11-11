@@ -19,7 +19,7 @@
                 <br>+20100TICKETS<br></span>
                 <br><br><span class="text_18">10am - 10pm / Everyday</span></li></ul>
                 
-                <form action="/contact-us.html" method="post" name="sendEmailForm" id="sendEmailForm">
+                <form  [formGroup]="myContactFormValidation" action="/contact-us.html" method="post" name="sendEmailForm" id="sendEmailForm">
                     <input value="Contact us" id="subject" name="subject" type="hidden">
                     <input value="" id="message" name="message" type="hidden">
                     <div class="inputArea">

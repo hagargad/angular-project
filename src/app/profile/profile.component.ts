@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ProfileComponent implements OnInit {
 
   constructor(Activated:ActivatedRoute) {
-    console.log(Activated)
+
    }
 
   ngOnInit(): void {
