@@ -25,11 +25,11 @@ updateData(id:number,updatedData:any){
   return this.myclient.put(`${this.Base_URL}/${id}`,updatedData);
 }
 
-deletetitle(title:any){
+deleteTitle(title:any){
   return this.myclient.delete(`${this.Base_URL}`,title);
 }
 
-deletebody(body:any){
+deleteBody(body:any){
   return this.myclient.delete(`${this.Base_URL}`,body);
 }
 

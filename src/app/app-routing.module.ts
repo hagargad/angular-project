@@ -46,7 +46,7 @@ const routes: Routes = [
   {path:"checkout", component:CheckoutComponent},
   { path: 'productsdetails', component: ProductsdetailsComponent },
   { path: 'products', component: ProductsComponent },
-  {path:"**",component:HomeComponent},
+
   {
     path: 'profile',
     component: ProfileComponent,
@@ -79,7 +79,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'allproducts', component: AllproductsComponent },
-
+  {path:"**",component:HomeComponent},
 
 ];
 
