@@ -12,6 +12,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AllproductsComponent } from './allproducts/allproducts.component';
+import { ProductsdetailsComponent } from './productsdetails/productsdetails.component';
 
 //Admin routings
 import { AdminAboutComponent } from './admin/admin-about/admin-about.component';
@@ -34,6 +35,7 @@ const routes: Routes = [
   //main Routes
 
   { path: 'about', component: AboutComponent },
+  { path: 'productsdetails', component: ProductsdetailsComponent },
   { path: 'products', component: ProductsComponent },
   {
     path: 'profile',
