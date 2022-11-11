@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     let that=this
     this.homes.getallProuduct().subscribe({
-      next(data){
+      next(data:any){
         that.home=data
 
       }
