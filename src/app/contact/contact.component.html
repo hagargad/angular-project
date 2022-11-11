@@ -31,27 +31,29 @@
                         <div class="row">
                             <div class="cell twoOfFour">
                                 <label>First name</label>
-                                <input id="nmFirstName" name="SendMailInfo.nmFirstName" required="required" type="text">
+                                <input formControlName="Fname" id="nmFirstName" name="SendMailInfo.nmFirstName" required="required" type="text">
+                                
                             </div>
                             <div class="cell twoOfFour">
                                 <label>Last name</label>
-                                <input id="nmLastName" name="SendMailInfo.nmLastName" required="required" type="text">
+                                <input formControlName="Lname" id="nmLastName" name="SendMailInfo.nmLastName" required="required" type="text">
                             </div>
                         </div>
+                        
                         <div class="row">
                             <div class="cell twoOfFour">
                                 <label>E-mail</label>
-                                <input id="ulEmail" name="SendMailInfo.ulEmail" required="required" type="email">
+                                <input id="ulEmail"  name="SendMailInfo.ulEmail" formControlName="Email" required="required" type="email">
                             </div>
                             <div class="cell twoOfFour">
                                 <label>Mobile</label>
-                                <input id="noPhone" name="SendMailInfo.noPhone" required="required" type="text">
+                                <input id="noPhone" formControlName="Mobile" name="SendMailInfo.noPhone" required="required" type="text">
                             </div>
                         </div>
                         <div class="row">
                             <div class="cell fourOfFour">
                                 <label>Your message</label>
-                                <textarea id="dsMessage" name="SendMailInfo.dsMessage" required="required" rows="5" spellcheck="true"></textarea>
+                                <textarea formControlName="Massage" id="dsMessage" name="SendMailInfo.dsMessage" required="required" rows="5" spellcheck="true"></textarea>
                             </div>
                         </div>
                         <div class="row">
@@ -62,10 +64,10 @@
                         </div>
                         <div class="row">
                             <div class="cell fourOfFour">
-                                <div onclick="doCheckbox(this);" class="checkboxRow">
-                                    <input value="true" name="haveAuthTermsAndConditions" type="checkbox">
-                                    <div class="checkboxInput">&nbsp;</div>
-                                    <p class="text_14">I agree with the <a href="http://www.ticketsmarche.com/privacy-policy_sc_38.html" title="privacy policy">privacy policy</a>
+                                <div  class="checkboxRow" >
+                                    <input value="true" name="haveAuthTermsAndConditions" type="checkbox" >
+                                    <div (click)="clicc()"  class="checkboxInput" [class.checked]="cslicc">&nbsp;</div>
+                                    <p class="text_14 ">I agree with the <a href="http://www.ticketsmarche.com/privacy-policy_sc_38.html" title="privacy policy">privacy policy</a>
                                     </p>
                                 </div>
                             </div>
@@ -83,11 +85,15 @@
                         </div>
                         <div class="row">
                             <div class="cell fourOfFour">
-                                <button onclick="tmeSendMail();" name="doSendMail" class="btn_2" type="submit">
+                                <button (click)="tmeSendMail()"   name="doSendMail" class="btn_2" type="submit">
                                     <span class="arrow_brown">Send message</span>
                                 </button>
                             </div>
                         </div>
+                        
+                        
+                        <div *ngIf="nameValid"><p class="alert alert-success">{{tmeSendMail()}}</p></div>
+                 
                     </div>
                 </form>
             

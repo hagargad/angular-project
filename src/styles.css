@@ -238,8 +238,8 @@ input[type="button"] {
   float: left;
   cursor: pointer;
 }
-.checkboxInput.checked {
-  background: #fff url("/img/tme-www/icoCheck.png") center no-repeat;
+.checked {
+  background: #fff url("./assets/images/icoCheck.png") center no-repeat;
 }
 .checkboxRow input[type="checkbox"] {
   display: none;
