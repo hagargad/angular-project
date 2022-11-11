@@ -1,5 +1,6 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
+
 @Injectable({
   providedIn : 'root'
 })
@@ -19,10 +20,17 @@ updateTitle(id:number,updatedTitle:any){
   return this.myclient.put(`${this.Base_URL}/${id}`,updatedTitle);
 }
 
-//updatet the body
+//update the body
 updateData(id:number,updatedData:any){
   return this.myclient.put(`${this.Base_URL}/${id}`,updatedData);
 }
 
+deletetitle(title:any){
+  return this.myclient.delete(`${this.Base_URL}`,title);
+}
+
+deletebody(body:any){
+  return this.myclient.delete(`${this.Base_URL}`,body);
+}
 
 }

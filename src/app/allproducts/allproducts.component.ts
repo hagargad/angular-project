@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input,Output,EventEmitter } from '@angular/core';
 import { ProductsService } from '../products/products.service';
 // import { NgxsReadMoreModule } from '@minni/read-more';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
@@ -31,6 +31,7 @@ export class AllproductsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
     this.httpClient
       .get<any>('assets/db.json')
       .subscribe((data) => (this.products = data));

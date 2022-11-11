@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,OnInit,Input,Output,EventEmitter  } from '@angular/core';
 import { AboutService } from './about.service';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 
@@ -32,7 +32,8 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
     this.httpClient
       .get<any>('assets/db.json')
-      .subscribe((data) => (this.title = data,
+      .subscribe(
+        (data) => (this.title = data,
         this.body =data));
   }
 
