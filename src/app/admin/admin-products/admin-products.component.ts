@@ -39,8 +39,15 @@ export class AdminProductsComponent implements OnInit {
         that.products = data;
       },
     });
+
+
     // this.httpClient
     //   .get<any>('assets/db.json')
     //   .subscribe((data) => (this.products = data));
   }
+  delete(id:any){
+    this.service.deleteProduct(id).subscribe();
+    console.log(id);
+  }
+
 }
