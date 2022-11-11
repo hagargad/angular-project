@@ -97,7 +97,7 @@ input:focus {
 }
 .btn_2 {
   font-family: "akkuratbold";
-  background-color: #ffc200;
+  background-color: #0794ff;
   display: inline-block;
   min-height: 20px;
   padding-top: 18px;
@@ -115,7 +115,7 @@ input:focus {
 }
 .btn_2:hover {
   background-color: #1e1919;
-  color: #ffc200 !important;
+  color: #00b3ff !important;
 }
 
 .btn_2.small {
@@ -175,7 +175,7 @@ label {
   font-weight: bold !important;
 }
 .link_3 {
-  color: #ffc200;
+  color: #0044ff;
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
@@ -185,11 +185,11 @@ label {
   overflow: hidden;
   background-color: #f2f3f3;
 } */
-.arrow_brown {
+/* .arrow_brown {
   background: url("src/assets/images/icons/arrow_yellow.png") right no-repeat;
   padding-right: 50px;
   display: inline-block;
 }
 .btn_2:hover .arrow_brown {
   background: url("src/assets/images/icons/arrow_yellow.png") right no-repeat;
-}
+} */
