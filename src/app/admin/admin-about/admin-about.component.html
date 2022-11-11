@@ -2,11 +2,11 @@
   <div class="inside-content">
     <form>
       <label>About Title </label>
-      <input type="text" placeholder="about title" />
+      <input type="text" *ngFor="let t of data" placeholder="{{t.title}}" />
       <br />
       <label>About Data  </label>
-      <textarea rows="4" cols="50">
-  enter your text here
+      <textarea rows="4" cols="50" *ngFor="let t of data">
+        {{t.data}}
       </textarea>
       <br/>
       <input type="submit" value="ENTER DATA" />
