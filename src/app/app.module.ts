@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule} from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { NgxsReadMoreModule } from '@minni/read-more';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -29,10 +29,14 @@ import { ProductsService } from './products/products.service';
 import { AboutService } from './about/about.service';
 import { AllproductsComponent } from './allproducts/allproducts.component';
 import { ProductsdetailsComponent } from './productsdetails/productsdetails.component';
-
-
-
-
+import { PersonalInfoComponent } from './profile/personal-info/personal-info.component';
+import { YourEventComponent } from './profile/your-event/your-event.component';
+import { WatchListComponent } from './profile/watch-list/watch-list.component';
+import { OrderListComponent } from './profile/order-list/order-list.component';
+import { AlertListComponent } from './profile/alert-list/alert-list.component';
+import { HeaderProfComponent } from './profile/header-prof/header-prof.component';
+import { ProfileService } from './profile/profile.service';
+import { AdminUserComponent } from './admin/admin-user/admin-user.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +62,13 @@ import { ProductsdetailsComponent } from './productsdetails/productsdetails.comp
     FooterComponent,
     AllproductsComponent,
     ProductsdetailsComponent,
-
+    PersonalInfoComponent,
+    YourEventComponent,
+    WatchListComponent,
+    OrderListComponent,
+    AlertListComponent,
+    HeaderProfComponent,
+    AdminUserComponent,
   ],
   imports: [
     BrowserModule,
@@ -67,17 +77,8 @@ import { ProductsdetailsComponent } from './productsdetails/productsdetails.comp
     FormsModule,
     ReactiveFormsModule,
     NgxsReadMoreModule,
-
-
-
   ],
-  providers: [
-    ProductsService,
-    AboutService
-  ],
-  bootstrap: [AppComponent]
+  providers: [ProductsService, AboutService, ProfileService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
-
-
-
+export class AppModule {}
