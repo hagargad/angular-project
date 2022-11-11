@@ -4,11 +4,10 @@ import { AllproductsService } from '../../allproducts/allproducts.service';
 @Component({
   selector: 'app-admin-products',
   templateUrl: './admin-products.component.html',
-  styleUrls: ['./admin-products.component.css']
+  styleUrls: ['./admin-products.component.css'],
 })
 export class AdminProductsComponent implements OnInit {
-
-  constructor(private service:AllproductsService) { }
+  constructor(private service: AllproductsService) {}
 
   products: any;
 
@@ -25,7 +24,7 @@ export class AdminProductsComponent implements OnInit {
   ngOnInit(): void {
     let that = this;
     this.service.getAllProducts().subscribe({
-      next(data:any) {
+      next(data: any) {
         that.id = data.id;
         that.title = data.title;
         that.desc = data.desc;
@@ -37,12 +36,11 @@ export class AdminProductsComponent implements OnInit {
         that.venue = data.venue;
         that.category = data.category;
 
-        that.products=data;
-      }
+        that.products = data;
+      },
     });
     // this.httpClient
     //   .get<any>('assets/db.json')
     //   .subscribe((data) => (this.products = data));
   }
-
 }

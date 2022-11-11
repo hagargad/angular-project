@@ -26,7 +26,18 @@ input[type=date] {
   background-color: #f8f8f8;
 }
 input[type=submit] {
-  width: 50%;
+  width: 200px;
+  height: 70px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+input[type=data] {
+  width: 100px;
+  height: 70px;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -64,5 +75,24 @@ textarea {
 }
 label{
   font-size: large;
+}
+
+/* the table  */
+
+table {
+  border-collapse: collapse;
+  border: 2px solid;
+}
+td {
+  text-align: left;
+  padding: 15px;
+}
+th {
+  padding: 15px;
+  text-align: center;
+}
+
+tr{
+  border: 2px solid;
 }
 
