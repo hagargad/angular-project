@@ -82,6 +82,15 @@ li {
     text-align: center;
 }
 
+
+
+#cntInnCont {
+    padding-bottom: 700px;
+}
+
+#cntInnCont {
+    background-color: #fff;
+}
 #cntInnCont {
     width: 100%;
     padding: 0;
@@ -91,16 +100,8 @@ li {
     overflow: visible;
     position: relative;
     text-align: center;
-    /* display: inline-block; */
-    margin-top: 91px;
-}
-
-#cntInnCont {
-    padding-bottom: 700px;
-}
-
-#cntInnCont {
-    background-color: #fff;
+    display: inline-block;
+    margin-top: 85px;
 }
 
 .showSlideShow {
