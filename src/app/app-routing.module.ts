@@ -14,6 +14,7 @@ import { RegisterComponent } from './register/register.component';
 import { AllproductsComponent } from './allproducts/allproducts.component';
 import { ProductsdetailsComponent } from './productsdetails/productsdetails.component';
 
+
 //Admin routings
 import { AdminAboutComponent } from './admin/admin-about/admin-about.component';
 import { AdminCartComponent } from './admin/admin-cart/admin-cart.component';
@@ -33,10 +34,19 @@ import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
   //main Routes
-
-  { path: 'about', component: AboutComponent },
+  {path:"about", component:AboutComponent},
+  {path:"products", component:ProductsComponent},
+  {path:"profile", component:ProfileComponent},
+  {path:"cart", component:CartComponent},
+  {path:"admin", component:AdminComponent},
+  {path:"register", component:RegisterComponent},
+  {path:"login", component:LoginComponent},
+  {path:"home", component:HomeComponent},
+  {path:"contact", component:ContactComponent},
+  {path:"checkout", component:CheckoutComponent},
   { path: 'productsdetails', component: ProductsdetailsComponent },
   { path: 'products', component: ProductsComponent },
+  {path:"**",component:HomeComponent},
   {
     path: 'profile',
     component: ProfileComponent,
