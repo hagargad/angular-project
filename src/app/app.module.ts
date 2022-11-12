@@ -37,6 +37,10 @@ import { AlertListComponent } from './profile/alert-list/alert-list.component';
 import { HeaderProfComponent } from './profile/header-prof/header-prof.component';
 import { ProfileService } from './profile/profile.service';
 import { AdminUserComponent } from './admin/admin-user/admin-user.component';
+import { ModalDialogModule } from 'ngx-modal-dialog';
+import { ModalComponent } from './modal/modal.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,6 +73,7 @@ import { AdminUserComponent } from './admin/admin-user/admin-user.component';
     AlertListComponent,
     HeaderProfComponent,
     AdminUserComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,

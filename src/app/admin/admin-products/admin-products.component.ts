@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AllproductsService } from '../../allproducts/allproducts.service';
+import { ModalComponent } from '../../modal/modal.component';
+import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
 
 @Component({
   selector: 'app-admin-products',
@@ -7,7 +9,10 @@ import { AllproductsService } from '../../allproducts/allproducts.service';
   styleUrls: ['./admin-products.component.css'],
 })
 export class AdminProductsComponent implements OnInit {
-  constructor(private service: AllproductsService) {}
+  modalRef: MdbModalRef<ModalComponent> | null = null;
+  constructor(
+    private service: AllproductsService,private modalService: MdbModalService
+  ) {}
 
   products: any;
 
@@ -40,14 +45,23 @@ export class AdminProductsComponent implements OnInit {
       },
     });
 
-
     // this.httpClient
     //   .get<any>('assets/db.json')
     //   .subscribe((data) => (this.products = data));
   }
-  delete(id:any){
+  openModal() {
+    this.modalRef = this.modalService.open(ModalComponent)
+  }
+
+
+  delete(id: any) {
     this.service.deleteProduct(id).subscribe();
     console.log(id);
   }
-
+  edit(id: any, dataedit: any) {
+    this.service.updateProduct(id, dataedit).subscribe();
+  }
+  create(newdata: any) {
+    this.service.AddProduct(newdata).subscribe();
+  }
 }

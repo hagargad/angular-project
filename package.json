@@ -8,6 +8,15 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "map": {
+    "ng-modal": "node_modules/ng-modal"
+  },
+  "packages": {
+    "ng-modal": {
+      "main": "index.js",
+      "defaultExtension": "js"
+    }
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^14.2.0",
@@ -20,6 +29,9 @@
     "@angular/router": "^14.2.0",
     "bootstrap": "^5.2.2",
     "jquery": "^3.6.1",
+    "mdb-angular-ui-kit": "^3.0.0",
+    "ng-modal": "^1.0.2",
+    "ngx-modal-dialog": "^4.0.0",
     "node": "^19.0.1",
     "nodejs": "^0.0.0",
     "popper.js": "^1.16.1",

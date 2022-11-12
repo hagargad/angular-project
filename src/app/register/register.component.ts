@@ -51,14 +51,14 @@ export class RegisterComponent implements OnInit {
   users:any;
   data(){
   // console.log(this.UserRegisterValidation.value);
-  let newUser = this.regUser.addUsers(this.UserRegisterValidation.value).subscribe();
+  // let newUser = this.regUser.addUsers(this.UserRegisterValidation.value).subscribe();
 
-  let that = this;
-  this.regUser.getUsers().subscribe({
-    next(data){
-      that.users = data
-      }
-    });
+  // let that = this;
+  // this.regUser.getUsers().subscribe({
+  //   next(data){
+  //     that.users = data
+  //     }
+  //   });
     // console.log(this.users);
     // for(let x of this.users){
     //   console.log(x);

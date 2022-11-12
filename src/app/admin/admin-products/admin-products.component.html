@@ -1,53 +1,5 @@
 <div id="cntOutHdr ">
   <div class="inside-content">
-    <form>
-      <label>upload product's image : </label>
-      <input type="file" placeholder="upload product image" />
-
-      <label>Enter product's label : </label>
-      <input type="text" placeholder="enter title" />
-
-      <label>Enter product's description :</label>
-      <textarea></textarea>
-
-      <label>Enter product's price : </label>
-      <input type="number" placeholder="enter price" />
-
-      <label>Events date : </label>
-      <input type="date" placeholder="enter price" />
-
-      <label>Events timing : </label>
-      <input type="number" placeholder="enter timing" />
-      <br />
-      <select>
-        <option>AM</option>
-        <option>PM</option>
-      </select>
-      <br />
-
-      <label>Venue </label>
-      <input type="text" placeholder="enter venue" />
-      <br />
-
-      <label>City</label>
-      <select>
-        <option>Cairo</option>
-        <option>Alexandria</option>
-        <option>Aswan</option>
-        <option>Luxor</option>
-      </select>
-      <br />
-
-      <label>Category</label>
-      <select>
-        <option>ART Theater Show</option>
-        <option>Musical Show</option>
-      </select>
-      <br />
-
-      <input type="submit" value="ENTER DATA" />
-    </form>
-
     <table cellspacing="0" cellpadding="0" border="2" class="center">
       <tr>
         <th><h5>ID</h5></th>
@@ -62,7 +14,7 @@
         <th><h5>Category</h5></th>
         <th><h5>Edit</h5></th>
         <th><h5>Delete</h5></th>
-        <th><input type="submit" value="ADD NEW PRODUCT" /></th>
+        <th><input (click)="openModal()" type="submit" value="ADD NEW PRODUCT" /></th>
       </tr>
 
       <tbody>

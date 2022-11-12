@@ -25,12 +25,12 @@ import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
 import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
 import { AdminRegisterComponent } from './admin/admin-register/admin-register.component';
 import { ProductsComponent } from './products/products.component';
-// import { PersonalInfoComponent } from './profile/personal-info/personal-info.component';
-// import { WatchListComponent } from './profile/watch-list/watch-list.component';
-// import { YourEventComponent } from './profile/your-event/your-event.component';
-// import { OrderListComponent } from './profile/order-list/order-list.component';
-// import { AlertListComponent } from './profile/alert-list/alert-list.component';
-// import { AdminUserComponent } from './admin/admin-user/admin-user.component';
+import { PersonalInfoComponent } from './profile/personal-info/personal-info.component';
+import { WatchListComponent } from './profile/watch-list/watch-list.component';
+import { YourEventComponent } from './profile/your-event/your-event.component';
+import { OrderListComponent } from './profile/order-list/order-list.component';
+import { AlertListComponent } from './profile/alert-list/alert-list.component';
+import { AdminUserComponent } from './admin/admin-user/admin-user.component';
 
 const routes: Routes = [
   //main Routes
