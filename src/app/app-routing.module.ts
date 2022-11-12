@@ -46,6 +46,12 @@ const routes: Routes = [
   {path:"checkout", component:CheckoutComponent},
   { path: 'productsdetails', component: ProductsdetailsComponent },
   { path: 'products', component: ProductsComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'checkout', component: CheckoutComponent },
+  { path: 'allproducts', component: AllproductsComponent },
 
   {
     path: 'profile',
@@ -73,12 +79,7 @@ const routes: Routes = [
   { path: 'admin-register', component: AdminRegisterComponent },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }, //404 not found
   ] },
-  { path: 'register', component: RegisterComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'checkout', component: CheckoutComponent },
-  { path: 'allproducts', component: AllproductsComponent },
+
   {path:"**",component:HomeComponent},
 
 ];

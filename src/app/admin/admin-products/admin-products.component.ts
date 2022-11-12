@@ -49,8 +49,9 @@ export class AdminProductsComponent implements OnInit {
     //   .get<any>('assets/db.json')
     //   .subscribe((data) => (this.products = data));
   }
+
   openModal() {
-    this.modalRef = this.modalService.open(ModalComponent)
+    this.modalRef = this.modalService.open(ModalComponent);
   }
 
 
