@@ -4,25 +4,18 @@ import { UserDataService } from './user-data.service';
 @Component({
   selector: 'app-admin-user',
   templateUrl: './admin-user.component.html',
-  styles: [
-  ]
+  styles: [],
 })
 export class AdminUserComponent implements OnInit {
+  constructor(private UserService: UserDataService) {}
+  users: any;
 
-  constructor(private UserService:UserDataService) { }
- users:any
- 
   ngOnInit(): void {
-   
-    let that=this
+    let that = this;
     this.UserService.GetAllUser().subscribe({
-      next(data){
-        that.users=data
-      }
-    })
-    
+      next(data) {
+        that.users = data;
+      },
+    });
   }
-
- 
-
 }

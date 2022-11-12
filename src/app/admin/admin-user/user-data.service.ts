@@ -12,5 +12,5 @@ baseUrl="http://localhost:3000/users";
   GetAllUser(){
     return this.DataFromAPI.get(this.baseUrl)
   }
-  
+
 }
