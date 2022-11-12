@@ -66,7 +66,7 @@ const routes: Routes = [
   { path: 'admin-cart', component: AdminCartComponent },
   { path: 'admin-contact', component: AdminContactComponent },
   { path: 'admin-control', component: AdminControlComponent },
-  // { path: 'admin-user', component: AdminUserComponent },
+  { path: 'admin-user', component: AdminUserComponent },
   { path: 'admin-home', component: AdminHomeComponent },
   { path: 'admin-login', component: AdminLoginComponent },
   { path: 'admin-products', component: AdminProductsComponent },
