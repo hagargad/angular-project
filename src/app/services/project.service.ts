@@ -6,15 +6,15 @@ import { Injectable } from '@angular/core';
 })
 export class ProjectService {
 
-  constructor(public myclient:HttpClient) { 
-    
+  constructor(private getUser: HttpClient) { }
+  Base_url = "http://localhost:3000/users";
+
+  addUsers(newUser:any){
+    return this.getUser.post(this.Base_url,newUser);
   }
-  basUrl="https://fakestoreapi.com/users"
-  
-  getAllUsers(){
-    return this.myclient.get(this.basUrl)
+
+  getUsers(){
+    return this.getUser.get(this.Base_url);
   }
-  getUserbyID(id:number){
-    return this.myclient.get(this.basUrl+"/"+id)
-  }
+
 }
