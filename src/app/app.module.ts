@@ -37,6 +37,9 @@ import { AlertListComponent } from './profile/alert-list/alert-list.component';
 import { HeaderProfComponent } from './profile/header-prof/header-prof.component';
 import { ProfileService } from './profile/profile.service';
 import { AdminUserComponent } from './admin/admin-user/admin-user.component';
+import { UserListComponent } from './admin/admin-user/user-list/user-list.component';
+import { UpdateFormComponent } from './admin/admin-user/update-form/update-form.component';
+import { AddNewComponent } from './admin/admin-user/add-new/add-new.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,6 +72,9 @@ import { AdminUserComponent } from './admin/admin-user/admin-user.component';
     AlertListComponent,
     HeaderProfComponent,
     AdminUserComponent,
+    UserListComponent,
+    UpdateFormComponent,
+    AddNewComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { UserDataService } from './user-data.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { UserDataService } from './user-data.service';
 })
 export class AdminUserComponent implements OnInit {
 
-  constructor(private UserService:UserDataService) { }
+  constructor(private UserService:UserDataService ,private Route:ActivatedRoute ) { }
  users:any
  
   ngOnInit(): void {
@@ -23,6 +24,13 @@ export class AdminUserComponent implements OnInit {
     
   }
 
+  delete(id:number){
+  this.UserService.deleteUser(id).subscribe()
+  }
+  /*Edit(id:number){
+    this.UserService.Updaten(id).subscribe()
+  }
+  */
  
 
 }

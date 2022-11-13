@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ContactService } from './contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -8,7 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor(private sr:ContactService) { }
   
   ngOnInit(): void {
   }
@@ -33,7 +34,6 @@ export class ContactComponent implements OnInit {
   successMsg="Suceessful Completed Will be contact with you soon "
   failedMssage="please fill success Data"
   tmeSendMail(){
-  
     let successMsg
     if (this.myContactFormValidation.valid){
         successMsg = this.successMsg;
@@ -41,10 +41,14 @@ export class ContactComponent implements OnInit {
     else{
       successMsg = this.failedMssage;
     }
+   
       return successMsg
+      
+      
 }
 
 sendData(){
-  
+  console.log(this.myContactFormValidation.value)
+  this.sr.adddat(this.myContactFormValidation.value).subscribe()
 }
 }
