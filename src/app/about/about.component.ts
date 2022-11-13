@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,OnInit,Input,Output,EventEmitter  } from '@angular/core';
+import { AboutService } from './about.service';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { title } from 'process';
 
 @Component({
   selector: 'app-about',
@@ -7,9 +10,36 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  // title: any;
+  // body :any;
 
+  constructor(private myservice:AboutService) { }
+  title:any;
+  data:any;
   ngOnInit(): void {
+    //fetching
+    let that = this;
+
+    this.myservice.getData().subscribe({
+      next(data:any){
+        that.title=title;
+        that.data=data;
+
+      }
+
+    })
+
+
   }
+
+  // ngOnInit(): void {
+  //   this.httpClient
+  //     .get<any>('assets/db.json')
+  //     .subscribe(
+  //       (data) => (this.title = data,
+  //       this.body =data));
+  // }
+
+
 
 }

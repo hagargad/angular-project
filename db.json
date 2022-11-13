@@ -1,32 +1,162 @@
 {
+  "home": [
+    {
+      "id": 1,
+      "title": "2 Cellos",
+      "type": "POP & ROCK",
+      "image": "/assets/images/2Cellos_1,140-x-570-min.jpg",
+      "thumb": "assets/images/2Cellos_370-x-260.jpg",
+      "venue": "Somabay"
+    },
+    {
+      "id": 2,
+      "title": "Hamaki Concert at Al Burouj",
+      "type": "Arabic Egyptian",
+      "image": "/assets/images/mohamed+hamaki+slider.jpg",
+      "thumb": "assets/images/mohamed+hamaki+thumb.jpg",
+      "venue": "AlBurouj Cultural Hub"
+    },
+    {
+      "id": 3,
+      "title": "Zed Winter Fest Opening",
+      "type": "Live Concerts & DJs",
+      "image": "/assets/images/ZWF_Artist+website+slider_11_06.jpg",
+      "thumb": "assets/images/ZED+Park+Thumb.jpg",
+      "venue": ""
+    },
+    {
+      "id": 4,
+      "title": "The Elite Stand Up Comedy",
+      "type": "Comedy",
+      "image": "/assets/images//Elite+slider.jpg",
+      "thumb": "assets/images/Elite+thumbnail.jpg",
+      "venue": "The Marquee-Cairo Festival City."
+    },
+    {
+      "id": 5,
+      "title": "Non-stop music - Angham",
+      "type": "Musical Shows",
+      "image": "/assets/images/NAGHOM.jpg",
+      "thumb": "assets/images/ANGHAM thumb.jpg",
+      "venue": "The Marquee-Cairo Festival City."
+    },
+    {
+      "id": 6,
+      "title": "Anistoona",
+      "type": "Art & Theater",
+      "image": "/assets/images/Anistoona+slider.jpg",
+      "thumb": "assets/images/Anistoona+thumbnail.jpg",
+      "venue": "MUST THEATER"
+    },
+    {
+      "id": 7,
+      "title": "Yama fi elgerab ya 7awy",
+      "type": "Art & Theater",
+      "image": "/assets/images/cairo+slider.jpg",
+      "thumb": "assets/images/Cairo+thumb.jpg",
+      "venue": "Cairo Show Theater"
+    },
+    {
+      "id": 8,
+      "title": "Qatar World Cup",
+      "type": "Sports",
+      "image": "/assets/images/WC+Slider.jpg",
+      "thumb": "assets/images/WC+Thumb.jpg",
+      "venue": "Qatar, El Doha"
+    },
+    {
+      "id": 9,
+      "title": "ELFIT 2022 CrossFit Championship",
+      "type": "Sports",
+      "image": "/assets/images/fit+1+slider.jpg",
+      "thumb": "assets/images/FIT22+THUMB.jpg",
+      "venue": "New Capital Sports City"
+    },
+    {
+      "id": 10,
+      "title": "Forbes Middle East Under 30 Summit El Gouna",
+      "type": "Other events",
+      "image": "/assets/images/U30-summit.jpg",
+      "thumb": "assets/images/U30-summit-thumb.jpg",
+      "venue": "El Gouna Conference and Cultural Center (GCCC)"
+    },
+    {
+      "id": 11,
+      "title": "SAMAJAM International Show",
+      "type": "Kids Shows",
+      "image": "/assets/images/Samajam+SLider.jpg",
+      "thumb": "assets/images/Samajam+Thumb.jpg",
+      "venue": "The Marquee-Cairo Festival City."
+    },
+    {
+      "id": 12,
+      "title": "Pyramids Half Marathon 2022",
+      "type": "Sports",
+      "image": "assets/images/Marathom+Slider.jpg",
+      "thumb": "assets/images/Marathom+Thumb.jpg",
+      "venue": "The Pyramids Of Giza"
+    },
+    {
+      "id": 13,
+      "title": "ZED Park",
+      "type": "Family Attractions",
+      "image": "/assets/images/ZED+Park+Slider.jpg",
+      "thumb": "assets/images/ZED+Park+Thumb.jpg",
+      "venue": ""
+    },
+    {
+      "id": 14,
+      "title": "Antigone",
+      "type": " Art & Theater ",
+      "image": "",
+      "thumb": "assets/images/antigone+thumb.jpg",
+      "venue": ""
+    },
+    {
+      "id": 15,
+      "title": "Anubis Jersey",
+      "type": "ad",
+      "image": "assets/images/Anubis-merchandising-mobile-001.jpeg",
+      "thumb": "assets/images/Anubis-merchandising-desktop-001.jpeg",
+      "venue": ""
+    }
+  ],
   "products": [
     {
       "id": 1,
       "title": "Anistoona",
       "desc": "Anistoona play with Donia Samir Ghanim ",
       "image": "assets/images/anistona.jpg",
-      "price": "800"
-    },
-    {
-      "id": 2,
-      "title": "Beyond Dance | D-CAF",
-      "desc": "D-CAF’s 10th edition brings you a special night this year to push the boundaries of dance, video art, and the most creative intersections. ",
-      "image": "assets/images/beyond.jpg",
-      "price": "300"
+      "price": "800",
+      "date": "10 November",
+      "timing": "18:15",
+      "city": "cairo",
+      "venue": "AUC Al Falaki Theatre",
+      "category": "Theatrical show"
     },
     {
       "id": 3,
       "title": "Live Vol. 4: Hamza Namira",
       "desc": "Al Manara Live Vol.4 ft. Hamza Namira on Thursday 27th of October",
       "image": "assets/images/hamza_namira.jpg",
-      "price": "400"
+      "price": "400",
+      "date": "22 November",
+      "timing": "18:15",
+      "city": "sharm elsheikh",
+      "venue": "Darwish Theatre",
+      "category": "Theatrical show"
     },
     {
       "id": 4,
       "title": "Yama fi elgerab ya 7awy",
       "desc": "In the atmosphere of the exciting  Alf Leila wa Leila  , our story revolves around Shehata the funny resourceful beggar, that was arrested in a robbery accident and led to  Al Moataser  who orders his hand to be cut off, but he changes his mind in the last minute and decides to use “Shehata” to kill the Caliph. The task of killing the Caliph turns into a journey full of surprises, its events escalate and intertwine in a breathtaking manner that provokes laughter and tears , and Shehata is always having a way for every impasse.",
       "image": "assets/images/yama.jpg",
-      "price": "1000"
+      "price": "1000",
+      "date": "12 November",
+      "timing": "7:15",
+      "city": "Luxor",
+      "venue": "The Theatre",
+      "category": "Theatrical show"
     }
   ],
   "about": [
@@ -265,26 +395,6 @@
         "catchPhrase": "Centralized empowering task-force",
         "bs": "target end-to-end models"
       }
-    },
-    {
-      "FirstName": "kimo",
-      "LastName": "ashraf",
-      "phoneNumber": 123456789101,
-      "Email": "kimo@hhh.com",
-      "re_email": "kimo@hhh.com",
-      "Password": "123456789",
-      "ConfirmPass": "123456789",
-      "id": 11
-    },
-    {
-      "FirstName": "Ahmed",
-      "LastName": "Mohamed",
-      "phoneNumber": 1234567891020,
-      "Email": "ahmed@gmail.com",
-      "re_email": "ahmed@gmail.com",
-      "Password": "123456789",
-      "ConfirmPass": "123456789",
-      "id": 12
     }
   ]
 }

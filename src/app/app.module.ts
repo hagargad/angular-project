@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { NgxsReadMoreModule } from '@minni/read-more';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin.component';
@@ -11,23 +13,32 @@ import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AboutComponent } from './about/about.component';
-import { AdminHomeComponent } from './adminpanel/admin-home/admin-home.component';
-import { AdminCartComponent } from './adminpanel/admin-cart/admin-cart.component';
-import { AdminAboutComponent } from './adminpanel/admin-about/admin-about.component';
-import { AdminContactComponent } from './adminpanel/admin-contact/admin-contact.component';
-import { AdminProductsComponent } from './adminpanel/admin-products/admin-products.component';
-import { AdminRegisterComponent } from './adminpanel/admin-register/admin-register.component';
-import { AdminLoginComponent } from './adminpanel/admin-login/admin-login.component';
-import { AdminControlComponent } from './adminpanel/admin-control/admin-control.component';
+import { AdminHomeComponent } from './admin/admin-home/admin-home.component';
+import { AdminCartComponent } from './admin/admin-cart/admin-cart.component';
+import { AdminAboutComponent } from './admin/admin-about/admin-about.component';
+import { AdminContactComponent } from './admin/admin-contact/admin-contact.component';
+import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
+import { AdminRegisterComponent } from './admin/admin-register/admin-register.component';
+import { AdminLoginComponent } from './admin/admin-login/admin-login.component';
+import { AdminControlComponent } from './admin/admin-control/admin-control.component';
 import { ProfileComponent } from './profile/profile.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { ReactiveFormsModule,FormsModule } from '@angular/forms';
-import { HttpClientModule }    from '@angular/common/http';
-import { ProjectService } from './services/project.service';
-// import { UsersComponent } from './routing/users/users.component';
-import { RouterModule} from '@angular/router';
+import { ProductsService } from './products/products.service';
+import { AboutService } from './about/about.service';
+import { AllproductsComponent } from './allproducts/allproducts.component';
+import { ProductsdetailsComponent } from './productsdetails/productsdetails.component';
+import { PersonalInfoComponent } from './profile/personal-info/personal-info.component';
+import { YourEventComponent } from './profile/your-event/your-event.component';
+import { WatchListComponent } from './profile/watch-list/watch-list.component';
+import { OrderListComponent } from './profile/order-list/order-list.component';
+import { AlertListComponent } from './profile/alert-list/alert-list.component';
+import { HeaderProfComponent } from './profile/header-prof/header-prof.component';
+import { ProfileService } from './profile/profile.service';
+import { AdminUserComponent } from './admin/admin-user/admin-user.component';
+import { ModalDialogModule } from 'ngx-modal-dialog';
+import { ModalComponent } from './modal/modal.component';
 
 
 @NgModule({
@@ -53,19 +64,26 @@ import { RouterModule} from '@angular/router';
     CheckoutComponent,
     HeaderComponent,
     FooterComponent,
-    // UsersComponent
+    AllproductsComponent,
+    ProductsdetailsComponent,
+    PersonalInfoComponent,
+    YourEventComponent,
+    WatchListComponent,
+    OrderListComponent,
+    AlertListComponent,
+    HeaderProfComponent,
+    AdminUserComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule,
-    FormsModule,
     HttpClientModule,
-    RouterModule
+    FormsModule,
+    ReactiveFormsModule,
+    NgxsReadMoreModule,
   ],
-  providers: [
-    ProjectService,
-  ],
-  bootstrap: [AppComponent]
+  providers: [ProductsService, AboutService, ProfileService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

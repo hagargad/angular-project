@@ -1,0 +1,98 @@
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+input[type=number] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+input[type=date] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+input[type=submit] {
+  width: 200px;
+  height: 70px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+input[type=data] {
+  width: 100px;
+  height: 70px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+input[type=file] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+select{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+textarea {
+  width: 50%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+label{
+  font-size: large;
+}
+
+/* the table  */
+
+table {
+  border-collapse: collapse;
+  border: 2px solid;
+}
+td {
+  text-align: left;
+  padding: 15px;
+}
+th {
+  padding: 15px;
+  text-align: center;
+}
+
+tr{
+  border: 2px solid;
+}
+

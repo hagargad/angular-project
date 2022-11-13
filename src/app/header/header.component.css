@@ -1,0 +1,532 @@
+@font-face {
+    font-family: 'akkuratbold';
+    src: url('../../assets/font/akkurat-bold.woff2') format('woff2'), url('/font/akkurat-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akkurat_regularregular';
+    src: url('../../assets/font/akkurat-regular.woff2') format('woff2'), url('/font/akkurat-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'noto_kufi_arabicbold';
+    src: url('../../assets/font/notokufiarabic-bold.woff2') format('woff2'), url('../../assets/font/notokufiarabic-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'noto_kufi_arabicregular';
+    src: url('../../assets/font/notokufiarabic-regular.woff2') format('woff2'), url('../../assets/font/notokufiarabic-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    font-family: 'akkurat_regularregular';
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #333;
+    height: 100%;
+    background-color: #fff;
+}
+
+img {
+    border: 0px;
+}
+
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+p,
+blockquote,
+fieldset,
+input,
+textarea {
+    font-family: 'akkurat_regularregular';
+    font-style: normal;
+    font-variant: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #1e1919;
+}
+
+li {
+    list-style: none;
+}
+#cntOutHdr {
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    z-index: 1000;
+}
+#cntOutFtr {
+    width: 100%;
+    text-align: center;
+}
+#cntInnHdr {
+    width: 100%;
+    padding: 0;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+.header {
+    border-bottom: 1px solid #cdced1;
+    background-color: #fff;
+    width: 100%;
+    padding: 0;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+    position: relative;
+    text-align: left;
+    display: inline-block;
+}
+
+.header .logo {
+    border-right: 1px solid #cdced1;
+    float: left;
+}
+
+.header ul {
+    float: right;
+}
+
+.header ul li {
+    float: right;
+}
+
+.header ul li a,
+.menuMobile li a {
+    width: 70px;
+    height: 85px;
+    border-left: 1px solid #cdced1;
+    float: right;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.icoMenu a {
+    background: url("../../assets/icons/icoMenu.png") top no-repeat;
+}
+
+li.selected.icoMenu a {
+    background-image: url("../../assets/icons/icoMenuSelected.png");
+}
+
+.icoBasket a {
+    background: url("../../assets/icons/icoBasket.png") top no-repeat;
+}
+
+.icoAccount a {
+    background: url("../../assets/icons/icoAccount.png") top no-repeat;
+}
+
+.icoAccountLogged a {
+    background: url("../../assets/icons/icoAccountLogged.png") top no-repeat;
+}
+
+.icoVenue a {
+    background: url("../../assets/icons/icoVenue.png") top no-repeat;
+}
+
+.icoArab a {
+    background: url("../../assets/icons/icoArab.png") top no-repeat;
+}
+
+.icoEng a {
+    background: url("../../assets/icons/icoEng.png") top no-repeat;
+}
+
+.header ul li:hover a {
+    background-color: #f3f3f4;
+}
+
+.header ul li.selected a {
+    background-color: #ffc200;
+    background-position: bottom;
+}
+
+input[type=text] {
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    height: 56px;
+    border: none;
+    background-color: #fff;
+    color: #485161;
+    font-size: 18px;
+    font-style: normal;
+}
+input[type=text]:disabled {
+    color: #dbdbdb;
+    border-bottom: 3px solid #dbdbdb;
+}
+
+.header .tmeSearch {
+    width: calc(100% - 605px);
+    height: 85px;
+    float: left;
+    padding: 0 0 0 40px;
+    outline: none;
+}
+
+.header #tmeLink {
+    position: absolute;
+    z-index: 100;
+    top: 85px;
+    left: 205px;
+    width: calc(100% - 560px);
+    padding: 30px 0;
+    background-color: #fff;
+    display: none;
+}
+
+.header #tmeLink li {
+    width: 80%;
+    padding: 0 10%;
+}
+
+.header #tmeLink li a {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    color: #6d6e71;
+}
+
+.header #tmeLink li:hover a {
+    background-color: transparent;
+    color: #1e1919;
+}
+
+.menuSearch {
+    position: absolute;
+    top: 86px;
+    left: 0;
+    z-index: 1000;
+    min-height: 540px;
+    padding-top: 30px;
+    background-color: #f3f3f4;
+    width: 100%;
+    display: none;
+    text-align: left;
+}
+
+.icoHeaderSearch a {
+    background: url("../../assets/icons/icoHeaderSearch.png") top no-repeat;
+}
+
+
+.menuHeader {
+    position: absolute;
+    top: 86px;
+    left: 0;
+    z-index: 1000;
+    min-height: 540px;
+    padding-top: 30px;
+    background-color: #f3f3f4;
+    width: 100%;
+    display: block;
+    text-align: left;
+}
+
+.menuHeader ul:nth-child(even) {
+    width: 30%;
+    float: left;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+.menuHeader ul:nth-child(odd) {
+    width: 30%;
+    float: left;
+    margin-right: 15%;
+    margin-left: 5%;
+}
+
+.menuHeader ul li {
+    margin-bottom: 20px;
+}
+
+.icoCustomerSupport {
+    background: url("../../assets/icons/icoCustomerSupport.png") left no-repeat;
+    padding-left: 50px;
+    height: 40px;
+    line-height: 40px;
+}
+.menuHeader li .text_36 {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.menuHeader li a.text_36:hover {
+    color: #9b9b9b;
+}
+
+@media screen and (max-width:630px) {
+    .hide630 {
+        display: none;
+    }
+
+    .show630 {
+        display: inline-block;
+    }
+
+    .menuHeader {
+        padding-top: 0;
+    }
+
+    .menuHeader ul {
+        border-bottom: 1px solid #1e1919;
+        margin-bottom: 20px;
+    }
+
+    .menuHeader ul:nth-child(odd) {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .menuHeader ul:nth-child(even) {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .menuHeader ul li {
+        margin-bottom: 20px;
+        width: 50%;
+        float: left;
+    }
+
+    .menuHeader li .text_36 {
+        font-size: 18px;
+    }
+
+    .menuHeader .menuMobile {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .menuHeader .menuMobile li {
+        width: 25%;
+        height: 85px;
+        margin-bottom: 0;
+    }
+
+    .menuHeader .menuMobile li a {
+        border: none;
+        float: none;
+        width: 100%;
+    }
+}
+.x {
+    position: absolute;
+    top: 86px;
+    left: 0;
+    z-index: 1000;
+    min-height: 540px;
+    padding-top: 30px;
+    background-color: #f3f3f4;
+    width: 100%;
+    display: none;
+    text-align: left;
+}
+
+.x ul:nth-child(even) {
+    width: 30%;
+    float: left;
+    margin-left: 15%;
+    margin-right: 5%;
+}
+
+.x ul:nth-child(odd) {
+    width: 30%;
+    float: left;
+    margin-right: 15%;
+    margin-left: 5%;
+}
+
+.x ul li {
+    margin-bottom: 20px;
+}
+
+.icoCustomerSupport {
+    background: url("../../assets/icons/icoCustomerSupport.png") left no-repeat;
+    padding-left: 50px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.x li .text_36 {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.x li a.text_36:hover {
+    color: #9b9b9b;
+}
+
+@media screen and (max-width:630px) {
+    .hide630 {
+        display: none;
+    }
+
+    .show630 {
+        display: inline-block;
+    }
+
+    .x {
+        padding-top: 0;
+    }
+
+    .x ul {
+        border-bottom: 1px solid #1e1919;
+        margin-bottom: 20px;
+    }
+
+    .x ul:nth-child(odd) {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .x ul:nth-child(even) {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .x ul li {
+        margin-bottom: 20px;
+        width: 50%;
+        float: left;
+    }
+
+    .x li .text_36 {
+        font-size: 18px;
+    }
+
+    .x .menuMobile {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .x .menuMobile li {
+        width: 25%;
+        height: 85px;
+        margin-bottom: 0;
+    }
+
+    .x .menuMobile li a {
+        border: none;
+        float: none;
+        width: 100%;
+    }
+
+    .searchCont {
+        display: none;
+        position: absolute;
+        z-index: 110;
+        top: 85px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        border-top: 1px solid #cdced1;
+    }
+
+    .header .tmeSearch {
+        width: calc(100% - 40px);
+        height: 48px;
+    }
+
+    .header #tmeLink {
+        width: 100%;
+        top: 48px;
+        left: 0;
+    }
+}
+@media screen and (max-width:500px) {
+    .header .tmeSearch {
+        width: calc(100% - 20px);
+        padding-left: 15px;
+        height: 48px;
+    }
+
+    .icoChooseMap {
+        line-height: 82px;
+    }
+
+    .header .logo {
+        width: 180px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-right: none;
+    }
+
+    .header .logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .menuHeader ul li {
+        width: 100%;
+    }
+
+    .header ul li a {
+        width: 60px;
+    }
+        input[type=text]{
+            font-size: 16px;
+        }
+}
+.show500 {
+    display: none !important;
+}
+
+.hide630 {
+    display: inline-block;
+}
+
+.show500,
+.show630 {
+    display: none;
+}
+.text_36 {
+    font-size: 36px;
+    color: #1e1919;
+    font-weight: normal;
+}
+.text_18 {
+    font-size: 18px;
+    color: #1e1919;
+    font-weight: normal;
+}
