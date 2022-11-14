@@ -72,13 +72,14 @@
     <input value="990252" name="PAA.idAccountAddress" type="hidden">
     <input value="true" name="PAA.isDefault" type="hidden">
     <label>Country</label>
-    {{user.address.Country}}
-    <select id="cdCountry" name="PAA.cdCountry"  (click)="toggleCityInput();" required="required" [(ngModel)]="selected">
+    
+    <input value="990252" name="PAA.idAccountAddress" type="text" value="{{user.address.Country}}">
+    <!-- <select id="cdCountry" name="PAA.cdCountry"  (click)="toggleCityInput();" required="required" [(ngModel)]="selected">
         
     <option *ngFor="let c of count" [value]="user.id"  {{selected}} >
         {{c}}
     </option>
-    </select>
+    </select> -->
     </div>
     
     <div class="cell twoOfFour">

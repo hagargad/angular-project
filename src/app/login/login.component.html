@@ -22,7 +22,7 @@
       </div>
       <div class="row">
         <div class="fourOfFour">
-          <button type="submit" class="btn_2" routerLink="/profile" (click)="login()">
+          <button type="submit" class="btn_2" [routerLink]="['/profile/personalinfo',7]" (click)="login()">
             <span class="arrow_brown" >Login</span>
           </button>
           <span></span>

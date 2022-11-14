@@ -1,4 +1,4 @@
-html,
+/* html,
 body {
   font-family: "akkurat_regularregular";
   -webkit-font-smoothing: antialiased;
@@ -86,7 +86,7 @@ option {
   margin-right: auto;
   overflow: visible;
   position: relative; /* text-align:left; */
-  display: inline-block;
+  /* display: inline-block;
 }
 .text_36 {
   font-size: 36px;
@@ -235,15 +235,15 @@ input[type="button"] {
   text-align: center;
   text-transform: uppercase;
   /* -webkit-appearance: none; */
-}
+/* }
 .btn_2:hover {
   background-color: #1e1919;
   color: #ffc200 !important;
-}
+} */
 /* .btn_2:hover .arrow_brown {
   background: url("../../assets/images/arrow_yellowBack.png") right no-repeat;
 } */
-.btn_2.small {
+/* .btn_2.small {
   padding: 8px;
   width: auto;
 }
@@ -357,4 +357,4 @@ input[type="button"] {
 }
 .btn_2:hover .arrow_brown {
   background: url("src/assets/images/icons/arrow_yellow.png") right no-repeat;
-}
+}  */

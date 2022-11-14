@@ -327,226 +327,30 @@
         "catchPhrase": "Synchronised bottom-line interface",
         "bs": "e-enable innovative applications"
       }
-    },
-    {
-      "FirstName": "Omar",
-      "LastName": "Mahran",
-      "phoneNumber": 1003287527,
-      "Email": "MM@WW.com",
-      "re_email": "MM@WW.com",
-      "Password": "12345678",
-      "ConfirmPass": "12345678",
-      "id": 7
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 8
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 9
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 10
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 11
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 12
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 13
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 14
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 15
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 16
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 17
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 18
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 19
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 20
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 21
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 22
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 23
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 24
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 25
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 26
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 27
-    },
-    {
-      "FirstName": "",
-      "LastName": "",
-      "phoneNumber": "",
-      "Email": "",
-      "re_email": "",
-      "Password": "",
-      "ConfirmPass": "",
-      "id": 28
+    },{
+      "id": 7,
+      "name": "Omar Mmahran",
+      "username": "Omar_A_Mahran",
+      "gender": "Male",
+      "email": "omar.a.m.mahran@gmail.com",
+      "address": {
+        "street": "ALexandria",
+        "suite": "Apt. 950",
+        "city": "South Christy",
+        "Country": "Egypt",
+        "zipcode": "23505-1337",
+        "geo": {
+          "lat": "-71.4197",
+          "lng": "71.7478"
+        }
+      },
+      "phone": "01003287527",
+      "website": "ola.org",
+      "company": {
+        "name": "Considine-Lockman",
+        "catchPhrase": "Synchronised bottom-line interface",
+        "bs": "e-enable innovative applications"
+      }
     }
   ],
   "Contact": [
@@ -557,22 +361,6 @@
       "Email": "Omar@gmail.com",
       "Mobile": "01003287527",
       "Massage": "Thank Your for service"
-    },
-    {
-      "Fname": "",
-      "Lname": "",
-      "Email": "",
-      "Mobile": 0,
-      "Massage": "",
-      "id": 1
-    },
-    {
-      "Fname": "Omar",
-      "Lname": "Mahran",
-      "Email": "Oma@hh.com",
-      "Mobile": "01003287527",
-      "Massage": "oamahsjsdhisnchjdc",
-      "id": 2
     }
   ]
 }
