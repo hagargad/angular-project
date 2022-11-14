@@ -32,12 +32,14 @@ import { AdminUserComponent } from './admin/admin-user/admin-user.component';
 import { UpdateFormComponent } from './admin/admin-user/update-form/update-form.component';
 import { AddNewComponent } from './admin/admin-user/add-new/add-new.component';
 import { UserListComponent } from './admin/admin-user/user-list/user-list.component';
+import { ProductsdetailsComponent } from './productsdetails/productsdetails.component';
 
 const routes: Routes = [
   //main Routes
 
   { path: 'about', component: AboutComponent },
   { path: 'products', component: ProductsComponent },
+  { path: 'productDetails',component:ProductsdetailsComponent},
   
   {
     path: 'profile',

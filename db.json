@@ -157,18 +157,6 @@
       "city": "sharm elsheikh",
       "venue": "Darwish Theatre",
       "category": "Theatrical show"
-    },
-    {
-      "id": 4,
-      "title": "Yama fi elgerab ya 7awy",
-      "desc": "In the atmosphere of the exciting  Alf Leila wa Leila  , our story revolves around Shehata the funny resourceful beggar, that was arrested in a robbery accident and led to  Al Moataser  who orders his hand to be cut off, but he changes his mind in the last minute and decides to use “Shehata” to kill the Caliph. The task of killing the Caliph turns into a journey full of surprises, its events escalate and intertwine in a breathtaking manner that provokes laughter and tears , and Shehata is always having a way for every impasse.",
-      "image": "assets/images/yama.jpg",
-      "price": "1000",
-      "date": "12 November",
-      "timing": "7:15",
-      "city": "Luxor",
-      "venue": "The Theatre",
-      "category": "Theatrical show"
     }
   ],
   "about": [
@@ -327,30 +315,6 @@
         "catchPhrase": "Synchronised bottom-line interface",
         "bs": "e-enable innovative applications"
       }
-    },{
-      "id": 7,
-      "name": "Omar Mmahran",
-      "username": "Omar_A_Mahran",
-      "gender": "Male",
-      "email": "omar.a.m.mahran@gmail.com",
-      "address": {
-        "street": "ALexandria",
-        "suite": "Apt. 950",
-        "city": "South Christy",
-        "Country": "Egypt",
-        "zipcode": "23505-1337",
-        "geo": {
-          "lat": "-71.4197",
-          "lng": "71.7478"
-        }
-      },
-      "phone": "01003287527",
-      "website": "ola.org",
-      "company": {
-        "name": "Considine-Lockman",
-        "catchPhrase": "Synchronised bottom-line interface",
-        "bs": "e-enable innovative applications"
-      }
     }
   ],
   "Contact": [
@@ -361,6 +325,14 @@
       "Email": "Omar@gmail.com",
       "Mobile": "01003287527",
       "Massage": "Thank Your for service"
+    },
+    {
+      "Fname": "Omar",
+      "Lname": "Mahran",
+      "Email": "omar.a.m.mahran@gmail.com",
+      "Mobile": "01003287527",
+      "Massage": "Hello",
+      "id": 1
     }
   ]
 }
