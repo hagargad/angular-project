@@ -23,7 +23,7 @@ export class RegisterComponent implements OnInit {
     re_email :new FormControl('',Validators.email),
     Password : new FormControl('',Validators.minLength(8)),
     ConfirmPass :new FormControl('',Validators.minLength(8))
-  });
+  })
 
   get FnameValid(){
     return this.UserRegisterValidation.controls.FirstName.valid;
@@ -55,7 +55,7 @@ export class RegisterComponent implements OnInit {
 
   let that = this;
   this.regUser.getUsers().subscribe({
-    next(data:any){
+    next(data){
       that.users = data
       }
     });

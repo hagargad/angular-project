@@ -113,18 +113,13 @@ option {
 }
 .navigator {
   background-color: #f3f3f4;
-  padding: 25px 2.5%;
-  margin-bottom: 30px;
+  padding: 50px 2.5%;
+  margin-bottom: 35px;
   position: relative;
 }
 .navigator .text_36 {
   float: left;
   font-weight: bold;
-}
-#cntPage {
-  width: 100%;
-  overflow: hidden;
-  background-color: white;
 }
 #cntInnCont {
   width: 100%;
@@ -142,6 +137,11 @@ option {
 #cntOutFtr {
   width: 100%;
   text-align: center;
+}
+#cntPage {
+  width: 100%;
+  overflow: hidden;
+  background-color:white;
 }
 textarea {
   width: calc(99% - 40px);
@@ -266,13 +266,14 @@ input[type="button"] {
   background-color: #f3f3f4;
   float: left;
   text-align: left;
+  position: relative;
   left: 30%;
 }
 .checkboxRow input[type="checkbox"] {
   display: none;
 }
 .checkboxRow .checkboxInput {
-  margin-right: 20px;
+  margin-right: 25px;
 }
 .checkboxRow .text_14 {
   margin-top: 10px;

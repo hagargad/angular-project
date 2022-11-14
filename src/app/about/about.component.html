@@ -12,15 +12,16 @@
   <div id="cntInnCont">
     <section xmlns:mm="xalan://it.blabs.xslt.MultimediaExt" class="showNews">
       <div class="navigator" >
-        <h1 class="text_36" *ngFor="let t of data">{{ t.title }}</h1>
+        <h1 class="text_36">About Us</h1>
         <div onclick="document.location = 'historyBack.html'" class="link_1">
           <span class="arrow_yellowBack">BACK</span>
         </div>
         <br clear="all" />
       </div>
-      <div class="nmText text_16 cntInnSmall"  *ngFor="let a of data" >
+      <div class="nmText text_16 cntInnSmall"  *ngFor="let a of title" >
         <p>{{ a.data }}</p>
-
+        <p>{{ a.data }}</p>
+        <p>{{ a.data }}</p>
       </div>
     </section>
   </div>

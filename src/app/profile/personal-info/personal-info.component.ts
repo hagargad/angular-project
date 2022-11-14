@@ -9,26 +9,47 @@ import { ProfileService } from '../profile.service';
   ]
 })
 export class PersonalInfoComponent implements OnInit {
+selected="selected";
 userID=0;
 user:any;
+users:any;
+count:any[]=[];
+
+
 
   constructor(private userid:ActivatedRoute ,private userInject:ProfileService) { 
     this.userID=userid.snapshot.params["id"]
   }
    
   ngOnInit(): void { //fetching Api
+    
     let that = this;
       this.userInject.getOneUser(this.userID).subscribe(
         {
         next(data){
          that.user=data
          //console.log(data[id])
-        },
-        error(err){
-    
         }
       })
+
+      this.userInject.getAllData().subscribe(
+        {
+          next(data){
+            that.users=data
+          }
+        }
+      )
+     
   }
+ 
+  toggleCityInput(){
+    for(let i=0 ;i<=this.users.length;i++){
+      this.count.push(this.users[i].address.Country)
+      //console.log(this.users[i].address)
+    }
+    
+  }
+  
   
 }
 

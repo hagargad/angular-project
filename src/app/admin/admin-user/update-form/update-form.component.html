@@ -1,0 +1,174 @@
+<head>
+ 
+</head>
+<body>
+<div>
+
+  <h2   style="background-color:#4723d9; color:white; text-align:center; margin:20px; border-radius: 20px; padding: 10px; font-weight:bold;">Update User Details</h2>
+</div>
+<form [formGroup]="formDeltailsValid"  class="h-100 h-custom gradient-custom-2">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12">
+          <div class="card card-registration card-registration-2" style="border-radius: 15px;">
+            <div class="card-body p-0">
+              <div class="row g-0">
+                <div class="col-lg-6 bg-light">
+                  <div class="p-5">
+                    <h3 class="fw-normal mb-5" style="color: #4835d4;">General Infomation</h3>
+                    <div class="row">
+                      <div class="col-md-12 mb-4 pb-2">
+  
+                        <div class="form-outline">
+                          <input type="text" id="form3Examplev2"  formControlName="name" value="{{DataOne.name}}" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Examplev2" > Name</label>
+                        </div>
+                        <div class="form-outline">
+                            <input type="text" id="form3Examplev0" formControlName="username" class="form-control form-control-lg" value="{{DataOne.username}}"  />
+                            <label class="form-label" for="form3Examplev0"> Username</label>
+                        </div>
+                        <div class="form-outline">
+                            <input type="text" id="form3Examplev3" value="{{DataOne.email}}" formControlName="email" class="form-control form-control-lg" />
+                            <label class="form-label" for="form3Examplev3"> Email</label>
+                        </div>
+                      </div>
+                    </div>
+
+                      
+                    
+  
+                    <div class="row">
+                      <div class="col-md-6 mb-4 pb-2 mb-md-0 pb-md-0">
+  
+                        <div class="form-outline">
+                          
+                          <input type="text" id="form3Examplev5" value="{{DataOne.company.name}}"  class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Examplev5" >company</label>
+                        </div>
+  
+                      </div>
+                      <div class="col-md-6" *ngIf="DataOne.gender=='male' else ANotherRe">
+                        <select   class="select">
+                          <option value="male" selected>Male</option>
+                          <option value="Female" >Female</option>
+                        </select>
+                      </div>
+
+                      <ng-template #ANotherRe>
+                        <div class="col-md-6">
+                          <select   class="select">
+                            <option value="male" >Male</option>
+                            <option value="Female" selected>Female</option>
+                          </select>
+                        </div>
+                      </ng-template>
+ 
+                    </div>
+  
+                  </div>
+                </div>
+                <div class="col-lg-6 bg-indigo text-white">
+                  <div class="p-5">
+                    <h3 class="fw-normal mb-5">Contact Details</h3>
+  
+                    <div class="mb-4 pb-2">
+                      <div class="form-outline form-white">
+                        <input type="text" id="form3Examplea2" value='{{DataOne.address.street}}' class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Examplea2" >Street + Nr</label>
+                      </div>
+                    </div>
+  
+                    <div class="row">
+                      <div class="col-md-5 mb-4 pb-2">
+  
+                        <div class="form-outline form-white">
+                          <input type="text" id="form3Examplea4" value='{{DataOne.address.suite}}' class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Examplea4">suite</label>
+                        </div>
+  
+                      </div>
+                      <div class="col-md-7 mb-4 pb-2">
+  
+                        <div class="form-outline form-white">
+                          <input type="text" id="form3Examplea5" value='{{DataOne.address.city}}' class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Examplea5">city</label>
+                        </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="mb-4 pb-2">
+                      <div class="form-outline form-white">
+                        <input type="text" id="form3Examplea6" value='{{DataOne.address.Country}}' class="form-control form-control-lg" />
+                        <label class="form-label" for="form3Examplea6">Country</label>
+                      </div>
+                    </div>
+  
+                    <div class="row">
+                      <div class="col-md-5 mb-4 pb-2">
+  
+                        <div class="form-outline form-white">
+                          <input type="text" id="form3Examplea7" value='{{DataOne.address.zipcode}}' class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Examplea7">ZipCode</label>
+                        </div>
+  
+                      </div>
+                      <div class="col-md-7 mb-4 pb-2">
+  
+                        <div class="form-outline form-white">
+                          <input type="text" id="form3Examplea8"   value="{{DataOne.phone}}" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Examplea8">Phone Number</label>
+                        </div>
+  
+                      </div>
+                    </div>
+
+  
+                    
+                    <button type="button" class="btn btn-light btn-lg"
+                      data-mdb-ripple-color="dark" (click)="updateNow()">Update Now</button>
+  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</form>
+    </body>
+    <style>
+        @media (min-width: 1025px) {
+.h-custom {
+height: 100vh !important;
+}
+}
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+font-size: 1rem;
+line-height: 2.15;
+padding-left: .75em;
+padding-right: .75em;
+}
+.card-registration .select-arrow {
+top: 13px;
+}
+
+ 
+
+.bg-indigo {
+background-color: #4835d4;
+}
+@media (min-width: 992px) {
+.card-registration-2 .bg-indigo {
+border-top-right-radius: 15px;
+border-bottom-right-radius: 15px;
+}
+}
+@media (max-width: 991px) {
+.card-registration-2 .bg-indigo {
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+}
+}
+    </style>

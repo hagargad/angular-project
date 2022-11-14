@@ -5,6 +5,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import { AllproductsService } from './allproducts.service';
+import { Router } from '@angular/router';
 
 // interface Product {
 //   id: Number;
@@ -24,7 +25,7 @@ export class AllproductsComponent implements OnInit {
   // constructor(private service: ProductsService) {
 
   // }
-  constructor(private service:AllproductsService) {}
+  constructor(private service:AllproductsService ,private router: Router) {}
   products: any;
 
   id: any;
@@ -83,4 +84,11 @@ export class AllproductsComponent implements OnInit {
   // };
 
   // @Input() oneproduct:any;
+
+
+
+goto(id:any){
+this.router.navigate(['checkout'], { queryParams: { id:id }});
+}
+
 }

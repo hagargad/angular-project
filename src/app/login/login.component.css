@@ -129,6 +129,12 @@ input:focus {
 .btn_2:disabled .arrow_brown {
   background: none;
 }
+#cntPage {
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+  border-top: 30%;
+}
 .label,
 label {
   font-size: 10px;
@@ -154,9 +160,10 @@ label {
   background-color: #f3f3f4;
   float: left;
   text-align: left;
+  left: 30%;
 }
 .twoOfFour {
-  width: 47%;
+  width: 55%;
   margin: 0 1.5%;
 }
 .fourOfFour {
@@ -180,11 +187,7 @@ label {
   text-transform: uppercase;
   cursor: pointer;
 }
-/* #cntPage {
-  width: 100%;
-  overflow: hidden;
-  background-color: #f2f3f3;
-} */
+
 .arrow_brown {
   background: url("src/assets/images/icons/arrow_yellow.png") right no-repeat;
   padding-right: 50px;

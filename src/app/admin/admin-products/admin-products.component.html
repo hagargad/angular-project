@@ -1,47 +1,20 @@
+<html>
+  <body>
+    <form>
 
-<div id="cntOutHdr ">
-  <div class="inside-content">
-    <table cellspacing="0" cellpadding="0" border="2" class="center">
-      <tr>
-        <th><h5>ID</h5></th>
-        <th><h5>Title</h5></th>
-        <th><h5>desc</h5></th>
-        <th><h5>Img</h5></th>
-        <th><h5>Price</h5></th>
-        <th><h5>Date</h5></th>
-        <th><h5>Timing</h5></th>
-        <th><h5>City</h5></th>
-        <th><h5>Venue</h5></th>
-        <th><h5>Category</h5></th>
-        <th><h5>Edit</h5></th>
-        <th><h5>Delete</h5></th>
-        <th><button class="btn btn-primary" (click)="openModal()">Add New Product</button></th>
-      </tr>
+    <label>upload product's image : </label>
 
-      <tbody>
-        <tr *ngFor="let p of products">
-          <td>
-            <p>{{ p.id }}</p>
-          </td>
-          <td>
-            <p>{{ p.title }}</p>
-          </td>
-          <td>
-            <p>{{ p.desc }}</p>
-          </td>
-          <td>
-            <img height="70" id="14007" src="{{ p.image }}" width="150" />
-          </td>
-          <td>{{ p.price }}</td>
-          <td>{{ p.date }}</td>
-          <td>{{ p.timing }}</td>
-          <td>{{ p.City }}</td>
-          <td>{{ p.venue }}</td>
-          <td>{{ p.Category }}</td>
-          <td><input  type="submit" value="EDIT" /></td>
-          <td><input (click)="delete( p.id )" type="submit" value="DELETE" /></td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
+    <label>Enter product's label : </label>
+    <input type="text" placeholder="enter title">
+
+    <label>Enter product's description :</label>
+    <textarea></textarea>
+
+    <label>Enter product's price : </label>
+    <input type="number" placeholder="enter price">
+
+    <input type="submit" value="enter data">
+
+  </form>
+  </body>
+</html>

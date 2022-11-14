@@ -12,8 +12,6 @@ import { ProfileComponent } from './profile/profile.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AllproductsComponent } from './allproducts/allproducts.component';
-import { ProductsdetailsComponent } from './productsdetails/productsdetails.component';
-
 
 //Admin routings
 import { AdminAboutComponent } from './admin/admin-about/admin-about.component';
@@ -31,28 +29,16 @@ import { YourEventComponent } from './profile/your-event/your-event.component';
 import { OrderListComponent } from './profile/order-list/order-list.component';
 import { AlertListComponent } from './profile/alert-list/alert-list.component';
 import { AdminUserComponent } from './admin/admin-user/admin-user.component';
+import { UpdateFormComponent } from './admin/admin-user/update-form/update-form.component';
+import { AddNewComponent } from './admin/admin-user/add-new/add-new.component';
+import { UserListComponent } from './admin/admin-user/user-list/user-list.component';
 
 const routes: Routes = [
   //main Routes
-  {path:"about", component:AboutComponent},
-  {path:"products", component:ProductsComponent},
-  {path:"profile", component:ProfileComponent},
-  {path:"cart", component:CartComponent},
-  {path:"admin", component:AdminComponent},
-  {path:"register", component:RegisterComponent},
-  {path:"login", component:LoginComponent},
-  {path:"home", component:HomeComponent},
-  {path:"contact", component:ContactComponent},
-  {path:"checkout", component:CheckoutComponent},
-  { path: 'productsdetails', component: ProductsdetailsComponent },
-  { path: 'products', component: ProductsComponent },
-  { path: 'register', component: RegisterComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'checkout', component: CheckoutComponent },
-  { path: 'allproducts', component: AllproductsComponent },
 
+  { path: 'about', component: AboutComponent },
+  { path: 'products', component: ProductsComponent },
+  
   {
     path: 'profile',
     component: ProfileComponent,
@@ -66,22 +52,35 @@ const routes: Routes = [
     ],
   },
   { path: 'cart', component: CartComponent },
+  
   { path: 'admin', component: AdminComponent,children:[
     //Admin Routes
+  { path: 'admin-user/:id',component:AdminUserComponent},
   { path: 'admin-about', component: AdminAboutComponent },
   { path: 'admin-cart', component: AdminCartComponent },
   { path: 'admin-contact', component: AdminContactComponent },
   { path: 'admin-control', component: AdminControlComponent },
-  { path: 'admin-user', component: AdminUserComponent },
+  { path: 'admin-user', component: AdminUserComponent ,
+  children:[
+    {path: 'update/:id',component:UpdateFormComponent},
+    {path: 'adduser/:id',component:AddNewComponent}
+  ]},
   { path: 'admin-home', component: AdminHomeComponent },
   { path: 'admin-login', component: AdminLoginComponent },
   { path: 'admin-products', component: AdminProductsComponent },
   { path: 'admin-register', component: AdminRegisterComponent },
   { path: '**', redirectTo: 'home', pathMatch: 'full' }, //404 not found
   ] },
+  { path: 'register', component: RegisterComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'checkout', component: CheckoutComponent },
+  { path: 'allproducts', component: AllproductsComponent },
+  { path: '**', component: HomeComponent }
 
-  {path:"**",component:HomeComponent},
 
+  
 ];
 
 @NgModule({

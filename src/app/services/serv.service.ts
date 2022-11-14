@@ -6,11 +6,11 @@ import { Injectable } from '@angular/core';
 })
 export class ServService {
 
-  constructor(public myclient:HttpClient) {
-
+  constructor(public myclient:HttpClient) { 
+    
   }
-  basUrl="http://localhost:3000/users";
-
+  basUrl="https://fakestoreapi.com/users"
+  
   getAllUsers(){
     return this.myclient.get(this.basUrl)
   }

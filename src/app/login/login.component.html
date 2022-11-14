@@ -1,9 +1,7 @@
-<!-- <p>login works!</p> -->
-<!-- <p>register works!</p> -->
-
-<div id="cntPage">
-  <div class="login halfCheckout">
-    <form [formGroup]="Userloginvalidation" (ngsubmit)="login()">
+ 
+<div   class="d-flex justify-content-center" style="padding-top:100px;">
+  <div class="login halfCheckout " >
+    <form [formGroup]="Userloginvalidation" >
     <div class="inputArea">
       <div class="row">
         <div class="cell twoOfFour">
@@ -24,9 +22,10 @@
       </div>
       <div class="row">
         <div class="fourOfFour">
-          <button routerLink="profile" type="submit" class="btn_2">
-            <span class="arrow_brown">Login</span>
+          <button type="submit" class="btn_2" routerLink="/profile" (click)="login()">
+            <span class="arrow_brown" >Login</span>
           </button>
+          <span></span>
         </div>
       </div>
     </div>
