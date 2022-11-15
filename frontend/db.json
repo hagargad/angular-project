@@ -1,0 +1,216 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Anistoona",
+      "desc": "Anistoona play with Donia Samir Ghanim ",
+      "image": "assets/images/anistona.jpg",
+      "price": "800"
+    },
+    {
+      "id": 2,
+      "title": "Beyond Dance | D-CAF",
+      "desc": "D-CAF’s 10th edition brings you a special night this year to push the boundaries of dance, video art, and the most creative intersections. ",
+      "image": "assets/images/beyond.jpg",
+      "price": "300"
+    },
+    {
+      "id": 3,
+      "title": "Live Vol. 4: Hamza Namira",
+      "desc": "Al Manara Live Vol.4 ft. Hamza Namira on Thursday 27th of October",
+      "image": "assets/images/hamza_namira.jpg",
+      "price": "400"
+    },
+    {
+      "id": 4,
+      "title": "Yama fi elgerab ya 7awy",
+      "desc": "In the atmosphere of the exciting  Alf Leila wa Leila  , our story revolves around Shehata the funny resourceful beggar, that was arrested in a robbery accident and led to  Al Moataser  who orders his hand to be cut off, but he changes his mind in the last minute and decides to use “Shehata” to kill the Caliph. The task of killing the Caliph turns into a journey full of surprises, its events escalate and intertwine in a breathtaking manner that provokes laughter and tears , and Shehata is always having a way for every impasse.",
+      "image": "assets/images/yama.jpg",
+      "price": "1000"
+    }
+  ],
+  "about": [
+    {
+      "title": "About us ",
+      "data": "The company is aimed at supplying entertainment houses, venue owners, event organizers and planners, with an easy and feasible solution to sell and market their tickets/invitations. The services provided do not end there; TicketsMarche also provides consultation and fraud protection as well as spectator entry monitoring and surveillance."
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "gender": "male",
+      "email": "Sincere@april.biz",
+      "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "Country": "Qatar",
+        "zipcode": "92998-3874",
+        "geo": {
+          "lat": "-37.3159",
+          "lng": "81.1496"
+        }
+      },
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org",
+      "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Multi-layered client-server neural-net",
+        "bs": "harness real-time e-markets"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "username": "Antonette",
+      "gender": "female",
+      "email": "Shanna@melissa.tv",
+      "address": {
+        "street": "Victor Plains",
+        "Country": "Saudi",
+        "suite": "Suite 879",
+        "city": "Wisokyburgh",
+        "zipcode": "90566-7771",
+        "geo": {
+          "lat": "-43.9509",
+          "lng": "-34.4618"
+        }
+      },
+      "phone": "010-692-6593 x09125",
+      "website": "anastasia.net",
+      "company": {
+        "name": "Deckow-Crist",
+        "catchPhrase": "Proactive didactic contingency",
+        "bs": "synergize scalable supply-chains"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "username": "Samantha",
+      "gender": "male",
+      "email": "Nathan@yesenia.net",
+      "address": {
+        "street": "Douglas Extension",
+        "suite": "Suite 847",
+        "Country": "Dubai",
+        "city": "McKenziehaven",
+        "zipcode": "59590-4157",
+        "geo": {
+          "lat": "-68.6102",
+          "lng": "-47.0653"
+        }
+      },
+      "phone": "1-463-123-4447",
+      "website": "ramiro.info",
+      "company": {
+        "name": "Romaguera-Jacobson",
+        "catchPhrase": "Face to face bifurcated interface",
+        "bs": "e-enable strategic applications"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Patricia Lebsack",
+      "username": "Karianne",
+      "gender": "male",
+      "email": "Julianne.OConner@kory.org",
+      "address": {
+        "street": "Hoeger Mall",
+        "suite": "Apt. 692",
+        "city": "South Elvis",
+        "Country": "Afgstan",
+        "zipcode": "53919-4257",
+        "geo": {
+          "lat": "29.4572",
+          "lng": "-164.2990"
+        }
+      },
+      "phone": "493-170-9623 x156",
+      "website": "kale.biz",
+      "company": {
+        "name": "Robel-Corkery",
+        "catchPhrase": "Multi-tiered zero tolerance productivity",
+        "bs": "transition cutting-edge web services"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Chelsey Dietrich",
+      "username": "Kamren",
+      "gender": "male",
+      "email": "Lucio_Hettinger@annie.ca",
+      "address": {
+        "street": "Skiles Walks",
+        "suite": "Suite 351",
+        "city": "Roscoeview",
+        "Country": "Kwait",
+        "zipcode": "33263",
+        "geo": {
+          "lat": "-31.8129",
+          "lng": "62.5342"
+        }
+      },
+      "phone": "(254)954-1289",
+      "website": "demarco.info",
+      "company": {
+        "name": "Keebler LLC",
+        "catchPhrase": "User-centric fault-tolerant solution",
+        "bs": "revolutionize end-to-end systems"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Mrs. Dennis Schulist",
+      "username": "Leopoldo_Corkery",
+      "gender": "female",
+      "email": "Karley_Dach@jasper.info",
+      "address": {
+        "street": "Norberto Crossing",
+        "suite": "Apt. 950",
+        "city": "South Christy",
+        "Country": "Egypt",
+        "zipcode": "23505-1337",
+        "geo": {
+          "lat": "-71.4197",
+          "lng": "71.7478"
+        }
+      },
+      "phone": "1-477-935-8478 x6430",
+      "website": "ola.org",
+      "company": {
+        "name": "Considine-Lockman",
+        "catchPhrase": "Synchronised bottom-line interface",
+        "bs": "e-enable innovative applications"
+      }
+    }
+  ],
+  "Contact": [
+    {
+      "id": 0,
+      "Fname": "Omar",
+      "Lname": "Mahran",
+      "Email": "Omar@gmail.com",
+      "Mobile": "01003287527",
+      "Massage": "Thank Your for service"
+    },
+    {
+      "Fname": "",
+      "Lname": "",
+      "Email": "",
+      "Mobile": 0,
+      "Massage": "",
+      "id": 1
+    },
+    {
+      "Fname": "Omar",
+      "Lname": "Mahran",
+      "Email": "Oma@hh.com",
+      "Mobile": "01003287527",
+      "Massage": "oamahsjsdhisnchjdc",
+      "id": 2
+    }
+  ]
+}
