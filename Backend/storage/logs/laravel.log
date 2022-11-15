@@ -782,3 +782,421 @@
 #45 /Users/hagargad/Desktop/final-api/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
 #46 {main}
 "} 
+[2022-11-15 23:28:27] production.ERROR: Command "make:migrate" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:migrate\" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:test at /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php:694)
+[stacktrace]
+#0 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(259): Symfony\\Component\\Console\\Application->find('make:migrate')
+#1 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/hagargad/Desktop/final/angular-project/Backend/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2022-11-15 23:28:54] production.ERROR: Command "make" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make\" is not defined.
+
+Did you mean one of these?
+    make:cast
+    make:channel
+    make:command
+    make:component
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:test at /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php:694)
+[stacktrace]
+#0 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(259): Symfony\\Component\\Console\\Application->find('make')
+#1 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/hagargad/Desktop/final/angular-project/Backend/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2022-11-15 23:29:07] production.ERROR: SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: YES) (SQL: select * from information_schema.tables where table_schema = forge and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: YES) (SQL: select * from information_schema.tables where table_schema = forge and table_name = migrations and table_type = 'BASE TABLE') at /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php:760)
+[stacktrace]
+#0 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(720): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(422): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(44): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(683): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(138): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Support/helpers.php(247): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}(1)
+#7 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(157): retry(1, Object(Closure), 0, Object(Closure))
+#8 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(114): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->repositoryExists()
+#9 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(82): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#10 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(616): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#11 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(102): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#12 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#13 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#15 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#16 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#17 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(178): Illuminate\\Container\\Container->call(Array)
+#18 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Command/Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#19 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(148): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 /Users/hagargad/Desktop/final/angular-project/Backend/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+
+[previous exception] [object] (PDOException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: YES) at /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=127....', 'forge', '', Array)
+#1 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'forge', '', Array)
+#2 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(184): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(1171): call_user_func(Object(Closure))
+#6 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(1207): Illuminate\\Database\\Connection->getPdo()
+#7 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(486): Illuminate\\Database\\Connection->getReadPdo()
+#8 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(414): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(753): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from i...', Array)
+#10 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(720): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#11 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(422): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#12 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(44): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#13 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#14 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(683): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#15 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(138): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#16 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Support/helpers.php(247): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}(1)
+#17 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(157): retry(1, Object(Closure), 0, Object(Closure))
+#18 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(114): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->repositoryExists()
+#19 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(82): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#20 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(616): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#21 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(102): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#22 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#23 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#25 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#26 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#27 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(178): Illuminate\\Container\\Container->call(Array)
+#28 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Command/Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#29 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(148): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 /Users/hagargad/Desktop/final/angular-project/Backend/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
+[2022-11-15 23:29:13] production.ERROR: The "--fresh" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--fresh\" option does not exist. at /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php:220)
+[stacktrace]
+#0 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php(149): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('fresh', NULL)
+#1 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--fresh')
+#2 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('--fresh', true)
+#3 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Command/Command.php(267): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#5 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(148): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#6 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 /Users/hagargad/Desktop/final/angular-project/Backend/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2022-11-15 23:31:58] production.ERROR: SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: YES) (SQL: select * from information_schema.tables where table_schema = forge and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: YES) (SQL: select * from information_schema.tables where table_schema = forge and table_name = migrations and table_type = 'BASE TABLE') at /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php:760)
+[stacktrace]
+#0 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(720): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(422): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(44): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(683): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(138): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Support/helpers.php(247): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}(1)
+#7 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(157): retry(1, Object(Closure), 0, Object(Closure))
+#8 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(114): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->repositoryExists()
+#9 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(82): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#10 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(616): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#11 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(102): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#12 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#13 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#15 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#16 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#17 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(178): Illuminate\\Container\\Container->call(Array)
+#18 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Command/Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#19 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(148): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 /Users/hagargad/Desktop/final/angular-project/Backend/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+
+[previous exception] [object] (PDOException(code: 1045): SQLSTATE[HY000] [1045] Access denied for user 'forge'@'localhost' (using password: YES) at /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=127....', 'forge', '', Array)
+#1 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'forge', '', Array)
+#2 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(184): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(1171): call_user_func(Object(Closure))
+#6 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(1207): Illuminate\\Database\\Connection->getPdo()
+#7 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(486): Illuminate\\Database\\Connection->getReadPdo()
+#8 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(414): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(753): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from i...', Array)
+#10 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(720): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#11 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(422): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#12 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(44): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#13 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#14 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(683): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#15 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(138): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#16 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Support/helpers.php(247): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}(1)
+#17 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(157): retry(1, Object(Closure), 0, Object(Closure))
+#18 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(114): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->repositoryExists()
+#19 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(82): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#20 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(616): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#21 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(102): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#22 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#23 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#25 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#26 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#27 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(178): Illuminate\\Container\\Container->call(Array)
+#28 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Command/Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#29 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(148): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 /Users/hagargad/Desktop/final/angular-project/Backend/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
+[2022-11-15 23:53:06] production.ERROR: SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' (SQL: select * from information_schema.tables where table_schema = forge and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1044): SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' (SQL: select * from information_schema.tables where table_schema = forge and table_name = migrations and table_type = 'BASE TABLE') at /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php:760)
+[stacktrace]
+#0 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(720): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(422): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(44): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(683): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(138): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Support/helpers.php(247): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}(1)
+#7 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(157): retry(1, Object(Closure), 0, Object(Closure))
+#8 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(114): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->repositoryExists()
+#9 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(82): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#10 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(616): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#11 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(102): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#12 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#13 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#15 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#16 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#17 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(178): Illuminate\\Container\\Container->call(Array)
+#18 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Command/Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#19 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(148): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 /Users/hagargad/Desktop/final/angular-project/Backend/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+
+[previous exception] [object] (PDOException(code: 1044): SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' at /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=127....', 'forge', '', Array)
+#1 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'forge', '', Array)
+#2 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(184): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(1171): call_user_func(Object(Closure))
+#6 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(1207): Illuminate\\Database\\Connection->getPdo()
+#7 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(486): Illuminate\\Database\\Connection->getReadPdo()
+#8 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(414): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(753): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from i...', Array)
+#10 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(720): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#11 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(422): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#12 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(44): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#13 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#14 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(683): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#15 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(138): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#16 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Support/helpers.php(247): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}(1)
+#17 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(157): retry(1, Object(Closure), 0, Object(Closure))
+#18 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(114): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->repositoryExists()
+#19 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(82): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#20 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(616): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#21 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(102): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#22 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#23 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#25 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#26 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#27 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(178): Illuminate\\Container\\Container->call(Array)
+#28 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Command/Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#29 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(148): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 /Users/hagargad/Desktop/final/angular-project/Backend/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
+[2022-11-15 23:55:50] production.ERROR: SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' (SQL: select * from information_schema.tables where table_schema = forge and table_name = migrations and table_type = 'BASE TABLE') {"exception":"[object] (Illuminate\\Database\\QueryException(code: 1044): SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' (SQL: select * from information_schema.tables where table_schema = forge and table_name = migrations and table_type = 'BASE TABLE') at /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php:760)
+[stacktrace]
+#0 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(720): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#1 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(422): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#2 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(44): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#3 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#4 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(683): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#5 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(138): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#6 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Support/helpers.php(247): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}(1)
+#7 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(157): retry(1, Object(Closure), 0, Object(Closure))
+#8 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(114): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->repositoryExists()
+#9 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(82): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#10 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(616): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#11 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(102): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#12 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#13 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#15 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#16 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#17 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(178): Illuminate\\Container\\Container->call(Array)
+#18 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Command/Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#19 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(148): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 /Users/hagargad/Desktop/final/angular-project/Backend/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 {main}
+
+[previous exception] [object] (PDOException(code: 1044): SQLSTATE[HY000] [1044] Access denied for user ''@'localhost' to database 'forge' at /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php:70)
+[stacktrace]
+#0 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(70): PDO->__construct('mysql:host=127....', 'forge', '', Array)
+#1 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/Connector.php(46): Illuminate\\Database\\Connectors\\Connector->createPdoConnection('mysql:host=127....', 'forge', '', Array)
+#2 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/MySqlConnector.php(24): Illuminate\\Database\\Connectors\\Connector->createConnection('mysql:host=127....', Array, Array)
+#3 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connectors/ConnectionFactory.php(184): Illuminate\\Database\\Connectors\\MySqlConnector->connect(Array)
+#4 [internal function]: Illuminate\\Database\\Connectors\\ConnectionFactory->Illuminate\\Database\\Connectors\\{closure}()
+#5 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(1171): call_user_func(Object(Closure))
+#6 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(1207): Illuminate\\Database\\Connection->getPdo()
+#7 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(486): Illuminate\\Database\\Connection->getReadPdo()
+#8 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(414): Illuminate\\Database\\Connection->getPdoForSelect(true)
+#9 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(753): Illuminate\\Database\\Connection->Illuminate\\Database\\{closure}('select * from i...', Array)
+#10 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(720): Illuminate\\Database\\Connection->runQueryCallback('select * from i...', Array, Object(Closure))
+#11 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Connection.php(422): Illuminate\\Database\\Connection->run('select * from i...', Array, Object(Closure))
+#12 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Schema/MySqlBuilder.php(44): Illuminate\\Database\\Connection->select('select * from i...', Array)
+#13 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(169): Illuminate\\Database\\Schema\\MySqlBuilder->hasTable('migrations')
+#14 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(683): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->repositoryExists()
+#15 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(138): Illuminate\\Database\\Migrations\\Migrator->repositoryExists()
+#16 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Support/helpers.php(247): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}(1)
+#17 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(157): retry(1, Object(Closure), 0, Object(Closure))
+#18 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(114): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->repositoryExists()
+#19 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(82): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->prepareDatabase()
+#20 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(616): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->Illuminate\\Database\\Console\\Migrations\\{closure}()
+#21 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/MigrateCommand.php(102): Illuminate\\Database\\Migrations\\Migrator->usingConnection(NULL, Object(Closure))
+#22 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#23 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/Util.php(41): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#24 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(93): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#25 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(37): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#26 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Container/Container.php(651): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#27 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(178): Illuminate\\Container\\Container->call(Array)
+#28 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Command/Command.php(308): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#29 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(148): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#30 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#31 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#32 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#33 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#34 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#35 /Users/hagargad/Desktop/final/angular-project/Backend/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#36 {main}
+"} 
