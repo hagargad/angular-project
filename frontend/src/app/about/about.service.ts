@@ -9,19 +9,19 @@ export interface About {
   title: String;
   body: String;
 }
-const Base_URL: string = environment.baseApi;
+
 @Injectable({
   providedIn: "root",
 })
 export class AboutService {
   private accessToken: any;
   private HttpHeaders: any;
-
+  private Base_URL: string = environment.baseApi;
   constructor(private http: HttpClient) {}
 
   //get the body
   getData(): Observable<About[]> {
-    return this.http.get<About[]>(Base_URL + "/about");
+    return this.http.get<About[]>(this.Base_URL + "/about");
 
   }
   // new HttpHeaderResponse({ headers: this.HttpHeaders })

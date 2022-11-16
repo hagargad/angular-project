@@ -340,12 +340,12 @@ input[type="button"] {
   display: inline-block;
 }
 #cntInnCont {
-  padding-bottom: 70px;
+  padding-bottom: 10px;
 }
 .cntInnContent {
   width: 100%;
   padding: 0;
-  max-width: 1105px;
+  /* max-width: 1105px; */
   margin-left: auto;
   margin-right: auto;
   overflow: visible;
@@ -858,7 +858,7 @@ li.selected.icoMenu a {
 }
 .navigator {
   background-color: #f3f3f4;
-  padding: 25px 2.5%;
+  padding: 50px 2.5%;
   margin-bottom: 30px;
   position: relative;
 }
@@ -1318,7 +1318,7 @@ li.selected.icoMenu a {
 .myMenu ul li {
   border-bottom: 1px solid #6d6e71;
   width: 80%;
-  padding: 0 10%;
+  /* padding: 0 10%; */
   display: inline-block;
 }
 .myMenu ul li a {
@@ -1330,14 +1330,19 @@ li.selected.icoMenu a {
   padding-left: 37px;
   float: left;
 }
-.myMenu ul li.selected {
-  background-color: #fff;
+.myMenu ul li.selected  {
+ background-color: #ffffff;
+ 
+  height: 100px;
+  width: 100%;
+ 
 }
 .myMenu ul li:hover a {
   color: #fff;
 }
 .myMenu ul li.selected a {
   color: #000000;
+  background-color: #ffffff;
 }
 .my_privacyPolicy,
 .my_purchasePrivacy,
@@ -2074,8 +2079,8 @@ label {
   display: inline-block;
 }
 .halfCheckout {
-  width: 44%;
-  margin: 0 1.5% 30px 1.5%;
+  width: 100%;
+  /* margin: 0 1.5% 30px 1.5%; */
   padding: 20px 1.5% 0 1.5%;
   display: inline-block;
   background-color: #f3f3f4;
@@ -3422,6 +3427,7 @@ input[type="text"].ui-autocomplete-input {
 .loading p {
   float: left;
 }
+
 .seats {
   visibility: hidden;
 }

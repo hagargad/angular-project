@@ -38,11 +38,11 @@
     <div class="row">
     <div class="cell twoOfFour">
     <label>First name</label>
-    <input required="true" value="{{user.name}}" name="A.nmFirstName" type="text">
+    <input required="true" value="{{user.Fname}}" name="A.nmFirstName" type="text">
     </div>
     <div class="cell twoOfFour">
     <label>Last name</label>
-    <input required="true" value="{{user.name}}" name="A.nmLastName" type="text">
+    <input required="true" value="{{user.Lname}}" name="A.nmLastName" type="text">
     </div>
     </div>
     <div class="row">
@@ -50,7 +50,7 @@
     <label>Mobile</label>
     <input required="true" value="{{user.phone}}" name="A.noMobile" type="text">
     </div>
-    <div *ngIf="user.gender == 'male';else NewRw"  class="cell twoOfFour">
+    <div *ngIf="user.gender == 'Male';else NewRw"  class="cell twoOfFour">
     <label>Gender</label>
     <div class="cell twoOfFour">
     <input required="required" value="true" name="A.cdSex" id="A.cdSex" type="radio" checked="checked" >&nbsp;Male</div>
@@ -72,13 +72,14 @@
     <input value="990252" name="PAA.idAccountAddress" type="hidden">
     <input value="true" name="PAA.isDefault" type="hidden">
     <label>Country</label>
-    {{user.address.Country}}
-    <select id="cdCountry" name="PAA.cdCountry"  (click)="toggleCityInput();" required="required" [(ngModel)]="selected">
+    
+    <input value="990252" name="PAA.idAccountAddress" type="text" value="{{user.address.Country}}">
+    <!-- <select id="cdCountry" name="PAA.cdCountry"  (click)="toggleCityInput();" required="required" [(ngModel)]="selected">
         
     <option *ngFor="let c of count" [value]="user.id"  {{selected}} >
         {{c}}
     </option>
-    </select>
+    </select> -->
     </div>
     
     <div class="cell twoOfFour">
@@ -87,8 +88,8 @@
     <select id="idCity" name="PAA.idCity" required="required">
     <option value="">
     </option><option value="0">- Foreign countries</option>
-    <option value="1">Alexandria</option>
-    <option selected="selected" value="2">Assiut</option>
+    <option selected="selected" value="1">Alexandria</option>
+    <option  value="2">Assiut</option>
     <option value="3">Aswan</option>
     <option value="4">Beheira</option>
     <option value="5">Beni Suef</option>

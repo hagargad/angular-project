@@ -1,0 +1,360 @@
+/* html,
+body {
+  font-family: "akkurat_regularregular";
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #333;
+  height: 100%;
+  background-color: #fff;
+}
+img {
+  border: 0px;
+}
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+p,
+blockquote,
+fieldset,
+input,
+textarea {
+  font-family: "akkurat_regularregular";
+  font-style: normal;
+  font-variant: normal;
+  margin: 0px;
+  padding: 0px;
+}
+a {
+  text-decoration: none;
+  color: #1e1919;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="number"] {
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  height: 56px;
+  border: none;
+  background-color: #fff;
+  color: #485161;
+  font-size: 18px;
+  font-style: normal;
+}
+input[type="text"]:disabled {
+  color: #dbdbdb;
+  border-bottom: 3px solid #dbdbdb;
+}
+select {
+  width: 100%;
+  padding: 0 5px;
+  height: 56px;
+  border: none;
+  background-color: #fff;
+  color: #485161;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+}
+select:disabled {
+  color: #dbdbdb;
+}
+option {
+  text-transform: uppercase;
+  height: 25px;
+}
+.cntInnContent {
+  width: 100%;
+  padding: 0;
+  max-width: 1105px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+  position: relative; /* text-align:left; */
+  /* display: inline-block;
+}
+.text_36 {
+  font-size: 36px;
+  color: #1e1919;
+  font-weight: normal;
+}
+#cntInnCont {
+  width: 100%;
+  padding: 0;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin-top: 91px;
+}
+#cntInnCont {
+  background-color: #fff;
+}
+#cntInnCont {
+  padding-bottom: 70px;
+}
+.navigator {
+  background-color: #f3f3f4;
+  padding: 50px 2.5%;
+  margin-bottom: 35px;
+  position: relative;
+}
+.navigator .text_36 {
+  float: left;
+  font-weight: bold;
+}
+#cntInnCont {
+  width: 100%;
+  padding: 0;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin-top: 91px;
+}
+#cntOutCont,
+#cntOutFtr {
+  width: 100%;
+  text-align: center;
+}
+#cntPage {
+  width: 100%;
+  overflow: hidden;
+  background-color:white;
+}
+textarea {
+  width: calc(99% - 40px);
+  padding: 20px;
+  border: none;
+  background-color: #fff;
+  color: #485161;
+  font-size: 18px;
+  font-style: normal;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+label {
+  font-size: 10px;
+  line-height: normal;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.inputArea {
+  text-align: left;
+}
+.inputArea .row {
+  padding: 0 0 20px 0;
+  width: 100%;
+  display: inline-block;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="number"] {
+  font-size: 16px;
+}
+.twoOfFour {
+  width: 47%;
+  margin: 0 1.5%;
+}
+.oneOfThree,
+.twoOfThree,
+.twoOfFour,
+.treeOfFour,
+.fourOfFour {
+  width: 97%;
+  margin: 0 1.5%;
+}
+.row {
+  margin: 0 0 5px 0;
+}
+.cell {
+  float: left;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  height: 56px;
+  border: none;
+  background-color: #fff;
+  color: #485161;
+  font-size: 18px;
+  font-style: normal;
+}
+input[type="text"]:disabled {
+  color: #dbdbdb;
+  border-bottom: 3px solid #dbdbdb;
+}
+input[type="submit"],
+input[type="button"] {
+  cursor: pointer;
+}
+.btn_2 {
+  font-family: "akkuratbold";
+  background-color: #ffc200;
+  display: inline-block;
+  min-height: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  color: #272525 !important;
+  font-weight: 400;
+  line-height: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  /* -webkit-appearance: none; */
+/* }
+.btn_2:hover {
+  background-color: #1e1919;
+  color: #ffc200 !important;
+} */
+/* .btn_2:hover .arrow_brown {
+  background: url("../../assets/images/arrow_yellowBack.png") right no-repeat;
+} */
+/* .btn_2.small {
+  padding: 8px;
+  width: auto;
+}
+.btn_2:disabled {
+  background-color: #aeaeae;
+  color: #fff !important;
+}
+.btn_2:disabled .arrow_brown {
+  background: none;
+}
+
+.inputArea .cell {
+  margin-bottom: 20px;
+}
+.halfCheckout {
+  width: 44%;
+  margin: 0 1.5% 30px 1.5%;
+  padding: 20px 1.5% 0 1.5%;
+  display: inline-block;
+  background-color: #f3f3f4;
+  float: left;
+  text-align: left;
+  position: relative;
+  left: 30%;
+}
+.checkboxRow input[type="checkbox"] {
+  display: none;
+}
+.checkboxRow .checkboxInput {
+  margin-right: 25px;
+}
+.checkboxRow .text_14 {
+  margin-top: 10px;
+  float: left;
+  width: calc(100% - 80px);
+}
+.fourOfFour {
+  width: 97%;
+  margin: 0 1.5%;
+}
+.checkboxInput {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #333;
+  background-color: #fff;
+  display: inline-block;
+  float:left;
+  cursor: pointer;
+}
+.checkboxInput.checked {
+  background: #fff url("/img/tme-www/icoCheck.png") center no-repeat;
+}
+.taCenter {
+  text-align: center !important;
+}
+.text_14,
+.text_14 p {
+  font-size: 19px;
+  color: #1e1919;
+}
+.text_14 p {
+  margin-bottom: 20px;
+}
+.bold {
+  font-weight: bold !important;
+}
+.g-recaptcha {
+  display: inline-block;
+}
+.navigator .btn_2 {
+  float: right;
+  width: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 0 50px;
+}
+.navigator .link_1,
+.singleWishList .link_1,
+.myProfile .link_1 {
+  float: right;
+  height: 43px;
+  line-height: 43px;
+  font-weight: 700;
+}
+.link_1 .arrow_yellowBack {
+  color: #ffc200;
+}
+.link_1:hover {
+  text-decoration: underline;
+}
+.arrow_link_yellow {
+  background: url("src/assets/images/icons/arrow_yellowBack.png") right no-repeat;
+  width: 100%;
+  display: inline-block;
+  padding-right: 35px;
+}
+.btn_1:hover .arrow_yellowBack {
+  background: url("src/assets/images/icons/arrow_yellowBack.png") left no-repeat;
+}
+.arrow_yellowBack {
+  background: url("src/assets/images/icons/arrow_yellowBack.png") left no-repeat;
+  padding-left: 50px;
+  display: inline-block;
+}
+.arrow_brown {
+  background: url("src/assets/images/icons/arrow_yellow.png") right no-repeat;
+  padding-right: 50px;
+  display: inline-block;
+}
+.btn_2:hover .arrow_brown {
+  background: url("src/assets/images/icons/arrow_yellow.png") right no-repeat;
+}  */

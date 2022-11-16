@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ProjectService } from '../services/project.service';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -7,53 +8,60 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class RegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private regUser: ProjectService) { }
 
   ngOnInit(): void {
+    // that = this;
+    // console.log(this.regUser);
   }
-  // FirstName:string ="";
-  // LastName:string ="";
-  // Email:string ="";
-  // password:any;
-  // ConfirmPass:any;
-  // signUp(){
-  //   if(this.FirstName == ""){
-  //     console.log("please enter your name");
-  //   }else if(this.LastName == ""){
-  //     console.log("please enter your lname");
-  //   }else if(this.Email == ""){
-  //     console.log("please enter your email");
-  //   }
-  // }
-  registerValidation = new FormGroup({
+
+  UserRegisterValidation = new FormGroup({
     FirstName : new FormControl('',Validators.required),
     LastName : new FormControl('',Validators.required),
-    E_mail : new FormControl('',Validators.email),
+    phoneNumber : new FormControl('',Validators.minLength(11)),
+    Email : new FormControl('',Validators.email),
+    re_email :new FormControl('',Validators.email),
     Password : new FormControl('',Validators.minLength(8)),
     ConfirmPass :new FormControl('',Validators.minLength(8))
   })
 
   get FnameValid(){
-    return this.registerValidation.controls.FirstName.valid;
+    return this.UserRegisterValidation.controls.FirstName.valid;
   }
 
   get LnameValid(){
-    return this.registerValidation.controls.LastName.valid;
+    return this.UserRegisterValidation.controls.LastName.valid;
   }
 
   get emailValid(){
-    return this.registerValidation.controls.E_mail.valid;
+    return this.UserRegisterValidation.controls.Email.valid;
+  }
+  get emailValue(){
+    return this.UserRegisterValidation.controls.Email.value;
   }
 
   get PassValid(){
-    return this.registerValidation.controls.Password.valid;
+    return this.UserRegisterValidation.controls.Password.valid;
   }
 
   get confirmValid(){
-    return this.registerValidation.controls.ConfirmPass.valid;
+    return this.UserRegisterValidation.controls.ConfirmPass.valid;
   }
 
+  users:any;
   data(){
-    console.log(this.registerValidation);
+  // console.log(this.UserRegisterValidation.value);
+  let newUser = this.regUser.addUsers(this.UserRegisterValidation.value).subscribe();
+
+  let that = this;
+  this.regUser.getUsers().subscribe({
+    next(data){
+      that.users = data
+      }
+    });
+    // console.log(this.users);
+    // for(let x of this.users){
+    //   console.log(x);
+    // }
   }
 }
