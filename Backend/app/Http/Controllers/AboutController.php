@@ -9,34 +9,44 @@ use App\Http\Resources\AboutResource;
 
 class AboutController extends Controller
 {
-  public function index()
-  {
-      $about = About::all();
+    public function index()
+    {
+        $about = About::all();
 
-      return AboutResource::collection($about);
-  }
+        return AboutResource::collection($about);
+    }
 
-  public function getData($id)
-  {
-      $about = About::find($id);
+    public function getData()
+    {
+        return new AboutResource(About::all());
+    }
 
-      return new AboutResource($about);
-  }
+    public function storeData(Request $request)
+    {
+        $request->validate([
+            'title' => 'required|max:255',
+        ]);
 
-  public function storeData(Request $request)
-  {
-      $data = $request->all();
-      $about = About::create([
-          'title' => request()->title,
-          'body' => $data['body'],
-      ]);
+        $data = $request->all();
+        $about = About::create([
+            'title' => request()->title,
+            'body' => $data['body'],
+        ]);
 
-      return new AboutResource($about);
-  }
-  public function updateTitle(){
+        return new AboutResource($about);
+    }
+    public function updateTitle()
+    {
+    }
+    public function updateBody()
+    {
+    }
 
-  }
-  public function updateBody(){
+    public function delete($id)
+    {
+        $about = About::findOrFail($id);
+        $about->delete();
 
-}
+        return response()->json(null, 204);
+    }
 }

@@ -1,32 +1,43 @@
 import { Injectable } from "@angular/core";
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaderResponse, HttpHeaders, HttpResponse} from "@angular/common/http";
 import { environment } from "src/environments/environment";
+import { Observable } from "rxjs";
+import { catchError, map, tap } from 'rxjs/operators';
+
+export interface About {
+  id: Number;
+  title: String;
+  body: String;
+}
+const Base_URL: string = environment.baseApi;
 @Injectable({
-  providedIn : 'root'
+  providedIn: "root",
 })
 export class AboutService {
+  private accessToken: any;
+  private HttpHeaders: any;
 
+  constructor(private http: HttpClient) {}
 
-constructor(private myclient:HttpClient){}
-private Base_URL = environment. baseApi;
+  //get the body
+  getData(): Observable<About[]> {
+    return this.http.get<About[]>(Base_URL + "/about");
 
-//get the body
-getData() {
-  return this.myclient.get(this.Base_URL);
-}
+  }
+  // new HttpHeaderResponse({ headers: this.HttpHeaders })
+  //Store Data
+  storeData(): void {}
 
-storeData(){
+  //Delete Data
+  delete() {}
 
-}
-//update the title
-updateTitle(id:number,updatedTitle:any){
-  return this.myclient.put(`${this.Base_URL}/${id}`,updatedTitle);
-}
+  //update the title
+  // updateTitle(id: number, updatedTitle: any) {
+  //   return this.http.put(`${this.Base_URL}/${id}`, updatedTitle);
+  // }
 
-//updatet the body
-updateBody(id:number,updatedData:any){
-  return this.myclient.put(`${this.Base_URL}/${id}`,updatedData);
-}
-
-
+  //update the body
+  // updateBody(id: number, updatedData: any) {
+  //   return this.http.put(`${this.Base_URL}/${id}`, updatedData);
+  // }
 }

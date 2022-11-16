@@ -27,7 +27,9 @@ Route::delete('/tickets/{id}', 'TicketsController@delete');
 Route::post('/tickets/{id}', 'TicketsController@add_to_cart');
 
 //About
-Route::post('about','AboutController@getData');
-Route::post('about','AboutController@storeData'); // to be added for the admin
-Route::post('about','AboutController@updateTitle');
-Route::post('about','AboutController@updateBody'); //For the edit
+Route::post('/about','AboutController@index');
+Route::post('/about','AboutController@getData');
+Route::post('/about','AboutController@storeData'); // to be added for the admin
+Route::post('/about','AboutController@updateTitle');
+Route::post('/about','AboutController@updateBody'); //For the edit
+Route::post('/about','AboutController@delete'); //For the edit
