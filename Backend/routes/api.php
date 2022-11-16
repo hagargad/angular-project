@@ -19,17 +19,17 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 //Tickets(Products)
-Route::get('/tickets', 'TicketsController@index');
-Route::get('/tickets/{id}', 'TicketsController@show');
-Route::post('/tickets', 'TicketsController@store');
-Route::post('/tickets/{id}/add', 'TicketsController@add');
-Route::delete('/tickets/{id}', 'TicketsController@delete');
-Route::post('/tickets/{id}', 'TicketsController@add_to_cart');
+Route::get('tickets', TicketsController::class,'index');
+Route::get('tickets/{id}',TicketsController::class,'showTickets');
+Route::post('tickets', TicketsController::class,'storeTickets');
+Route::post('tickets/{id}/addTickets', TicketsController::class,'addTickets');
+Route::delete('tickets/{id}', TicketsController::class,'deleteTickets');
+Route::post('tickets/{id}', TicketsController::class,'add_to_cart');
 
 //About
-Route::post('about','AboutController@index');
-Route::post('about','AboutController@getData');
-Route::post('about','AboutController@storeData'); // to be added for the admin
-Route::post('about','AboutController@updateTitle');
-Route::post('about','AboutController@updateBody'); //For the edit
-Route::post('about','AboutController@delete'); //For the edit
+Route::post('about',AboutController::class,'index');
+Route::post('about',AboutController::class,'getData');
+Route::post('about',AboutController::class,'storeData'); // to be added for the admin
+Route::post('about',AboutController::class,'updateTitle');
+Route::post('about',AboutController::class,'updateBody'); //For the edit
+Route::post('about',AboutController::class,'delete'); //For the edit

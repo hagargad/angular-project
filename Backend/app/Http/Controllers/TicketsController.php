@@ -8,29 +8,46 @@ use Illuminate\Http\Request;
 
 class TicketsController extends Controller
 {
+    //view the content
     public function index()
     {
         return new TicketsCollection(tickets::all());
     }
-    public function show($id)
+
+    //show function
+    public function showTickets($id)
     {
         return new TicketsResource(tickets::findOrFail($id));
     }
 
-    public function store(Request $request)
+    //create and store tickets
+    public function storeTickets(Request $request)
     {
-        $request->validate([
-            'name' => 'required|max:255',
+        // $request->validate([
+        //     'name' => 'required|max:255',
+        // ]);
+
+        // $ticket = tickets::create($request->all());
+
+        // return (new TicketsResource($ticket))
+        //         ->response()
+        //         ->setStatusCode(201);
+
+        $product =  tickets::create([
+            'title' => $request->title,
+            'details' => $request->details,
+            'price' => $request->price,
+            'type' => $request->type,
+            'menu_category_id' => $request->menu_category_id,
+            'image' => $request->image
         ]);
 
-        $ticket = tickets::create($request->all());
+        return $product;
 
-        return (new TicketsResource($ticket))
-                ->response()
-                ->setStatusCode(201);
     }
 
-    public function delete($id)
+    //delete tickets
+    public function deleteTicket($id)
     {
         $ticket = tickets::findOrFail($id);
         $ticket->delete();
