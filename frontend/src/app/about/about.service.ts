@@ -15,13 +15,16 @@ getData() {
   return this.myclient.get(this.Base_URL);
 }
 
+storeData(){
+
+}
 //update the title
 updateTitle(id:number,updatedTitle:any){
   return this.myclient.put(`${this.Base_URL}/${id}`,updatedTitle);
 }
 
 //updatet the body
-updateData(id:number,updatedData:any){
+updateBody(id:number,updatedData:any){
   return this.myclient.put(`${this.Base_URL}/${id}`,updatedData);
 }
 

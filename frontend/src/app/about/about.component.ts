@@ -9,7 +9,7 @@ export class AboutComponent implements OnInit {
 
   constructor(private myservice: AboutService) { }
   title:any;
-  data:any;
+  body:any;
   ngOnInit(): void {
     //fetching
     let that = this;
@@ -17,6 +17,7 @@ export class AboutComponent implements OnInit {
       {
       next(title: any) {
         that.title = title;
+        // that.body=body;
 
       },
       error(err: any) {

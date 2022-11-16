@@ -14,10 +14,10 @@ return new class extends Migration
     public function up()
     {
         Schema::create('about', function (Blueprint $table) {
-            $table->id();
+            $table->id()->nullable();
             $table->timestamps();
-            $table->title();
-            $table->body();
+            $table->string('title');
+            $table->text('body');
         });
     }
 

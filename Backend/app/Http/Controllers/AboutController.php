@@ -16,14 +16,14 @@ class AboutController extends Controller
       return AboutResource::collection($about);
   }
 
-  public function show($id)
+  public function getData($id)
   {
       $about = About::find($id);
 
       return new AboutResource($about);
   }
 
-  public function store(StorePostRequest $request)
+  public function storeData(Request $request)
   {
       $data = $request->all();
       $about = About::create([
@@ -33,4 +33,10 @@ class AboutController extends Controller
 
       return new AboutResource($about);
   }
+  public function updateTitle(){
+
+  }
+  public function updateBody(){
+
+}
 }
