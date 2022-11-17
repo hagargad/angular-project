@@ -3,6 +3,7 @@ import { HttpClient, HttpHeaderResponse, HttpHeaders, HttpResponse} from "@angul
 import { environment } from "src/environments/environment";
 import { Observable } from "rxjs";
 import { catchError, map, tap } from 'rxjs/operators';
+import axios from 'axios';
 
 export interface About {
   id: Number;

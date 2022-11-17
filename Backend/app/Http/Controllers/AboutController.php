@@ -35,14 +35,12 @@ class AboutController extends Controller
 
         return new AboutResource($about);
     }
-    public function updateTitle()
-    {
-    }
-    public function updateBody()
+    public function updateData()
     {
     }
 
-    public function delete($id)
+
+    public function deleteData($id)
     {
         $about = About::findOrFail($id);
         $about->delete();
