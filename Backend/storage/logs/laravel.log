@@ -2390,3 +2390,82 @@ Did you mean one of these?
 #49 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php(16): require_once('/Users/hagargad...')
 #50 {main}
 "} 
+[2022-11-17 02:58:18] local.ERROR: The "--fresh" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--fresh\" option does not exist. at /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php:220)
+[stacktrace]
+#0 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php(149): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('fresh', NULL)
+#1 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--fresh')
+#2 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('--fresh', true)
+#3 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Command/Command.php(267): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#5 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(148): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#6 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 /Users/hagargad/Desktop/final/angular-project/Backend/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2022-11-17 02:58:25] local.ERROR: The "-f" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"-f\" option does not exist. at /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php:122)
+[stacktrace]
+#0 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php(104): Symfony\\Component\\Console\\Input\\ArgvInput->parseShortOptionSet('fresh')
+#1 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php(84): Symfony\\Component\\Console\\Input\\ArgvInput->parseShortOption('-fresh')
+#2 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('-fresh', true)
+#3 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Command/Command.php(267): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#5 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(148): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#6 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 /Users/hagargad/Desktop/final/angular-project/Backend/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2022-11-17 02:58:34] local.ERROR: The "--fresh" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--fresh\" option does not exist. at /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php:220)
+[stacktrace]
+#0 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php(149): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('fresh', NULL)
+#1 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--fresh')
+#2 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('--fresh', true)
+#3 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Command/Command.php(267): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#5 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(148): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#6 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 /Users/hagargad/Desktop/final/angular-project/Backend/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 
+[2022-11-17 02:58:42] local.ERROR: No arguments expected for "migrate" command, got "fresh". {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): No arguments expected for \"migrate\" command, got \"fresh\". at /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php:193)
+[stacktrace]
+#0 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php(86): Symfony\\Component\\Console\\Input\\ArgvInput->parseArgument('fresh')
+#1 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('fresh', true)
+#2 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#3 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Command/Command.php(267): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#4 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(148): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#5 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /Users/hagargad/Desktop/final/angular-project/Backend/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 {main}
+"} 
+[2022-11-17 02:58:50] local.ERROR: The "--fresh" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--fresh\" option does not exist. at /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php:220)
+[stacktrace]
+#0 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php(149): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('fresh', NULL)
+#1 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--fresh')
+#2 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/ArgvInput.php(71): Symfony\\Component\\Console\\Input\\ArgvInput->parseToken('--fresh', true)
+#3 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#4 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Command/Command.php(267): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#5 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Command.php(148): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#6 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(1014): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(301): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/symfony/console/Application.php(171): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Console/Application.php(102): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /Users/hagargad/Desktop/final/angular-project/Backend/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(155): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 /Users/hagargad/Desktop/final/angular-project/Backend/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#12 {main}
+"} 

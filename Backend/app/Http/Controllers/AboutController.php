@@ -4,11 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Models\About;
 use Illuminate\Http\Request;
-use App\Http\Requests\StorePostRequest;
 use App\Http\Resources\AboutResource;
+use App\Http\Requests\StoreDataRequest;
 
 class AboutController extends Controller
 {
+    //indexing
     public function index()
     {
         $about = About::all();
@@ -16,12 +17,14 @@ class AboutController extends Controller
         return AboutResource::collection($about);
     }
 
+    //get all data
     public function getData()
     {
         return new AboutResource(About::all());
     }
 
-    public function storeData(Request $request)
+    //Store tickets
+    public function storeData(StoreDataRequest $request)
     {
         $request->validate([
             'title' => 'required|max:255',
@@ -35,7 +38,9 @@ class AboutController extends Controller
 
         return new AboutResource($about);
     }
-    public function updateData()
+
+    //update data
+    public function updateData(StoreDataRequest $request)
     {
     }
 

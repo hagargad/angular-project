@@ -22,6 +22,7 @@ class tickets extends JsonResource
             'event_date'     => $this->event_date,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
+            'image'=>$this->image,
         ];
     }
 }
