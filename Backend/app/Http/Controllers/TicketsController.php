@@ -5,14 +5,15 @@ use app\Http\Resources\tickets as ticketsResource;
 use app\http\Resources\TicketsCollection;
 use app\Models\tickets;
 use Illuminate\Http\Request;
-use App\Http\Requests\StoreTicektsRequest;
-use App\Http\Requests\UpdateTicektsRequest;
+use App\Http\Requests\StoreTicketsRequest;
+use App\Http\Requests\UpdateTicketsRequest;
 class TicketsController extends Controller
 {
     //view the content
     public function index()
     {
-        return new TicketsCollection(tickets::all());
+       $tickets= tickets::all();
+       return $tickets;
     }
 
     //show function
@@ -22,7 +23,7 @@ class TicketsController extends Controller
     }
 
     //create and store tickets
-    public function storeTickets(StoreTicektsRequest $request)
+    public function storeTickets(StoreTicketsRequest $request)
     {
         $request->validate([
             'name' => 'required|max:255',
@@ -44,7 +45,7 @@ class TicketsController extends Controller
 
         return $ticket;
     }
-    public function updateTickets(UpdateTicektsRequest $request,tickets $ticket)
+    public function updateTickets(UpdateTicketsRequest $request,tickets $ticket)
     {
         $ticket = tickets::find($ticket->id);
 

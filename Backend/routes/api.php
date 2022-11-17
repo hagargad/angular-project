@@ -28,7 +28,10 @@ Route::delete('tickets/{id}', [TicketsController::class,'deleteTickets']);
 // Route::post('tickets/{id}',[ TicketsController::class,'add_to_cart']);
 
 //About
-Route::get('/about',[AboutController::class,'index']);
+Route::get('about',function(){
+    return' we are in about ';
+});
+// Route::get('about',[AboutController::class,'index']);
 Route::get('about',[AboutController::class,'getData']);
 Route::post('about',[AboutController::class,'storeData']); // to be added for the admin
 Route::post('about',[AboutController::class,'updateData']);
