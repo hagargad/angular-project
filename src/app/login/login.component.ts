@@ -19,11 +19,11 @@ export class LoginComponent implements OnInit {
     userpassword : new FormControl('',Validators.minLength(8)),
   });
 
-  get UseremailValid(){
-    return this.Userloginvalidation.controls.useremail.valid;
+   get UseremailValid(){
+    return this.Userloginvalidation.get('useremail');
   }
   get UserpassValid(){
-    return this.Userloginvalidation.controls.userpassword.valid;
+    return this.Userloginvalidation.get('userpassword');
   }
 
   login(){
