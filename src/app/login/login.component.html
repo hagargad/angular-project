@@ -13,13 +13,15 @@
       <div class="row">
         <div class="cell twoOfFour">
           <span class="label">E-mail :</span>
-          <input type="email"  formControlName="useremail"><br>
+          <input type="email"  formControlName="useremail">
+          <span style="color: red;" *ngIf="UseremailValid && UseremailValid.invalid && UseremailValid.touched">*enter valid e-mail</span><br>
         </div>
       </div>
       <div class="row">
         <div class="cell twoOfFour">
           <span class="label">Password or &nbsp; <a class="link_3" href="#">Forgot Password</a></span>
-          <input type="password"  formControlName="userpassword"><br>
+          <input type="password"  formControlName="userpassword">
+          <span style="color: red;" *ngIf="UserpassValid && UserpassValid.invalid && UserpassValid.touched">*required</span><br>
         </div>
       </div>
       <div class="row">
