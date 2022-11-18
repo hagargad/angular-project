@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use app\Http\Resources\tickets as ticketsResource;
 use app\http\Resources\TicketsCollection;
-use app\Models\tickets;
+use app\Models\Tickets;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreTicketsRequest;
 use App\Http\Requests\UpdateTicketsRequest;
@@ -12,14 +12,14 @@ class TicketsController extends Controller
     //view the content
     public function index()
     {
-       $tickets= tickets::all();
+       $tickets= Tickets::all();
        return $tickets;
     }
 
     //show function
     public function showTickets($id)
     {
-        return new TicketsResource(tickets::findOrFail($id));
+        return new TicketsResource(Tickets::findOrFail($id));
     }
 
     //create and store tickets
@@ -34,7 +34,7 @@ class TicketsController extends Controller
         // return (new TicketsResource($ticket))
         //         ->response()
         //         ->setStatusCode(201);
-        $ticket = tickets::create([
+        $ticket = Tickets::create([
             'title' => $request->title,
             'details' => $request->details,
             'price' => $request->price,
@@ -45,7 +45,7 @@ class TicketsController extends Controller
 
         return $ticket;
     }
-    public function updateTickets(UpdateTicketsRequest $request,tickets $ticket)
+    public function updateTickets(UpdateTicketsRequest $request,Tickets $ticket)
     {
         $ticket = tickets::find($ticket->id);
 
@@ -64,7 +64,7 @@ class TicketsController extends Controller
     //delete tickets
     public function deleteTicket($id)
     {
-        $ticket = tickets::findOrFail($id);
+        $ticket = Tickets::findOrFail($id);
         $ticket->delete();
 
         return response()->json(null, 204);

@@ -3,7 +3,6 @@ import { HttpClient, HttpHeaderResponse, HttpHeaders, HttpResponse} from "@angul
 import { environment } from "src/environments/environment";
 import { Observable } from "rxjs";
 import { catchError, map, tap } from 'rxjs/operators';
-import axios from 'axios';
 
 export interface About {
   id: Number;
@@ -25,20 +24,20 @@ export class AboutService {
     return this.http.get<About[]>(this.Base_URL + "/about");
 
   }
-  // new HttpHeaderResponse({ headers: this.HttpHeaders })
   //Store Data
-  storeData(): void {}
+  storeData(newdata: any) {
+    return this.http.post(this.Base_URL, newdata);
+  }
 
   //Delete Data
-  delete() {}
+  deleteData(id: number) {
+    return this.http.delete(`${this.Base_URL}/${id}`);
+  }
 
-  //update the title
-  // updateTitle(id: number, updatedTitle: any) {
-  //   return this.http.put(`${this.Base_URL}/${id}`, updatedTitle);
-  // }
+  //update Data
+  updateData(id: number, updatedTitle: any) {
+    return this.http.put(`${this.Base_URL}/${id}`, updatedTitle);
+  }
 
-  //update the body
-  // updateBody(id: number, updatedData: any) {
-  //   return this.http.put(`${this.Base_URL}/${id}`, updatedData);
-  // }
+
 }
