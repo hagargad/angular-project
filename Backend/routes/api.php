@@ -20,7 +20,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 //Tickets(Products)
-Route::get('tickets', [TicketsController::class,'index']);
+Route::get('tickets',function(){
+    return' we are in tickets ';
+});
+// Route::get('tickets', [TicketsController::class,'index']);
 Route::get('tickets/{id}',[TicketsController::class,'showTickets']);
 Route::post('tickets', [TicketsController::class,'storeTickets']);
 Route::post('tickets/{id}/addTickets', [TicketsController::class,'addTickets']);
@@ -32,7 +35,7 @@ Route::get('about',function(){
     return' we are in about ';
 });
 // Route::get('about',[AboutController::class,'index']);
-Route::get('about',[AboutController::class,'getData']);
+// Route::get('about',[AboutController::class,'getData']);
 Route::post('about',[AboutController::class,'storeData']); // to be added for the admin
 Route::post('about',[AboutController::class,'updateData']);
 Route::delete('about',[AboutController::class,'deleteData']); //For the edit

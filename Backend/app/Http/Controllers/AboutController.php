@@ -6,6 +6,7 @@ use App\Models\About;
 use Illuminate\Http\Request;
 use App\Http\Resources\AboutResource;
 use App\Http\Requests\StoreDataRequest;
+use App\Http\Requests\UpdateDataRequest;
 
 class AboutController extends Controller
 {
@@ -13,35 +14,51 @@ class AboutController extends Controller
     public function index()
     {
         $about = About::all();
-
+        dd($about);
         return AboutResource::collection($about);
     }
 
     //get all data
-    public function getData()
-    {
-        return new AboutResource(About::all());
-    }
+    // public function getData()
+    // {
+    //     return new AboutResource(About::all());
+    // }
 
     //Store tickets
     public function storeData(StoreDataRequest $request)
     {
-        $request->validate([
-            'title' => 'required|max:255',
+        // $request->validate([
+        //     'title' => 'required|max:255',
+        // ]);
+
+        // $data = $request->all();
+        // $about = About::create([
+        //     'title' => request()->title,
+        //     'body' => $data['body'],
+        // ]);
+
+        // return new AboutResource($about);
+        $data=About::create([
+           'title'=>$request->title,
+           'body'=>$request->body
         ]);
 
-        $data = $request->all();
-        $about = About::create([
-            'title' => request()->title,
-            'body' => $data['body'],
-        ]);
+        return $data;
 
-        return new AboutResource($about);
     }
 
     //update data
-    public function updateData(StoreDataRequest $request)
+    public function updateData(UpdateDataRequest $request, About $about)
     {
+        $about = About::find($about->id);
+
+        $about= $about->update([
+        'title'=>$request->title,
+        'body'=>$request->body
+     ]);
+
+     return $about;
+
     }
 
 
