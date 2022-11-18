@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Resources\AboutResource;
 use App\Http\Requests\StoreDataRequest;
 use App\Http\Requests\UpdateDataRequest;
+use App\Models\Ticket;
 
 class AboutController extends Controller
 {
@@ -14,36 +15,36 @@ class AboutController extends Controller
     public function index()
     {
         $about = About::all();
-        dd($about);
         return AboutResource::collection($about);
+
     }
 
-    //get all data
-    // public function getData()
-    // {
-    //     return new AboutResource(About::all());
-    // }
+    // get all data
+    public function getData()
+    {
+        return new AboutResource(About::all());
+    }
 
     //Store tickets
     public function storeData(StoreDataRequest $request)
     {
-        // $request->validate([
-        //     'title' => 'required|max:255',
-        // ]);
-
-        // $data = $request->all();
-        // $about = About::create([
-        //     'title' => request()->title,
-        //     'body' => $data['body'],
-        // ]);
-
-        // return new AboutResource($about);
-        $data=About::create([
-           'title'=>$request->title,
-           'body'=>$request->body
+        $request->validate([
+            'title' => 'required|max:255',
         ]);
 
-        return $data;
+        $data = $request->all();
+        $about = About::create([
+            'title' => request()->title,
+            'body' => $data['body'],
+        ]);
+
+        return new AboutResource($about);
+        // $data=About::create([
+        //    'title'=>$request->title,
+        //    'body'=>$request->body
+        // ]);
+
+        // return $data;
 
     }
 
@@ -52,13 +53,12 @@ class AboutController extends Controller
     {
         $about = About::find($about->id);
 
-        $about= $about->update([
-        'title'=>$request->title,
-        'body'=>$request->body
-     ]);
+        $about = $about->update([
+            'title' => $request->title,
+            'body' => $request->body
+        ]);
 
-     return $about;
-
+        return $about;
     }
 
 

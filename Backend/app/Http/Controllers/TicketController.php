@@ -1,25 +1,29 @@
 <?php
 
 namespace App\Http\Controllers;
-use app\Http\Resources\tickets as ticketsResource;
-use app\http\Resources\TicketsCollection;
-use app\Models\Tickets;
+use App\Http\Resources\tickets as ticketsResource;
+use App\http\Resources\TicketsCollection;
+use App\Models\Ticket;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreTicketsRequest;
 use App\Http\Requests\UpdateTicketsRequest;
-class TicketsController extends Controller
+use App\Models\About;
+
+class TicketController extends Controller
 {
     //view the content
     public function index()
     {
-       $tickets= Tickets::all();
-       return $tickets;
+       $ticket= Ticket::all();
+       return $ticket;
+
+
     }
 
     //show function
     public function showTickets($id)
     {
-        return new TicketsResource(Tickets::findOrFail($id));
+        return new TicketsResource(Ticket::findOrFail($id));
     }
 
     //create and store tickets
@@ -34,7 +38,7 @@ class TicketsController extends Controller
         // return (new TicketsResource($ticket))
         //         ->response()
         //         ->setStatusCode(201);
-        $ticket = Tickets::create([
+        $ticket = Ticket::create([
             'title' => $request->title,
             'details' => $request->details,
             'price' => $request->price,
@@ -45,9 +49,9 @@ class TicketsController extends Controller
 
         return $ticket;
     }
-    public function updateTickets(UpdateTicketsRequest $request,Tickets $ticket)
+    public function updateTickets(UpdateTicketsRequest $request,Ticket $ticket)
     {
-        $ticket = tickets::find($ticket->id);
+        $ticket = Ticket::find($ticket->id);
 
         $ticket =  $ticket->update([
             'title' => $request->title,
@@ -64,7 +68,7 @@ class TicketsController extends Controller
     //delete tickets
     public function deleteTicket($id)
     {
-        $ticket = Tickets::findOrFail($id);
+        $ticket = Ticket::findOrFail($id);
         $ticket->delete();
 
         return response()->json(null, 204);
