@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AllproductsService } from '../../allproducts/allproducts.service';
-// import { ModalComponent } from '../../modal/modal.component';
-// import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
+import { ModalComponent } from '../../modal/modal.component';
+import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
 
 @Component({
   selector: 'app-admin-products',
@@ -9,9 +9,9 @@ import { AllproductsService } from '../../allproducts/allproducts.service';
   styleUrls: ['./admin-products.component.css'],
 })
 export class AdminProductsComponent implements OnInit {
-  // modalRef: MdbModalRef<ModalComponent> | null = null;
+  modalRef: MdbModalRef<ModalComponent> | null = null;
   constructor(
-    private service: AllproductsService
+    private service: AllproductsService,private modalService: MdbModalService
   ) {}
 
   products: any;
@@ -50,7 +50,7 @@ export class AdminProductsComponent implements OnInit {
     //   .subscribe((data) => (this.products = data));
   }
   openModal() {
-    // this.modalRef = this.modalService.open(ModalComponent)
+    this.modalRef = this.modalService.open(ModalComponent)
   }
 
 

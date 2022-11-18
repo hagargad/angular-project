@@ -1,0 +1,39 @@
+
+/* @import "~mdb-angular-ui-kit/assets/scss/mdb.css"; */
+textarea {
+  font-family: "akkurat_regularregular";
+  font-style: normal;
+  font-variant: normal;
+  margin: 0px;
+  padding: 0px;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="date"],
+input[type="number"] {
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  height: 56px;
+  border: none;
+  background-color: #fff;
+  color: #485161;
+  font-size: 18px;
+  font-style: normal;
+}
+input[type="text"]:disabled {
+  color: #dbdbdb;
+  border-bottom: 3px solid #dbdbdb;
+}
+select {
+  width: 100%;
+  padding: 0 5px;
+  height: 56px;
+  border: none;
+  background-color: #fff;
+  color: #485161;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+}

@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
 export class AllproductsService {
   constructor(private httpClient:HttpClient) {}
 
-private Base_URL = "http://localhost:3000/products";
+private Base_URL = environment.baseApi;
 
   getAllProducts() {
     return this.httpClient.get(this.Base_URL);

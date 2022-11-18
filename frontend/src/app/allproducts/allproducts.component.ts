@@ -7,6 +7,7 @@ import { catchError, retry } from 'rxjs/operators';
 import { AllproductsService } from './allproducts.service';
 import { Router } from '@angular/router';
 
+
 // interface Product {
 //   id: Number;
 //   title: String;
@@ -20,6 +21,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./allproducts.component.css'],
 })
 export class AllproductsComponent implements OnInit {
+
   // addtocart: boolean = false;
 
   // constructor(private service: ProductsService) {
@@ -90,5 +92,6 @@ export class AllproductsComponent implements OnInit {
 goto(id:any){
 this.router.navigate(['checkout'], { queryParams: { id:id }});
 }
+
 
 }
