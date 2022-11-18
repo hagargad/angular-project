@@ -9,27 +9,32 @@
 </div>
 <div class="modal-body">
   <label>Event's Title</label>
-  <br>
-  <input type="text" placeholder="Event's Title">
+  <br />
+  <input type="text" placeholder="Event's Title" />
+  <br />
+
+  <label>Price</label>
+  <br />
+  <input type="number" placeholder="Ticket's price" />
+  <br />
   <label>Event's Descriptions</label>
-  <br>
- <textarea placeholder="Enter Event's Descriptions"></textarea>
-  <br>
+
+  <br />
+  <textarea placeholder="Enter Event's Descriptions"></textarea>
+  <br />
   <label>Event Date</label>
-  <input type="date">
-  <br>
+  <input type="date" />
+  <br />
   <label>Event Venue:</label>
-<select>
-  <option>AUC Venue</option>
-  <option>Maadi Venue</option>
-  <option>Capital Venue</option>
-  <option>Opera Venue</option>
-</select>
-<br>
-<label>upload image</label>
-<input type="file" placeholder="upload image">
-
-
+  <select>
+    <option>AUC Venue</option>
+    <option>Maadi Venue</option>
+    <option>Capital Venue</option>
+    <option>Opera Venue</option>
+  </select>
+  <br />
+  <label>upload image</label>
+  <input type="file" placeholder="upload image" />
 </div>
 <div class="modal-footer">
   <button type="button" class="btn btn-secondary" (click)="modalRef.close()">
