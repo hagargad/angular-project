@@ -25,7 +25,8 @@ export class AboutService {
   //get the body
   getData() {
     // return this.http.get<About[]>(this.Base_URL + "/about");
-    return this.http.get(this.Base_URL+'/about');
+    // return this.http.get(this.Base_URL+'/about');
+    return this.http.get('http://localhost:8000/api/about');
   }
   //Store Data
   storeData(newdata: any) {

@@ -30,18 +30,32 @@
   <br />
   <input type="text" placeholder="Event's Title" />
   <br />
-
+  <label>Event's Descriptions</label>
+  <br/>
+  <textarea placeholder="Enter Event's Descriptions"></textarea>
+  <br />
+  <br />
+  <label>upload image</label>
+  <input type="file" placeholder="upload image" />
+  <br>
   <label>Price</label>
   <br />
   <input type="number" placeholder="Ticket's price" />
+  <br/>
+  <label>Timing</label>
   <br />
-  <label>Event's Descriptions</label>
-
-  <br />
-  <textarea placeholder="Enter Event's Descriptions"></textarea>
-  <br />
+  <input type="number" placeholder="Timing" />
+  <br/>
   <label>Event Date</label>
   <input type="date" />
+  <br />
+  <label>Event City:</label>
+  <select>
+    <option>Alexandria</option>
+    <option>Cairo</option>
+    <option>Luxor</option>
+    <option>Aswan</option>
+  </select>
   <br />
   <label>Event Venue:</label>
   <select>
@@ -51,8 +65,14 @@
     <option>Opera Venue</option>
   </select>
   <br />
-  <label>upload image</label>
-  <input type="file" placeholder="upload image" />
+  <label>Event Category:</label>
+  <select>
+    <option>Arts & theater</option>
+    <option>Music</option>
+    <option>sports event</option>
+    <option>Opera Venue</option>
+  </select>
+
 </div>
 <div class="modal-footer">
   <button type="button" class="btn btn-secondary" (click)="modalRef.close()">

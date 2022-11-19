@@ -14,7 +14,6 @@ export class AboutComponent implements OnInit {
     let that = this;
     this.aboutservice.getData().subscribe({
       next(data: any) {
-        // that.about=data;
         that.title = data.title;
         that.body = data.body;
       },
