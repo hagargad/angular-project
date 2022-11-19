@@ -9,7 +9,7 @@ export class AboutComponent implements OnInit {
   constructor(private aboutservice: AboutService) {}
   // title: any;
   // body: any;
-  about:any;
+  about:any
   ngOnInit(): void {
     let that = this;
     this.aboutservice.getData().subscribe({
