@@ -7,16 +7,16 @@ import { AboutService } from "./about.service";
 })
 export class AboutComponent implements OnInit {
   constructor(private aboutservice: AboutService) {}
-  // title: any;
-  // body: any;
-  about:any
+  title: any;
+  body: any;
+
   ngOnInit(): void {
     let that = this;
     this.aboutservice.getData().subscribe({
       next(data: any) {
-        that.about=data;
-        // that.title = data.title;
-        // that.body = data.body;
+        // that.about=data;
+        that.title = data.title;
+        that.body = data.body;
       },
       error(err: any) {
         console.log(err);

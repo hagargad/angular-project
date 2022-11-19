@@ -12,19 +12,27 @@ export class AdminAboutComponent implements OnInit {
 
   constructor(private myservice:AboutService) { }
   title:any;
-  data:any;
+  body:any;
   ngOnInit(): void {
      //fetching
      let that = this;
 
      this.myservice.getData().subscribe({
        next(data:any){
-        //  that.title=title;
-         that.data=data;
+         that.title=data.title;
+         that.body=data.body;
 
        }
 
      })
+  }
+
+  deleteData(id: any) {
+    this.myservice.deleteData(id).subscribe();
+    console.log(id);
+  }
+ updateData(id: any, dataedit: any) {
+    this.myservice.updateData(id, dataedit).subscribe();
   }
 
 }
