@@ -40,6 +40,7 @@ import { AdminUserComponent } from './admin/admin-user/admin-user.component';
 import { UserListComponent } from './admin/admin-user/user-list/user-list.component';
 import { UpdateFormComponent } from './admin/admin-user/update-form/update-form.component';
 import { AddNewComponent } from './admin/admin-user/add-new/add-new.component';
+import { AbouAdminModalComponent } from './abou-admin-modal/abou-admin-modal.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -75,6 +76,7 @@ import { AddNewComponent } from './admin/admin-user/add-new/add-new.component';
     UserListComponent,
     UpdateFormComponent,
     AddNewComponent,
+    AbouAdminModalComponent,
   ],
   imports: [
     BrowserModule,

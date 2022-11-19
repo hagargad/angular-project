@@ -8,14 +8,16 @@ import { AboutService } from "./about.service";
 export class AboutComponent implements OnInit {
   constructor(private aboutservice: AboutService) {}
   title: any;
-  body: any;
+  desc: any;
 
   ngOnInit(): void {
     let that = this;
     this.aboutservice.getData().subscribe({
       next(data: any) {
-        that.title = data.title;
-        that.body = data.body;
+        // that.title = data.data[0].title;
+        // that.desc = data.data[0].body;
+        that.title=data[0].title;
+        that.desc=data[0].body;
       },
       error(err: any) {
         console.log(err);

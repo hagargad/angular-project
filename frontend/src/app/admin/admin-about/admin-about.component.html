@@ -2,31 +2,40 @@
   <div class="inside-content">
     <form>
       <label>About Title </label>
-      <input type="text" *ngFor="let t of title" placeholder="{{ t.title }}" />
+      <input type="text"  placeholder="{{ title }}" />
 
       <br />
       <label>About Data </label>
-      <textarea rows="4" cols="50" *ngFor="let t of body">
-        {{ t.body }}
+      <textarea rows="4" cols="50" >
+        {{ body }}
       </textarea>
 
       <br />
       <input type="submit" value="ENTER DATA" />
     </form>
-
+<hr>
+<h3>Operation Section</h3>
+<hr>
     <table>
       <tr>
-        <td>Title</td>
-        <td>The Body</td>
-        <td>Edit</td>
+        <td>Section</td>
         <td>Delete</td>
+        <td>Edit</td>
+      </tr>
+      <tbody>
+      <tr>
+        <td >{{ title }}</td>
+        <td><input (click)="deleteData(id)" type="submit" value="Delete title" /></td>
+        <td><input (click)="openModal()" type="submit" value="Edit" /></td>
       </tr>
       <tr>
-        <td *ngFor="let t of title">{{ t.title }}</td>
-        <td *ngFor="let t of body">{{ t.body }}</td>
-        <td><button onclick="editData()">Edit</button></td>
-        <td><button onclick="deleteData()">Delete</button></td>
+        <td >{{ body }}</td>
+      <td><input (click)="deleteData(id)" type="submit" value="Delete body" /></td>
+      <td><input (click)="openModal()" type="submit" value="Edit" /></td>
       </tr>
+    </tbody>
     </table>
+
+
   </div>
 </div>

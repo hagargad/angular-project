@@ -15,7 +15,8 @@ class AboutController extends Controller
     public function index()
     {
         $about = About::all();
-        return AboutResource::collection($about);
+        // return AboutResource::collection($about);
+        return $about;
 
 
     }
