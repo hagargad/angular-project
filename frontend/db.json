@@ -1,0 +1,378 @@
+{
+  "home": [
+    {
+      "id": 1,
+      "title": "2 Cellos",
+      "type": "POP & ROCK",
+      "image": "/assets/images/2Cellos_1,140-x-570-min.jpg",
+      "thumb": "assets/images/2Cellos_370-x-260.jpg",
+      "venue": "Somabay"
+    },
+    {
+      "id": 2,
+      "title": "Hamaki Concert at Al Burouj",
+      "type": "Arabic Egyptian",
+      "image": "/assets/images/mohamed+hamaki+slider.jpg",
+      "thumb": "assets/images/mohamed+hamaki+thumb.jpg",
+      "venue": "AlBurouj Cultural Hub"
+    },
+    {
+      "id": 3,
+      "title": "Zed Winter Fest Opening",
+      "type": "Live Concerts & DJs",
+      "image": "/assets/images/ZWF_Artist+website+slider_11_06.jpg",
+      "thumb": "assets/images/ZED+Park+Thumb.jpg",
+      "venue": ""
+    },
+    {
+      "id": 4,
+      "title": "The Elite Stand Up Comedy",
+      "type": "Comedy",
+      "image": "/assets/images//Elite+slider.jpg",
+      "thumb": "assets/images/Elite+thumbnail.jpg",
+      "venue": "The Marquee-Cairo Festival City."
+    },
+    {
+      "id": 5,
+      "title": "Non-stop music - Angham",
+      "type": "Musical Shows",
+      "image": "/assets/images/NAGHOM.jpg",
+      "thumb": "assets/images/ANGHAM thumb.jpg",
+      "venue": "The Marquee-Cairo Festival City."
+    },
+    {
+      "id": 6,
+      "title": "Anistoona",
+      "type": "Art & Theater",
+      "image": "/assets/images/Anistoona+slider.jpg",
+      "thumb": "assets/images/Anistoona+thumbnail.jpg",
+      "venue": "MUST THEATER"
+    },
+    {
+      "id": 7,
+      "title": "Yama fi elgerab ya 7awy",
+      "type": "Art & Theater",
+      "image": "/assets/images/cairo+slider.jpg",
+      "thumb": "assets/images/Cairo+thumb.jpg",
+      "venue": "Cairo Show Theater"
+    },
+    {
+      "id": 8,
+      "title": "Qatar World Cup",
+      "type": "Sports",
+      "image": "/assets/images/WC+Slider.jpg",
+      "thumb": "assets/images/WC+Thumb.jpg",
+      "venue": "Qatar, El Doha"
+    },
+    {
+      "id": 9,
+      "title": "ELFIT 2022 CrossFit Championship",
+      "type": "Sports",
+      "image": "/assets/images/fit+1+slider.jpg",
+      "thumb": "assets/images/FIT22+THUMB.jpg",
+      "venue": "New Capital Sports City"
+    },
+    {
+      "id": 10,
+      "title": "Forbes Middle East Under 30 Summit El Gouna",
+      "type": "Other events",
+      "image": "/assets/images/U30-summit.jpg",
+      "thumb": "assets/images/U30-summit-thumb.jpg",
+      "venue": "El Gouna Conference and Cultural Center (GCCC)"
+    },
+    {
+      "id": 11,
+      "title": "SAMAJAM International Show",
+      "type": "Kids Shows",
+      "image": "/assets/images/Samajam+SLider.jpg",
+      "thumb": "assets/images/Samajam+Thumb.jpg",
+      "venue": "The Marquee-Cairo Festival City."
+    },
+    {
+      "id": 12,
+      "title": "Pyramids Half Marathon 2022",
+      "type": "Sports",
+      "image": "assets/images/Marathom+Slider.jpg",
+      "thumb": "assets/images/Marathom+Thumb.jpg",
+      "venue": "The Pyramids Of Giza"
+    },
+    {
+      "id": 13,
+      "title": "ZED Park",
+      "type": "Family Attractions",
+      "image": "/assets/images/ZED+Park+Slider.jpg",
+      "thumb": "assets/images/ZED+Park+Thumb.jpg",
+      "venue": ""
+    },
+    {
+      "id": 14,
+      "title": "Antigone",
+      "type": " Art & Theater ",
+      "image": "",
+      "thumb": "assets/images/antigone+thumb.jpg",
+      "venue": ""
+    },
+    {
+      "id": 15,
+      "title": "Anubis Jersey",
+      "type": "ad",
+      "image": "assets/images/Anubis-merchandising-mobile-001.jpeg",
+      "thumb": "assets/images/Anubis-merchandising-desktop-001.jpeg",
+      "venue": ""
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Anistoona",
+      "desc": "Anistoona play with Donia Samir Ghanim ",
+      "image": "assets/images/anistona.jpg",
+      "price": "800",
+      "date": "10 November",
+      "timing": "18:15",
+      "city": "cairo",
+      "venue": "AUC Al Falaki Theatre",
+      "category": "Theatrical show"
+    },
+    {
+      "id": 2,
+      "title": "Beyond Dance | D-CAF",
+      "desc": "D-CAF’s 10th edition brings you a special night this year to push the boundaries of dance, video art, and the most creative intersections. ",
+      "image": "assets/images/beyond.jpg",
+      "price": "300",
+      "date": "16 November",
+      "timing": "20:15",
+      "city": "Alexandria",
+      "venue": "AUC Al Falaki Theatre",
+      "category": "Musical show"
+    },
+    {
+      "id": 3,
+      "title": "Live Vol. 4: Hamza Namira",
+      "desc": "Al Manara Live Vol.4 ft. Hamza Namira on Thursday 27th of October",
+      "image": "assets/images/hamza_namira.jpg",
+      "price": "400",
+      "date": "22 November",
+      "timing": "18:15",
+      "city": "sharm elsheikh",
+      "venue": "Darwish Theatre",
+      "category": "Theatrical show"
+    }
+  ],
+  "about": [
+    {
+      "title": "About us ",
+      "data": "The company is aimed at supplying entertainment houses, venue owners, event organizers and planners, with an easy and feasible solution to sell and market their tickets/invitations. The services provided do not end there; TicketsMarche also provides consultation and fraud protection as well as spectator entry monitoring and surveillance."
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Leanne Graham",
+      "username": "Bret",
+      "gender": "male",
+      "email": "Sincere@april.biz",
+      "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "Country": "Qatar",
+        "zipcode": "92998-3874",
+        "geo": {
+          "lat": "-37.3159",
+          "lng": "81.1496"
+        }
+      },
+      "phone": "1-770-736-8031 x56442",
+      "website": "hildegard.org",
+      "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Multi-layered client-server neural-net",
+        "bs": "harness real-time e-markets"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Ervin Howell",
+      "username": "Antonette",
+      "gender": "female",
+      "email": "Shanna@melissa.tv",
+      "address": {
+        "street": "Victor Plains",
+        "Country": "Saudi",
+        "suite": "Suite 879",
+        "city": "Wisokyburgh",
+        "zipcode": "90566-7771",
+        "geo": {
+          "lat": "-43.9509",
+          "lng": "-34.4618"
+        }
+      },
+      "phone": "010-692-6593 x09125",
+      "website": "anastasia.net",
+      "company": {
+        "name": "Deckow-Crist",
+        "catchPhrase": "Proactive didactic contingency",
+        "bs": "synergize scalable supply-chains"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Clementine Bauch",
+      "username": "Samantha",
+      "gender": "male",
+      "email": "Nathan@yesenia.net",
+      "address": {
+        "street": "Douglas Extension",
+        "suite": "Suite 847",
+        "Country": "Dubai",
+        "city": "McKenziehaven",
+        "zipcode": "59590-4157",
+        "geo": {
+          "lat": "-68.6102",
+          "lng": "-47.0653"
+        }
+      },
+      "phone": "1-463-123-4447",
+      "website": "ramiro.info",
+      "company": {
+        "name": "Romaguera-Jacobson",
+        "catchPhrase": "Face to face bifurcated interface",
+        "bs": "e-enable strategic applications"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Patricia Lebsack",
+      "username": "Karianne",
+      "gender": "male",
+      "email": "Julianne.OConner@kory.org",
+      "address": {
+        "street": "Hoeger Mall",
+        "suite": "Apt. 692",
+        "city": "South Elvis",
+        "Country": "Afgstan",
+        "zipcode": "53919-4257",
+        "geo": {
+          "lat": "29.4572",
+          "lng": "-164.2990"
+        }
+      },
+      "phone": "493-170-9623 x156",
+      "website": "kale.biz",
+      "company": {
+        "name": "Robel-Corkery",
+        "catchPhrase": "Multi-tiered zero tolerance productivity",
+        "bs": "transition cutting-edge web services"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Chelsey Dietrich",
+      "username": "Kamren",
+      "gender": "male",
+      "email": "Lucio_Hettinger@annie.ca",
+      "address": {
+        "street": "Skiles Walks",
+        "suite": "Suite 351",
+        "city": "Roscoeview",
+        "Country": "Kwait",
+        "zipcode": "33263",
+        "geo": {
+          "lat": "-31.8129",
+          "lng": "62.5342"
+        }
+      },
+      "phone": "(254)954-1289",
+      "website": "demarco.info",
+      "company": {
+        "name": "Keebler LLC",
+        "catchPhrase": "User-centric fault-tolerant solution",
+        "bs": "revolutionize end-to-end systems"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Mrs. Dennis Schulist",
+      "username": "Leopoldo_Corkery",
+      "gender": "female",
+      "email": "Karley_Dach@jasper.info",
+      "address": {
+        "street": "Norberto Crossing",
+        "suite": "Apt. 950",
+        "city": "South Christy",
+        "Country": "Egypt",
+        "zipcode": "23505-1337",
+        "geo": {
+          "lat": "-71.4197",
+          "lng": "71.7478"
+        }
+      },
+      "phone": "1-477-935-8478 x6430",
+      "website": "ola.org",
+      "company": {
+        "name": "Considine-Lockman",
+        "catchPhrase": "Synchronised bottom-line interface",
+        "bs": "e-enable innovative applications"
+      }
+    },
+    {
+      "id": 7,
+      "Fname": "Omar",
+      "Lname": " Mahran",
+      "username": "Omar_A_Mahran",
+      "gender": "Male",
+      "email": "omar.a.m.mahran@gmail.com",
+      "address": {
+        "street": "Norberto Crossing",
+        "suite": "Apt. 950",
+        "city": "Alexandria",
+        "Country": "Egypt",
+        "zipcode": "23505-1337",
+        "geo": {
+          "lat": "-71.4197",
+          "lng": "71.7478"
+        }
+      },
+      "phone": "01003287527",
+      "website": "omar@gmail.com",
+      "company": {
+        "name": "ITI",
+        "catchPhrase": "Synchronised bottom-line interface",
+        "bs": "e-enable innovative applications"
+      }
+    },
+    {
+      "name": "Ahmed",
+      "username": "Ahmed123",
+      "email": "Ahmed@gmail.com",
+      "gender": "Male",
+      "suite": "1.a",
+      "company": "Technatiom",
+      "street": "11",
+      "city": "Assiut",
+      "zipcode": "117151",
+      "phonenumber": "01003287527",
+      "country": "Egypt",
+      "id": 8
+    }
+  ],
+  "Contact": [
+    {
+      "id": 0,
+      "Fname": "Omar",
+      "Lname": "Mahran",
+      "Email": "Omar@gmail.com",
+      "Mobile": "01003287527",
+      "Massage": "Thank Your for service"
+    },
+    {
+      "Fname": "Omar",
+      "Lname": "Mahran",
+      "Email": "omar.a.m.mahran@gmail.com",
+      "Mobile": "01003287527",
+      "Massage": "Hello",
+      "id": 1
+    }
+  ]
+}

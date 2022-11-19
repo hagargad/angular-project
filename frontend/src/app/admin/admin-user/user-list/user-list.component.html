@@ -1,0 +1,43 @@
+
+<body>
+<div>
+  <h2   style="background-color:#4723d9; color:white; text-align:center; margin:20px; border-radius: 20px; padding: 10px; font-weight:bold;">List Of Users</h2>
+</div>
+    <table class="table ">
+        <thead>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">Name</th>
+            <th scope="col">username</th>
+            <th scope="col">email</th>
+            <th scope="col">City</th>
+            <th scope="col">Suite</th>
+            <th scope="col">phone</th>
+            <th scope="col">website</th>
+            <th scope="col">company</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let s of users">
+            <th scope="row">{{s.id}}</th>
+            <td>{{s.name}}</td>
+            <td>{{s.username}}</td>
+            <td>{{s.email}}</td>
+            <td> {{s.address.city}}</td>
+            <td>{{s.address.suite}}</td>
+            <td>{{s.phone}}</td>
+            <td>{{s.website}}</td>
+            <td>{{s.company.name}}</td>  
+            <td class="d-flex gap-2">
+              <!-- <a class="btn btn-success" >view</a> -->
+              <a class="btn btn-danger" href='admin/admin-user' (click)="delete(s.id)">Delete</a>
+              <a class="btn btn-primary" [routerLink]="['update',s.id]" >Update</a>
+            </td>
+          </tr>
+        
+        </tbody>
+      </table>
+      <button class="btn btn-primary" [routerLink]="['adduser',0]">Add New</button>
+     
+    </body>

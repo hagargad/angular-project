@@ -1,0 +1,148 @@
+
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRDTWXH" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div id="cntPage">
+
+    <div id="cntOutCont">
+      <div id="cntInnCont">
+        <div class="cntInnContent">
+          <div class="navigator">
+            <h1 class="text_36">Checkout</h1>
+            <div routerLink="/allproducts" class="link_1">
+              <span class="arrow_yellowBack">BACK</span>
+            </div>
+            <br clear="all">
+          </div>
+        </div>
+        <script type="text/javascript">
+          $(document).ready(function () {
+            var dsLabel = "Time left";
+            doCountdown(1199.846, dsLabel);
+            $("#doCountDown").show();
+          });
+        
+        </script>
+        <!-- <div id="doCountDown" class="doCountDown text_20">Time left 19 : 31 </div> -->
+        <div class="checkout cntContent taCenter">
+          <div class="cntInnContent">
+            <form action="/checkout.html" method="post" name="checkoutForm" id="checkoutForm">
+              <input value="14364832" name="idBsk" id="idBasket" type="hidden">
+              <input value="" name="commandValue" id="commandValue" type="hidden">
+              <input value="" name="command" id="command" type="hidden">
+      
+              <table cellspacing="0" cellpadding="0" border="0" class="gridBig" *ngFor="let item of checkOut">
+               
+                <tbody>
+               
+                  <tr>
+                      
+                    <td rowspan="2" class="border">
+                      <div class="image">
+                        <img alt="fit 1 thumb" height="260" id="13928" src="{{item.image}}" width="370">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell">
+                        <span class="label">Sports</span>
+                        <h2 class="text_20 bold">"{{item.title}}"</h2>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="cell">
+                        <span class="label">Venue</span>
+                        <p class="text_18">"{{item.venue}}",&nbsp;<b>"{{item.city}}"</b>
+                        </p>
+                      </div>
+                    </td>
+                    <td rowspan="2" class="border">
+                      <div class="editDeleteBtns">
+                        <a class="icoModify" title="Modify"
+                          href="/tickets/buy-tickets-elfit-2022-crossfit-championship-3-days-pass.html">&nbsp;</a>
+                        <button onclick="$('#command').val('removeBasketItem'); $('#commandValue').val('3775385')"
+                          class="icoDelete" name="removeBasketItem" type="submit">&nbsp;</button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border halfMobile">
+                      <div class="cell">
+                        <span class="label">Date</span>
+                        <p class="text_18">"{{item.date}}"</p>
+                      </div>
+                    </td>
+                    <td class="border halfMobile">
+                      <div class="cell">
+                        <span class="label">Hour</span>
+                        <p class="text_18">"{{item.timing}}"</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="singleItem">
+                    <td class="hide500">&nbsp;</td>
+                    <td class="border">
+                      <div class="cell">
+                        <span class="label">Ticket</span>
+                        <p class="text_18">Regular / Season</p>
+                      </div>
+                    </td>
+                    <td class="border halfMobile">
+                      <div class="cell">
+                        <span class="label">Total Tickets/Seats</span>
+                        <p class="text_18">1 &nbsp;Ticket(s)</p>
+                      </div>
+                    </td>
+                    <td class="border halfMobile">
+                      <div class="cell">
+                        <span class="label">Price</span>
+                        <p class="text_18">"{{item.date}}"&nbsp;EGP</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="singleItem">
+                    <td class="hide500">&nbsp;</td>
+                    <td colspan="2" class="border halfMobile">
+                      <div class="cell">
+                        <span class="label">Delivery</span>
+                        <p class="text_18">Retail Location Pickup</p>
+                        <p class="text_16">Pickup at a retail outlet, must show a valid ID, Credit Card used for
+                          purchase &amp; your order number</p>
+                      </div>
+                    </td>
+                    <td class="border halfMobile">
+                      <div class="cell">
+                        <span class="label">Price</span>
+                        <p class="text_18">"{{item.price}}"&nbsp;EGP</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="rowSpace">
+                    <td colspan="4">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td class="hide500">&nbsp;</td>
+                    <td colspan="2" class="borderTop halfMobile">
+                      <div class="cell">
+                        <span class="label">&nbsp;</span>
+                        <p class="text_28">Total</p>
+                      </div>
+                    </td>
+                    <td class="borderTop halfMobile">
+                      <div class="cell">
+                        <span class="label">&nbsp;</span>
+                        <p class="text_28">{{item.price * getCount(item.id)}}&nbsp;EGP</p>
+                      </div>
+                    </td>
+                    
+                  </tr>
+                  
+                </tbody>
+                <hr style="border: 3px solid black;">
+              </table>
+            </form>
+           
+          </div>
+
+          </div>

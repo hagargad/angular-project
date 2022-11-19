@@ -1,0 +1,17 @@
+
+<div id="cntOutCont">
+  <div id="cntInnCont">
+    <section  class="showNews">
+      <div class="navigator" >
+        <h1 class="text_36" *ngFor="let t of title">{{ t.title }}</h1>
+        <div class="link_1">
+          <span class="arrow_yellowBack">BACK</span>
+        </div>
+        <br clear="all" />
+      </div>
+      <div class="nmText text_16 cntInnSmall" *ngFor="let b of body" >
+        <p>{{ b.body }}</p>
+      </div>
+    </section>
+  </div>
+</div>

@@ -1,0 +1,147 @@
+  
+    <div class="myProfile">
+    <div class="account">
+    <div class="link_1" onclick="document.location = 'historyBack.html'">
+    <span class="arrow_yellowBack">BACK</span>
+    </div>
+    <img src="../../../assets/images/idMultimediaPhotoPlaceHolder.png" class="photo" alt="idMultimediaPhotoPlaceHolder">
+    <div class="myDetail">
+    <p class="text_28" *ngIf="user;else anoth">Hi, {{user.name}}<br>What your plans today?</p>
+    <ng-template #anoth>
+        <p class="text_28">wait...</p>
+    </ng-template>
+    <ul class="linkProfile">
+    <li>
+    <a title="Shipping Info" href="/shipping-info.html" class="link_2">Shipping Info</a>
+    </li>
+    <li>
+    <a title="Change password" href="/change-password.html" class="link_2">Change password</a>
+    </li>
+    <li>
+    <span onclick="logout();" class="link_2">Logout</span>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <div class="register myProfile">
+    <form action="/personal-info.html" method="post" name="registerForm">
+    <input value="1362246" name="A.idAccount" type="hidden">
+    <input value="en" name="A.cdLanguage" type="hidden">
+    <input value="https://www.ticketsmarche.com/personal-info.html" name="landingPage" id="landingPage" type="hidden">
+    <div class="inputArea">
+    <div class="row">
+    <div class="cell twoOfFour">
+    <p class="text_14 bold">PERSONAL INFO</p>
+    </div>
+    </div>
+    <div class="row">
+    <div class="cell twoOfFour">
+    <label>First name</label>
+    <input required="true" value="{{user.Fname}}" name="A.nmFirstName" type="text">
+    </div>
+    <div class="cell twoOfFour">
+    <label>Last name</label>
+    <input required="true" value="{{user.Lname}}" name="A.nmLastName" type="text">
+    </div>
+    </div>
+    <div class="row">
+    <div class="cell twoOfFour">
+    <label>Mobile</label>
+    <input required="true" value="{{user.phone}}" name="A.noMobile" type="text">
+    </div>
+    <div *ngIf="user.gender == 'Male';else NewRw"  class="cell twoOfFour">
+    <label>Gender</label>
+    <div class="cell twoOfFour">
+    <input required="required" value="true" name="A.cdSex" id="A.cdSex" type="radio" checked="checked" >&nbsp;Male</div>
+    <div class="cell twoOfFour">
+    <input required="required" value="false" name="A.cdSex" id="A.cdSex" type="radio" >&nbsp;Female</div>
+    </div>
+    <ng-template #NewRw>
+        <div class="cell twoOfFour">
+            <label>Gender</label>
+            <div class="cell twoOfFour">
+            <input required="required" value="false" name="A.cdSex" id="A.cdSex" type="radio"  >&nbsp;Male</div>
+            <div class="cell twoOfFour">
+            <input required="required" value="true" name="A.cdSex" id="A.cdSex" type="radio" checked="checked">&nbsp;Female</div>
+            </div>
+    </ng-template>
+    </div>
+    <div class="row">
+    <div class="cell twoOfFour">
+    <input value="990252" name="PAA.idAccountAddress" type="hidden">
+    <input value="true" name="PAA.isDefault" type="hidden">
+    <label>Country</label>
+    
+    <input value="990252" name="PAA.idAccountAddress" type="text" value="{{user.address.Country}}">
+    <!-- <select id="cdCountry" name="PAA.cdCountry"  (click)="toggleCityInput();" required="required" [(ngModel)]="selected">
+        
+    <option *ngFor="let c of count" [value]="user.id"  {{selected}} >
+        {{c}}
+    </option>
+    </select> -->
+    </div>
+    
+    <div class="cell twoOfFour">
+    <label>City</label>
+   
+    <select id="idCity" name="PAA.idCity" required="required">
+    <option value="">
+    </option><option value="0">- Foreign countries</option>
+    <option selected="selected" value="1">Alexandria</option>
+    <option  value="2">Assiut</option>
+    <option value="3">Aswan</option>
+    <option value="4">Beheira</option>
+    <option value="5">Beni Suef</option>
+    <option value="6">Cairo</option>
+    <option value="7">Dakahlia</option>
+    <option value="8">Damietta</option>
+    <option value="9">Fayoum</option>
+    <option value="10">Gharbia</option>
+    <option value="11">Giza</option>
+    <option value="12">Ismailia</option>
+    <option value="13">Kafr El Sheikh</option>
+    <option value="14">Luxor</option>
+    <option value="15">Matrouh</option>
+    <option value="17">Menoufia</option>
+    <option value="16">Minya</option>
+    <option value="18">New Valley</option>
+    <option value="19">North Sinai</option>
+    <option value="20">Port-Said</option>
+    <option value="21">Qaliubya</option>
+    <option value="22">Qena</option>
+    <option value="23">Red Sea</option>
+    <option value="24">Sharqia</option>
+    <option value="25">Sohag</option>
+    <option value="26">South Sinai</option>
+    <option value="27">Suez</option>
+    </select>
+    <input style="display: none;" value="Assiut" name="PAA.nmCity" id="nmCity" type="text">
+    </div>
+    </div>
+    <div class="row">
+    <div class="cell twoOfFour">
+    <label>E-mail</label>
+    <input required="true" value="Omar.a.m.mahran@gmail.com" name="A.ulEmail" type="email">
+    </div>
+    </div>
+    <div class="row">
+    <div class="cell fourOfFour">
+    <div onclick="doCheckbox(this);" class="checkboxRow">
+    <input value="1" name="idNewsLetter" type="checkbox">
+    <div class="checkboxInput">&nbsp;</div>
+    <p class="text_14 uppercase">Register to&nbsp;TicketsMarche NewsLetter</p>
+    </div>
+    </div>
+    </div>
+    <div class="row">
+    <button name="doSave" class="btn_2" type="submit">
+    <span class="arrow_brown">Update</span>
+    </button>
+    </div>
+    </div>
+    </form>
+    </div>
+  
+
+<iframe id="__JSBridgeIframe_1.0__" title="jsbridge___JSBridgeIframe_1.0__" style="display: none;"></iframe><iframe id="__JSBridgeIframe_SetResult_1.0__" title="jsbridge___JSBridgeIframe_SetResult_1.0__" style="display: none;"></iframe><iframe id="__JSBridgeIframe__" title="jsbridge___JSBridgeIframe__" style="display: none;"></iframe><iframe id="__JSBridgeIframe_SetResult__" title="jsbridge___JSBridgeIframe_SetResult__" style="display: none;"></iframe> 

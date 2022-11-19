@@ -1,0 +1,91 @@
+<header id="cntOutHdr">
+    <div id="cntInnHdr">
+        <div class="header">
+            <a class="logo" title="TicketsMarche" routerLink="home">
+                <img src="../../assets/icons/TME.svg" alt="TicketsMarche" />
+            </a>
+            <div id="menuSearch" class="searchCont">
+                <input onkeyup="callSearch(this);" placeholder="Search events, artists, venues..." type="text"
+                    name="cdKeyword" class="tmeSearch"/>
+                <ul id="tmeLink">
+              </ul>
+            </div>
+            <ul>
+                <li (click)="toggleMenu()" class="icoMenu">
+                    <a routerLinkActive="active" ariaCurrentWhenActive="page"> </a>
+                </li>
+                <li class="icoBasket">
+                    <a routerLink="/cart" routerLinkActive="active" ariaCurrentWhenActive="page">
+                    </a>
+                </li>
+                <li class="icoAccount">
+                    <a routerLink="register" routerLinkActive="active" ariaCurrentWhenActive="page">
+                    </a>
+                </li>
+                <li class="icoVenue">
+                    <a routerLinkActive="active" ariaCurrentWhenActive="page"> </a>
+                </li>
+                <li class="icoArab">
+                    <a routerLinkActive="active" ariaCurrentWhenActive="page"> </a>
+                </li>
+            </ul>
+        </div>
+        <!-- new -->
+        <div id="menuHeader" element="principal"  class="menuHeader"  [class.menuHeader]="isMenuOpen" [class.x]="!isMenuOpen">
+            <ul class="menuMobile show630">
+                <li class="icoBasket">
+                    <a href="/checkout_sc_19.html" title="Checkout">&nbsp;</a>
+                </li>
+                <li class="icoAccount">
+                    <a href="/personal-info.html" title="Personal Info">&nbsp;</a>
+                </li>
+                <li class="icoVenue">
+                    <a href="/locate-our-outlets.html" title="Locate Our Outlets">&nbsp;</a>
+                </li>
+                <li class="icoArab">
+                    <a href="/?changeLanguageTo=ar" title="Arab">&nbsp;</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="text_18 hide630">That’s everything we’ve got</li>
+                <li>
+                    <a title="All Tickets on Sale" href="/allproducts" class="text_36">All Tickets on
+                        Sale</a>
+                </li>
+                <li>
+                    <a title="Hot Events" href="/hot-events.html" class="text_36">Hot Events</a>
+                </li>
+                <li>
+                    <a title="Locate Our Outlets" href="/locate-our-outlets.html" class="text_36">Locate Our Outlets</a>
+                </li>
+                <li>
+                    <a title="Ticket Your Event" href="/ticket-your-event.html" class="text_36">Ticket Your Event</a>
+                </li>
+                <li>
+                    <a title="FAQs" href="/faqs.html" class="text_36">FAQs</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="text_18 hide630">Tickets Marche</li>
+                <li>
+                    <a title="About us" href="about" class="text_36">About us</a>
+                </li>
+                <li>
+                    <a title="Our Policies" href="/our-policies.html" class="text_36">Our Policies</a>
+                </li>
+                <li>
+                    <a title="Contact Us" href="/contact" class="text_36">Contact Us</a>
+                </li>
+                <li>
+                    <a title="Careers" href="/careers-2179.html" class="text_36">Careers</a>
+                </li>
+                <li class="text_18 hide630">Need Help?</li>
+                <li>
+                    <span class="text_36 icoCustomerSupport">16826/+202 24637000</span>
+                    <br />
+                    <span class="text_18">10am - 10pm / Everyday</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>

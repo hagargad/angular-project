@@ -1,0 +1,32 @@
+<div id="cntOutHdr ">
+  <div class="inside-content">
+    <form>
+      <label>About Title </label>
+      <input type="text" *ngFor="let t of title" placeholder="{{ t.title }}" />
+
+      <br />
+      <label>About Data </label>
+      <textarea rows="4" cols="50" *ngFor="let t of body">
+        {{ t.body }}
+      </textarea>
+
+      <br />
+      <input type="submit" value="ENTER DATA" />
+    </form>
+
+    <table>
+      <tr>
+        <td>Title</td>
+        <td>The Body</td>
+        <td>Edit</td>
+        <td>Delete</td>
+      </tr>
+      <tr>
+        <td *ngFor="let t of title">{{ t.title }}</td>
+        <td *ngFor="let t of body">{{ t.body }}</td>
+        <td><button onclick="editData()">Edit</button></td>
+        <td><button onclick="deleteData()">Delete</button></td>
+      </tr>
+    </table>
+  </div>
+</div>

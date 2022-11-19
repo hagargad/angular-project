@@ -1,0 +1,33 @@
+
+<div id="cntPage">
+  <div class="login halfCheckout">
+    <form [formGroup]="adminLogin" (ngsubmit)="adminLog()" action="POST">
+    <div class="inputArea">
+      <div class="row">
+        <div class="cell twoOfFour">
+          <p class="text_14 bold">Admin-Login</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell twoOfFour">
+          <span class="label">E-mail :</span>
+          <input type="email" name="Email" formControlName="Email"><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="cell twoOfFour">
+          <span class="label">Password or &nbsp; <a class="link_3" href="#">Forgot Password</a></span>
+          <input type="password" name="password" formControlName="Password"><br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="fourOfFour">
+          <button type="submit" id="doLogin" class="btn_2">
+            <span class="arrow_brown">Login</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    </form>
+  </div>
+</div>
