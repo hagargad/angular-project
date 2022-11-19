@@ -1,12 +1,11 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { ProductsService } from '../products/products.service';
+import { Component, OnInit, Input, Output, EventEmitter } from "@angular/core";
+import { ProductsService } from "../products/products.service";
 // import { NgxsReadMoreModule } from '@minni/read-more';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { Observable, throwError } from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
-import { AllproductsService } from './allproducts.service';
-import { Router } from '@angular/router';
-
+import { HttpClient, HttpErrorResponse } from "@angular/common/http";
+import { Observable, throwError } from "rxjs";
+import { catchError, retry } from "rxjs/operators";
+import { AllproductsService } from "./allproducts.service";
+import { Router } from "@angular/router";
 
 // interface Product {
 //   id: Number;
@@ -16,18 +15,14 @@ import { Router } from '@angular/router';
 // }
 
 @Component({
-  selector: 'app-allproducts',
-  templateUrl: './allproducts.component.html',
-  styleUrls: ['./allproducts.component.css'],
+  selector: "app-allproducts",
+  templateUrl: "./allproducts.component.html",
+  styleUrls: ["./allproducts.component.css"],
 })
 export class AllproductsComponent implements OnInit {
-
   // addtocart: boolean = false;
 
-  // constructor(private service: ProductsService) {
-
-  // }
-  constructor(private service:AllproductsService ,private router: Router) {}
+  constructor(private service: AllproductsService, private router: Router) {}
   products: any;
 
   id: any;
@@ -43,7 +38,7 @@ export class AllproductsComponent implements OnInit {
   ngOnInit(): void {
     let that = this;
     this.service.getAllProducts().subscribe({
-      next(data:any) {
+      next(data: any) {
         that.id = data.id;
         that.title = data.title;
         that.desc = data.desc;
@@ -55,12 +50,11 @@ export class AllproductsComponent implements OnInit {
         that.venue = data.venue;
         that.category = data.category;
 
-        that.products=data;
-      }
+        that.products = data;
+        console.log(data);
+      },
+
     });
-    // this.httpClient
-    //   .get<any>('assets/db.json')
-    //   .subscribe((data) => (this.products = data));
   }
 
   // getProducts() {
@@ -87,11 +81,7 @@ export class AllproductsComponent implements OnInit {
 
   // @Input() oneproduct:any;
 
-
-
-goto(id:any){
-this.router.navigate(['checkout'], { queryParams: { id:id }});
-}
-
-
+  goto(id: any) {
+    this.router.navigate(["checkout"], { queryParams: { id: id } });
+  }
 }

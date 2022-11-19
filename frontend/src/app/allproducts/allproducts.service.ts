@@ -11,7 +11,7 @@ export class AllproductsService {
 private Base_URL = environment.baseApi;
 
   getAllProducts() {
-    return this.httpClient.get(this.Base_URL);
+    return this.httpClient.get(this.Base_URL+'/tickets');
   }
   getProductsByID(id:number) {
     return this.httpClient.get(`${this.Base_URL}/${id}`);

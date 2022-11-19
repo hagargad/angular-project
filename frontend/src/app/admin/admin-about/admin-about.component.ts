@@ -36,7 +36,7 @@ export class AdminAboutComponent implements OnInit {
     this.myservice.updateData(id, dataedit).subscribe();
   }
 
-  openModal() {
+  openModalabout() {
     this.modalRef = this.modalService.open(AbouAdminModalComponent)
   }
 }
