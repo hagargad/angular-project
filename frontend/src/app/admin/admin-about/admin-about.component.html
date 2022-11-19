@@ -18,21 +18,17 @@
 <hr>
     <table>
       <tr>
-        <td>Section</td>
+        <td>Title</td>
+        <td>Body</td>
         <td>Delete</td>
-        <td>Edit</td>
       </tr>
       <tbody>
       <tr>
         <td >{{ title }}</td>
-        <td><input (click)="deleteData(id)" type="submit" value="Delete title" /></td>
-        <td><input (click)="openModalabout()" type="submit" value="Edit" /></td>
-      </tr>
-      <tr>
         <td >{{ body }}</td>
-      <td><input (click)="deleteData(id)" type="submit" value="Delete body" /></td>
-      <td><input (click)="openModalabout()" type="submit" value="Edit" /></td>
-      </tr>
+        <td><input (click)="deleteData(id)" type="submit" value="Delete title" /></td>
+       </tr>
+
     </tbody>
     </table>
 

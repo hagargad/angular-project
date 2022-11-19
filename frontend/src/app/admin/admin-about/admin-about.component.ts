@@ -1,8 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { AboutService } from "../../about/about.service";
 import { HttpClient, HttpErrorResponse } from "@angular/common/http";
-import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
-import { AbouAdminModalComponent } from "src/app/abou-admin-modal/abou-admin-modal.component";
+
+
 
 @Component({
   selector: "app-admin-about",
@@ -10,8 +10,8 @@ import { AbouAdminModalComponent } from "src/app/abou-admin-modal/abou-admin-mod
   styleUrls: ["./admin-about.component.css"],
 })
 export class AdminAboutComponent implements OnInit {
-  modalRef: MdbModalRef<AbouAdminModalComponent> | null = null;
-  constructor(private myservice: AboutService,public modalService: MdbModalService) {}
+
+  constructor(private myservice: AboutService) {}
   title: any;
   body: any;
   id: any;
@@ -36,7 +36,4 @@ export class AdminAboutComponent implements OnInit {
     this.myservice.updateData(id, dataedit).subscribe();
   }
 
-  openModalabout() {
-    this.modalRef = this.modalService.open(AbouAdminModalComponent)
-  }
 }
