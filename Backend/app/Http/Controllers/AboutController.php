@@ -36,7 +36,7 @@ class AboutController extends Controller
 
         $data = $request->all();
         $about = About::create([
-            'title' => request()->title,
+            'title' => $request()->title,
             'body' => $data['body'],
         ]);
 
@@ -69,6 +69,6 @@ class AboutController extends Controller
         $about = About::findOrFail($id);
         $about->delete();
 
-        return response()->json(null, 204);
+        return $about;
     }
 }

@@ -79,7 +79,7 @@ class TicketController extends Controller
         $ticket = Ticket::findOrFail($id);
         $ticket->delete();
 
-        return response()->json(null, 204);
+        return $ticket;
     }
 }
 

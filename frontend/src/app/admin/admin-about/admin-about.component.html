@@ -2,20 +2,25 @@
   <div class="inside-content">
     <form>
       <label>About Title </label>
-      <input type="text"  placeholder="{{ title }}" />
+      <input type="text" placeholder="{{ title }}" />
 
       <br />
+      <input
+        type="submit"
+        (click)="storeData(title)"
+        value="update title"
+      />
       <label>About Data </label>
-      <textarea rows="4" cols="50" >
+      <textarea rows="4" cols="50">
         {{ body }}
       </textarea>
-
       <br />
-      <input type="submit" value="ENTER DATA" />
+      <input type="submit" (click)="storeData(body)" value="update body" />
+      <br />
     </form>
-<hr>
-<h3>Operation Section</h3>
-<hr>
+    <hr />
+    <h3>Operation Section</h3>
+    <hr />
     <table>
       <tr>
         <td>Title</td>
@@ -23,15 +28,18 @@
         <td>Delete</td>
       </tr>
       <tbody>
-      <tr>
-        <td >{{ title }}</td>
-        <td >{{ body }}</td>
-        <td><input (click)="deleteData(id)" type="submit" value="Delete title" /></td>
-       </tr>
-
-    </tbody>
+        <tr>
+          <td>{{ title }}</td>
+          <td>{{ body }}</td>
+          <td>
+            <input
+              (click)="deleteData(id)"
+              type="submit"
+              value="Delete title"
+            />
+          </td>
+        </tr>
+      </tbody>
     </table>
-
-
   </div>
 </div>

@@ -37,5 +37,5 @@ Route::delete('tickets/{id}', [TicketController::class,'deleteTickets']);
 Route::get('about',[AboutController::class,'index']);
 // Route::get('about',[AboutController::class,'getData']);
 Route::post('about',[AboutController::class,'storeData']);
-Route::post('about',[AboutController::class,'updateData']);
-Route::delete('about',[AboutController::class,'deleteData']);
+Route::post('about/{id}',[AboutController::class,'updateData']);
+Route::delete('about/{id}',[AboutController::class,'deleteData']);

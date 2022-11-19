@@ -24,23 +24,23 @@ export class AboutService {
 
   //get the body
   getData() {
-    // return this.http.get<About[]>(this.Base_URL + "/about");
+    return this.http.get<About[]>(this.Base_URL + "/about");
     // return this.http.get(this.Base_URL+'/about');
-    return this.http.get('http://localhost:8000/api/about');
+    // return this.http.get('http://localhost:8000/api/about');
   }
   //Store Data
   storeData(newdata: any) {
-    return this.http.post(this.Base_URL, newdata);
+    return this.http.post(this.Base_URL + "/about", newdata);
   }
 
   //Delete Data
   deleteData(id: number) {
-    return this.http.delete(`${this.Base_URL}/${id}`);
+    return this.http.delete(`${this.Base_URL + "/about"}/${id}`);
   }
 
   //update Data
   updateData(id: number, updatedData: any) {
-    return this.http.put(`${this.Base_URL}/${id}`, updatedData);
+    return this.http.put(`${this.Base_URL + "/about"}/${id}`, updatedData);
   }
 
 
