@@ -17,6 +17,7 @@ class AboutController extends Controller
         $about = About::all();
         return AboutResource::collection($about);
 
+
     }
 
     // get all data

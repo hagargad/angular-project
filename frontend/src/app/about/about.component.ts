@@ -1,4 +1,4 @@
-import { Component, OnInit, Output,Input } from "@angular/core";
+import { Component, OnInit, Output, Input } from "@angular/core";
 import { AboutService } from "./about.service";
 @Component({
   selector: "app-about",
@@ -7,16 +7,16 @@ import { AboutService } from "./about.service";
 })
 export class AboutComponent implements OnInit {
   constructor(private aboutservice: AboutService) {}
-  title: any;
-  body: any;
+  // title: any;
+  // body: any;
+  about:any;
   ngOnInit(): void {
-
     let that = this;
     this.aboutservice.getData().subscribe({
-      next(title: any) {
-        that.title = title;
-        // that.body=body;
-
+      next(data: any) {
+        that.about=data;
+        // that.title = data.title;
+        // that.body = data.body;
       },
       error(err: any) {
         console.log(err);

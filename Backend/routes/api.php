@@ -35,7 +35,7 @@ Route::delete('tickets/{id}', [TicketController::class,'deleteTickets']);
 //About
 
 Route::get('about',[AboutController::class,'index']);
-Route::get('about',[AboutController::class,'getData']);
-Route::post('about',[AboutController::class,'storeData']); // to be added for the admin
+// Route::get('about',[AboutController::class,'getData']);
+Route::post('about',[AboutController::class,'storeData']);
 Route::post('about',[AboutController::class,'updateData']);
-Route::delete('about',[AboutController::class,'deleteData']); //For the edit
+Route::delete('about',[AboutController::class,'deleteData']);

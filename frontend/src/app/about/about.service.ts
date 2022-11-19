@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaderResponse, HttpHeaders, HttpResponse} from "@angular/common/http";
 import { environment } from "src/environments/environment";
 import { Observable } from "rxjs";
-import { catchError, map, tap } from 'rxjs/operators';
+
 
 export interface About {
   id: Number;
@@ -20,8 +20,9 @@ export class AboutService {
   constructor(private http: HttpClient) {}
 
   //get the body
-  getData(): Observable<About[]> {
-    return this.http.get<About[]>(this.Base_URL + "/about");
+  getData() {
+    // return this.http.get<About[]>(this.Base_URL + "/about");
+    return this.http.get(this.Base_URL+'/about');
 
   }
   //Store Data
