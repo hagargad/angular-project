@@ -15,14 +15,16 @@ class tickets extends JsonResource
     public function toArray($request)
     {
         return [
-            'id'         => $this->id,
-            'title'       => $this->title,
-            'price'    => (int) $this->price,
-            'place'     =>  $this->place,
-            'event_date'     => $this->event_date,
-            'created_at' => $this->created_at,
-            'updated_at' => $this->updated_at,
-            'image'=>$this->image,
+
+            'title' => $this->title,
+            'desc' => $this->desc,
+            'price' =>  (int)$this->price,
+            'image' => $this->image,
+            'date' => $this->date,
+            'timing' => $this->timing,
+            'city' => $this->city,
+            'venue' => $this->venue,
+            'category' => $this->category,
         ];
     }
 }

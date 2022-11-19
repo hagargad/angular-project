@@ -21,12 +21,11 @@ export class AboutService {
   constructor(private http: HttpClient) {}
 
 // private Base_URL: any ='http://localhost:8000/api/about';
+
   //get the body
   getData() {
     // return this.http.get<About[]>(this.Base_URL + "/about");
     return this.http.get(this.Base_URL+'/about');
-
-
   }
   //Store Data
   storeData(newdata: any) {

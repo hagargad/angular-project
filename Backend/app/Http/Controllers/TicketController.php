@@ -40,11 +40,16 @@ class TicketController extends Controller
         //         ->setStatusCode(201);
         $ticket = Ticket::create([
             'title' => $request->title,
-            'details' => $request->details,
+            'desc' => $request->desc,
             'price' => $request->price,
-            'place' => $request->place,
-            'event_date' => $request->menu_category_id,
-            'image' => $request->image
+            'image' => $request->image,
+            'date' => $request->date,
+            'timing' => $request->timing,
+            'city' => $request->city,
+            'venue' => $request->venue,
+            'category' => $request->category,
+
+
         ]);
 
         return $ticket;
@@ -55,11 +60,14 @@ class TicketController extends Controller
 
         $ticket =  $ticket->update([
             'title' => $request->title,
-            'details' => $request->details,
+            'desc' => $request->desc,
             'price' => $request->price,
-            'place' => $request->place,
-            'event_date' => $request->menu_category_id,
-            'image' => $request->image
+            'image' => $request->image,
+            'date' => $request->date,
+            'timing' => $request->timing,
+            'city' => $request->city,
+            'venue' => $request->venue,
+            'category' => $request->category,
         ]);
 
         return $ticket;

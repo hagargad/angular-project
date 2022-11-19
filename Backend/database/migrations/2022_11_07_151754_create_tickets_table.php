@@ -17,11 +17,18 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('title');
-            $table->string('details');
-            $table->string('place');
-            $table->integer('price')->default(0);
-            $table->date('event_date');
+            $table->string('desc');
             $table->string('image');
+            $table->integer('price')->default(0);
+            $table->date('date');
+            $table->integer('timing')->default(0);
+            $table->string('city');
+            $table->string('venue');
+            $table->string('category');
+
+
+
+
         });
     }
 
