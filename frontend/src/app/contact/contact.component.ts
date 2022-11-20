@@ -19,7 +19,8 @@ export class ContactComponent implements OnInit {
     Lname:new FormControl("",[Validators.minLength(3),Validators.maxLength(10),Validators.required]),
     Email:new FormControl("",[Validators.required,Validators.email]),
     Mobile:new FormControl(0,[Validators.minLength(11),Validators.maxLength(11),Validators.required]),
-    Massage:new FormControl("",[Validators.maxLength(200),Validators.required])
+    Massage:new FormControl("",[Validators.maxLength(200),Validators.required]),
+    Auth:new FormControl(1,[Validators.required])
   })
   get nameValid(){
     return this.myContactFormValidation.controls.Fname.value 

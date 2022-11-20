@@ -53,7 +53,6 @@ export class AllproductsComponent implements OnInit {
         that.products = data;
         console.log(data);
       },
-
     });
   }
 

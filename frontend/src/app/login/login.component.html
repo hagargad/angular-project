@@ -1,7 +1,7 @@
  
 <div   class="d-flex justify-content-center" style="padding-top:100px;">
   <div class="login halfCheckout " >
-    <form [formGroup]="Userloginvalidation" >
+    <form [formGroup]="Userloginvalidation" (ngSubmit)="login()">
     <div class="inputArea">
       <div class="row">
         <div class="cell twoOfFour">
@@ -11,18 +11,20 @@
       <div class="row">
         <div class="cell twoOfFour">
           <span class="label">E-mail :</span>
-          <input type="email"  formControlName="useremail"><br>
+          <input type="email" name="useremail"  formControlName="useremail">
+          <span style="color: red;" *ngIf="UseremailValid && UseremailValid.invalid && UseremailValid.touched">*enter valid e-mail</span><br>
         </div>
       </div>
       <div class="row">
         <div class="cell twoOfFour">
           <span class="label">Password or &nbsp; <a class="link_3" href="#">Forgot Password</a></span>
-          <input type="password"  formControlName="userpassword"><br>
+          <input type="password" name="userpassword" formControlName="userpassword">
+          <span style="color: red;" *ngIf="UserpassValid && UserpassValid.invalid && UserpassValid.touched">*required</span><br>
         </div>
       </div>
       <div class="row">
         <div class="fourOfFour">
-          <button type="submit" class="btn_2" [routerLink]="['/profile/personalinfo',7]" (click)="login()">
+          <button routerLink="profile/personal-info/1" [disabled]="Userloginvalidation.invalid" type="submit" class="btn_2">
             <span class="arrow_brown" >Login</span>
           </button>
           <span></span>

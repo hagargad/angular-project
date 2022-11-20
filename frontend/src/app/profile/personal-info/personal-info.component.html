@@ -6,7 +6,7 @@
     </div>
     <img src="../../../assets/images/idMultimediaPhotoPlaceHolder.png" class="photo" alt="idMultimediaPhotoPlaceHolder">
     <div class="myDetail">
-    <p class="text_28" *ngIf="user;else anoth">Hi, {{user.name}}<br>What your plans today?</p>
+    <p class="text_28" *ngIf="user;else anoth">Hi, {{user.first_name}}<br>What your plans today?</p>
     <ng-template #anoth>
         <p class="text_28">wait...</p>
     </ng-template>
@@ -38,11 +38,11 @@
     <div class="row">
     <div class="cell twoOfFour">
     <label>First name</label>
-    <input required="true" value="{{user.Fname}}" name="A.nmFirstName" type="text">
+    <input required="true" value="{{user.first_name}}" name="A.nmFirstName" type="text">
     </div>
     <div class="cell twoOfFour">
     <label>Last name</label>
-    <input required="true" value="{{user.Lname}}" name="A.nmLastName" type="text">
+    <input required="true" value="{{user.last_name}}" name="A.nmLastName" type="text">
     </div>
     </div>
     <div class="row">
@@ -50,7 +50,7 @@
     <label>Mobile</label>
     <input required="true" value="{{user.phone}}" name="A.noMobile" type="text">
     </div>
-    <div *ngIf="user.gender == 'Male';else NewRw"  class="cell twoOfFour">
+    <div *ngIf="user.gender == 'M';else NewRw"  class="cell twoOfFour">
     <label>Gender</label>
     <div class="cell twoOfFour">
     <input required="required" value="true" name="A.cdSex" id="A.cdSex" type="radio" checked="checked" >&nbsp;Male</div>
@@ -73,7 +73,7 @@
     <input value="true" name="PAA.isDefault" type="hidden">
     <label>Country</label>
     
-    <input value="990252" name="PAA.idAccountAddress" type="text" value="{{user.address.Country}}">
+    <input value="990252" name="PAA.idAccountAddress" type="text" value="{{user.country}}">
     <!-- <select id="cdCountry" name="PAA.cdCountry"  (click)="toggleCityInput();" required="required" [(ngModel)]="selected">
         
     <option *ngFor="let c of count" [value]="user.id"  {{selected}} >
@@ -86,9 +86,9 @@
     <label>City</label>
    
     <select id="idCity" name="PAA.idCity" required="required">
-    <option value="">
+    <option selected="selected" value="{{user.id}}">{{user.city}}
     </option><option value="0">- Foreign countries</option>
-    <option selected="selected" value="1">Alexandria</option>
+    <option  value="1">Alexandria</option>
     <option  value="2">Assiut</option>
     <option value="3">Aswan</option>
     <option value="4">Beheira</option>
@@ -122,7 +122,7 @@
     <div class="row">
     <div class="cell twoOfFour">
     <label>E-mail</label>
-    <input required="true" value="Omar.a.m.mahran@gmail.com" name="A.ulEmail" type="email">
+    <input required="true" value="{{user.email}}" name="A.ulEmail" type="email">
     </div>
     </div>
     <div class="row">

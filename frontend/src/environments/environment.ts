@@ -4,6 +4,10 @@
 
 export const environment = {
   baseApi :"http://127.0.0.1:8000/api",
+  register_url: "http://127.0.0.1:8000/api/register",
+  login_url : "http://127.0.0.1:8000/api/login",
+  admin_url : "http://127.0.0.1:8000/api/admin-reg",
+  loginAdmin__url : "http://127.0.0.1:8000/api/admin-log",
   production: false
 };
 

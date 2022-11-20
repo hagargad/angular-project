@@ -9,7 +9,7 @@ export class ContactService {
   constructor(private h:HttpClient) { }
 
 
-  baseurl="http://localhost:3000/Contact"
+  baseurl="http://127.0.0.1:8000/api/contacts"
 
   adddat(body:any){
     return this.h.post(this.baseurl,body)

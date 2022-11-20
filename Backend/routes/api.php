@@ -38,3 +38,18 @@ Route::get('about',[AboutController::class,'index']);
 // Route::post('about',[AboutController::class,'storeData']);
 Route::put('about/{id}',[AboutController::class,'updateData']);
 Route::delete('about/{id}',[AboutController::class,'deleteData']);
+
+
+//register routes
+Route::post("register", [RegisterController::class, "registration"]);
+Route::get("login", [RegisterController::class, "Userlogin"]);
+Route::post("login", [RegisterController::class, "Userlogin"]);
+Route::get("register/{id}", [RegisterController::class, "show"]);
+Route::post("admin-reg", [AdminsCntroller::class, "store"]);
+Route::post("admin-log", [AdminsCntroller::class, "Adminlogin"]);
+
+
+//contacts routes
+Route::get('contacts', [ContactController::class, 'index']);
+Route::get('contacts/{id}', [ContactController::class, 'show']);
+Route::post('contacts', [ContactController::class, 'store']);

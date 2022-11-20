@@ -22,44 +22,47 @@ export class LoginComponent implements OnInit {
   });
 
   get UseremailValid(){
-    return this.Userloginvalidation.controls.useremail.valid;
+    return this.Userloginvalidation.get('useremail');
   }
   get UserpassValid(){
-    return this.Userloginvalidation.controls.userpassword.valid;
+    return this.Userloginvalidation.get('userpassword');
   }
-  usersData:any;
-  message:any;
+  // usersData:any;
+  // message:any;
   login(){
+    this.user.checkUsers(this.Userloginvalidation.value).subscribe();
+
     // console.log(this.Userloginvalidation.value.useremail);
-    let that = this;
+    // let that = this;
     // let message;
-    this.user.getUsers().subscribe({
-      next(data){
-        that.usersData = data;
-        // console.log(data)
+    // let fetch= this.user.getUsers().subscribe({
+    //   next(data){
+    //     that.usersData = data;
+    //     // console.log(data)
+    //   }
+    // });
+    // if(this.Userloginvalidation.value.useremail ){
 
-      }
+    // }
+    // console.log(this.usersData);
+    //    for(let i = 0; i>= 10 ; i++){
+    //       let u = "mm"
+    //       if(that.Userloginvalidation.value.useremail == that.usersData[i].email){
+    //         that.message = "successfully";
+    //         console.log("jssssss");
+    //         // let url = "/register"
+    //         // that.message = url;
 
-    });
-    console.log(this.usersData);
-       for(let i = 0; i>= 10 ; i++){
-          let u = "mm"
-          if(that.Userloginvalidation.value.useremail == that.usersData[i].email){
-            that.message = "successfully";
-            console.log("jssssss");
-            // let url = "/register"
-            // that.message = url;
+    //       }else{
+    //         that.message = "failed";
+    //         console.log("555555555");
 
-          }else{
-            that.message = "failed";
-            console.log("555555555");
+    //       }
+    //       // that.message = "shhs";
+    //       // console.log(that.message);
+    //        console.log(i);
 
-          }
-          // that.message = "shhs";
-          // console.log(that.message);
-           console.log(i);
-
-        }
+    //     }
   }
 
 }

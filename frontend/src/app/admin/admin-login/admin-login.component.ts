@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ProjectService } from 'src/app/services/project.service';
 
 @Component({
   selector: 'app-admin-login',
@@ -8,7 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class AdminLoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private admin: ProjectService) { }
 
   ngOnInit(): void {
   }
@@ -27,6 +28,7 @@ export class AdminLoginComponent implements OnInit {
 
   adminLog(){
     // console.log(this.adminLogin);
+    this.admin.checkAdmin(this.adminLogin.value).subscribe();
   }
 
 }

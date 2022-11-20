@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +8,7 @@ import { Injectable } from '@angular/core';
 export class ProfileService {
   constructor(public myprofileData:HttpClient) { }
 
-  baseURL="http://localhost:3000/users"
+  baseURL= environment.baseApi
   
   getAllData(){
     return this.myprofileData.get(this.baseURL)

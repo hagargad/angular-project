@@ -1,12 +1,13 @@
-<!-- <p>register works!</p>
 
-<ul>
-  <li><a routerLink="/">Home</a></li>
-  <li><a routerLink="/login">Login</a></li>
-  <li><a routerLink="/register">Register</a></li>
-  <li><a routerLink="/adminlogin">AdminLogin</a></li>
-  <li><a routerLink="/adminregister">AdminRegister</a></li>
-</ul> -->
+
+
+
+
+
+
+
+
+
 <div id="cntPage mt-5">
   <div id="cntOutCont">
     <div id="cntInnCont">
@@ -32,46 +33,50 @@
               <div class="cell twoOfFour">
                 <label for="">First Name :</label>
                 <input type="text" name="FirstName" formControlName="FirstName" >
-                <!-- <div style="color: red;" *ngIf="FnameValid">*required</div> -->
+                <div style="color: red;" *ngIf="FnameValid && FnameValid.invalid && FnameValid.touched"> *required</div>
               </div>
               <div class="cell twoOfFour">
                 <label for="">Last Name :</label>
                   <input type="text" name="LastName" formControlName="LastName"><br>
-                    <!-- <div style="color: red;" *ngIf="LnameValid">*required</div> -->
+                    <div style="color: red;" *ngIf="LnameValid && LnameValid.invalid && LnameValid.touched">*required</div>
               </div>
             </div>
             <div class="row">
               <div class="cell twoOfFour">
                 <label for="">MOBILE :</label>
-                <input type="number" name="mobile" formControlName="phoneNumber">
+                <input type="number" name="phoneNumber" formControlName="phoneNumber">
+                <div style="color: red;" *ngIf="LnameValid && LnameValid.invalid && LnameValid.touched">*required</div>
+
               </div>
               <div class="cell twoOfFour">
                 <label for="">GENDER :</label>
-                <input type="radio" name=""  id="A.cdSex" formControlName="">Male
-                <input type="radio" name="" id="A.cdSex" formControlName="">Female<br>
+                <input type="radio" name="gender"  value="M" id="A.cdSex" formControlName="gender">Male
+                <input type="radio" name="gender" value="F" id="A.cdSex" formControlName="gender">Female<br>
               </div>
             </div>
 
             <div class="row">
               <div class="cell twoOfFour">
                 <label>Country :</label>
-                <select >
+                <select name="country" formControlName="country">
                   <option></option>
-                  <option>EGYPT</option>
+                  <option >EGYPT</option>
                   <option>KSA</option>
                   <option>UAE</option>
                   <option>QATAR</option>
                   <option>KIWAT</option>
                   <option>SUDAN</option>
                 </select>
+                <!-- <div style="color: red;" *ngIf="LnameValid && LnameValid.invalid && LnameValid.touched">*required</div> -->
+
               </div>
               <div class="cell twoOfFour">
                 <label>City :</label>
-                <select >
+                <select name="city" formControlName="city">
                   <option></option>
                   <option>-Forigen Countries</option>
                   <option>CAIRO</option>
-                  <option>ALEXANDRIA</option>
+                  <option >ALEXANDRIA</option>
                   <option>GIZA</option>
                   <option>ASSUIT</option>
                   <option>ASWAN</option>
@@ -84,14 +89,12 @@
               <div class="cell twoOfFour">
                 <label for="">Email :</label>
                 <input type="email" name="Email" formControlName="Email" >
-
-                 <!-- <div *ngFor="let x of users">
-                <h1>{{x.email}}</h1>
-                  <div style="color: red;" *ngIf="emailValue != x.email">*required</div>
-                </div>  -->
+                <div style="color: red;" *ngIf="emailValid && emailValid.invalid && emailValid.touched">*required</div>
 
                 <label for="">Re-Enter Email :</label>
-                <input type="email" name="Re-Email" formControlName="re_email"><br>
+                <input type="email" name="Re-Email" formControlName="re_email">
+                <div style="color: red;" *ngIf="reEmail && reEmail.invalid && reEmail.touched">*required</div> 
+                <!-- <span style="color: red;" *ngIf="reEmail != emailValid"> email does not match</span> <br> -->
               </div>
             </div>
 
@@ -99,10 +102,12 @@
               <div class="cell twoOfFour">
                 <label for="">Password :</label>
                 <input type="password" name="password" formControlName="Password">
-                <!-- <div style="color: red;" *ngIf="PassValid">*required</div> -->
+                <div style="color: red;" *ngIf="PassValid && PassValid.invalid && PassValid.touched">*required</div>
 
                 <label for="">Confirm Password :</label>
-                <input type="password" name="ConfirmPass" formControlName="ConfirmPass"><br>
+                <input type="password" name="ConfirmPass" formControlName="ConfirmPass">
+                <div style="color: red;" *ngIf="confirmValid && confirmValid.invalid && confirmValid.touched">*required</div>
+                <!-- <div style="color: red;" *ngIf="confirmValid != PassValid"> password not match</div><br> -->
               </div>
             </div>
               <!-- <div style="color: green;" *ngIf=" confirmValid == PassValid "> match</div> -->
@@ -141,7 +146,7 @@
               </div>
             </div> -->
               <div class="row">
-                <button routerLink="/login" class="btn_2" type="submit" value="register" >
+                <button [disabled]="UserRegisterValidation.invalid" class="btn_2" type="submit">
                   <span class="arrow_brown">Register</span>
                 </button>
               </div>

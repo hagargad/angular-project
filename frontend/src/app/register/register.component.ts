@@ -19,6 +19,9 @@ export class RegisterComponent implements OnInit {
     FirstName : new FormControl('',Validators.required),
     LastName : new FormControl('',Validators.required),
     phoneNumber : new FormControl('',Validators.minLength(11)),
+    gender: new FormControl('',Validators.required),
+    country: new FormControl('',Validators.required),
+    city: new FormControl('',Validators.required),
     Email : new FormControl('',Validators.email),
     re_email :new FormControl('',Validators.email),
     Password : new FormControl('',Validators.minLength(8)),
@@ -26,39 +29,41 @@ export class RegisterComponent implements OnInit {
   })
 
   get FnameValid(){
-    return this.UserRegisterValidation.controls.FirstName.valid;
+    return this.UserRegisterValidation.get('FirstName');
   }
 
   get LnameValid(){
-    return this.UserRegisterValidation.controls.LastName.valid;
+    return this.UserRegisterValidation.get('LastName');
   }
 
   get emailValid(){
-    return this.UserRegisterValidation.controls.Email.valid;
+    return this.UserRegisterValidation.get('Email');
   }
   get emailValue(){
     return this.UserRegisterValidation.controls.Email.value;
   }
-
+  get reEmail(){
+    return this.UserRegisterValidation.get('re_email');
+  }
   get PassValid(){
-    return this.UserRegisterValidation.controls.Password.valid;
+    return this.UserRegisterValidation.get('Password');
   }
 
   get confirmValid(){
-    return this.UserRegisterValidation.controls.ConfirmPass.valid;
+    return this.UserRegisterValidation.get('ConfirmPass');
   }
 
   users:any;
   data(){
   // console.log(this.UserRegisterValidation.value);
   let newUser = this.regUser.addUsers(this.UserRegisterValidation.value).subscribe();
-
+    console.log(newUser);
   let that = this;
-  this.regUser.getUsers().subscribe({
-    next(data){
-      that.users = data
-      }
-    });
+  // this.regUser.getUsers().subscribe({
+  //   next(data){
+  //     that.users = data
+  //     }
+  //   });
     // console.log(this.users);
     // for(let x of this.users){
     //   console.log(x);
