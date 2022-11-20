@@ -1,20 +1,20 @@
 <div id="cntOutHdr ">
   <div class="inside-content">
-    <form [formGroup]="aboutform" >
-      <input formControlName="id" type="hidden" value="1">
+    <form [formGroup]="aboutform">
+      <input formControlName="id" type="hidden" value="1" />
       <label>About Title </label>
-      <input  formControlName="titleinput" type="text" placeholder="{{ title }}" />
+      <input
+        formControlName="titleinput"
+        type="text"
+        placeholder="{{ title }}"
+      />
       <br />
       <label>About Data </label>
-      <textarea  formControlName="bodyinput" rows="4" cols="50">
+      <textarea formControlName="bodyinput" rows="4" cols="50">
         {{ body }}
       </textarea>
       <br />
-      <input
-        type="submit"
-        (click)="updateData()"
-        value="update about"
-      />
+      <input type="submit" (click)="updateData()" value="update about" />
       <br />
     </form>
     <hr />

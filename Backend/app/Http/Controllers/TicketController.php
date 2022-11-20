@@ -79,7 +79,6 @@ class TicketController extends Controller
     {
         $ticket = Ticket::findOrFail($id);
         $ticket->delete();
-
         return $ticket;
     }
 }

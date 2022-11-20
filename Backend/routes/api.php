@@ -29,11 +29,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //     return' we are in tickets ';
 // });
 Route::get('tickets', [TicketController::class,'index']);
-Route::get('tickets/{id}',[TicketController::class,'showTickets']);
+Route::get('tickets/{id}',[TicketController::class,'showTicket']);
+Route::delete('tickets/{id}', [TicketController::class,'deleteTicket']);
+Route::put('tickets/{id}', [TicketController::class,'updateTickets']);
+// Route::post('tickets/{id}',[ TicketController::class,'add_to_cart']);
 Route::post('tickets', [TicketController::class,'storeTickets']);
-// Route::post('tickets/{id}/addTickets', [TicketController::class,'addTickets']);
-Route::delete('tickets/{id}', [TicketController::class,'deleteTickets']);
-// Route::post('tickets/{id}',[ TicketsController::class,'add_to_cart']);
 
 //About
 Route::get('about',[AboutController::class,'index']);

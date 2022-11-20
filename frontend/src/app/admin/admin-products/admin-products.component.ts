@@ -1,19 +1,22 @@
-import { Component, OnInit } from '@angular/core';
-import { AllproductsService } from '../../allproducts/allproducts.service';
+import { Component, OnInit } from "@angular/core";
+import { AllproductsService } from "../../allproducts/allproducts.service";
 // import { ModalComponent } from '../../modal/modal.component';
 // import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
-import { FormControl, FormGroup, Validators } from "@angular/forms";
+import { FormControl, FormGroup, FormBuilder } from "@angular/forms";
 @Component({
-  selector: 'app-admin-products',
-  templateUrl: './admin-products.component.html',
-  styleUrls: ['./admin-products.component.css'],
+  selector: "app-admin-products",
+  templateUrl: "./admin-products.component.html",
+  styleUrls: ["./admin-products.component.css"],
 })
 export class AdminProductsComponent implements OnInit {
   // modalRef: MdbModalRef<ModalComponent> | null = null;
   constructor(
-    private service: AllproductsService) {} // ,private modalService: MdbModalService
+    private formBuilder: FormBuilder,
+    private service: AllproductsService
+  ) {} // ,private modalService: MdbModalService
 
   products: any;
+  imageURL: string='';
 
   id: any;
   title: any;
@@ -61,13 +64,26 @@ export class AdminProductsComponent implements OnInit {
     eventcity: new FormControl(""),
     eventvenue: new FormControl(""),
     eventcategory: new FormControl(""),
-
-
   });
+  // createEvent = this.formBuilder.group({
+  //   eventtitle: '',
+  //     eventdesc: '',
+  //     eventtiming: '',
+  //     eventprice: '',
+  //     eventdate: '',
+  //     eventimage: '',
+  //     eventcity: '',
+  //     eventvenue:'',
+  //     eventcategory: '',
+  // });
+
+  onSubmit(): void {
+    console.warn("Your Event has been submitted", this.createEvent.value);
+    this.createEvent.reset();
+  }
 
   deleteTickets(id: any) {
     this.service.deleteTickets(id).subscribe();
-    console.log(id);
   }
   edit(id: any, dataedit: any) {
     this.service.updateProduct(id, dataedit).subscribe();

@@ -47,11 +47,11 @@
     <hr />
     Create New Event
     <hr />
-    <form [formGroup]="createEvent">
+    <form [formGroup]="createEvent" (ngSubmit)="onSubmit()">
       <label>Event's Title</label>
       <br />
       <input
-        formGroupName="eventtitle"
+      formControlName="eventtitle"
         type="text"
         placeholder="Event's Title"
       />
@@ -59,13 +59,13 @@
       <label>Event's Descriptions</label>
       <br />
       <textarea
-        formGroupName="eventdesc"
+      formControlName="eventdesc"
         placeholder="Enter Event's Descriptions"
       ></textarea>
       <br />
       <label>upload image</label>
       <input
-        formGroupName="eventimage"
+      formControlName="eventimage"
         type="file"
         placeholder="upload image"
       />
@@ -73,20 +73,20 @@
       <label>Price</label>
       <br />
       <input
-        formGroupName="eventprice"
+      formControlName="eventprice"
         type="number"
         placeholder="Ticket's price"
       />
       <br />
       <label>Timing</label>
       <br />
-      <input formGroupName="eventtiming" type="number" placeholder="Timing" />
+      <input formControlName="eventtiming" type="number" placeholder="Timing" />
       <br />
       <label>Event Date</label>
-      <input formGroupName="eventdate" type="date" />
+      <input formControlName="eventdate" type="date" />
       <br />
       <label>Event City:</label>
-      <select formGroupName="eventcity">
+      <select formControlName="eventcity">
         <option value="Alexandria">Alexandria</option>
         <option value="Cairo">Cairo</option>
         <option value="Luxor">Luxor</option>
@@ -94,7 +94,7 @@
       </select>
       <br />
       <label>Event Venue:</label>
-      <select formGroupName="eventvenue">
+      <select formControlName="eventvenue">
         <option value="AUC Venue">AUC Venue</option>
         <option value="Maadi Venue">Maadi Venue</option>
         <option value="Cpital Venue">Capital Venue</option>
@@ -102,7 +102,7 @@
       </select>
       <br />
       <label>Event Category:</label>
-      <select formGroupName="eventcategory">
+      <select formControlName="eventcategory">
         <option value="Arts & theater">Arts & theater</option>
         <option value="Music">Music</option>
         <option value="sports event">sports event</option>

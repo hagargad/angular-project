@@ -25,13 +25,13 @@ class StoreTicketsRequest extends FormRequest
     {
 
         return [
-            'id'  => ['required'],
-            'title' => ['required'],
-            'details'=>['required'],
-            'price' => ['required'],
-            'place' => ['required'],
-            'event_date' => ['required'],
-            'image' => ['required']
+            // 'id'  => ['required'],
+            // 'title' => ['required'],
+            // 'details'=>['required'],
+            // 'price' => ['required'],
+            // 'place' => ['required'],
+            // 'event_date' => ['required'],
+            // 'image' => ['required']
         ];
     }
 }
