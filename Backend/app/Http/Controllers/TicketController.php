@@ -29,9 +29,9 @@ class TicketController extends Controller
     //create and store tickets
     public function storeTickets(StoreTicketsRequest $request)
     {
-        $request->validate([
-            'name' => 'required|max:255',
-        ]);
+        // $request->validate([
+        //     'name' => 'required|max:255',
+        // ]);
 
         // $ticket = tickets::create($request->all());
 
@@ -39,15 +39,15 @@ class TicketController extends Controller
         //         ->response()
         //         ->setStatusCode(201);
         $ticket = Ticket::create([
-            'title' => $request->title,
-            'desc' => $request->desc,
-            'price' => $request->price,
-            'image' => $request->image,
-            'date' => $request->date,
-            'timing' => $request->timing,
-            'city' => $request->city,
-            'venue' => $request->venue,
-            'category' => $request->category,
+            'title' => $request-> eventtitle,
+            'desc' => $request-> eventdesc,
+            'price' => $request-> eventprice,
+            'image' => $request->eventimage,
+            'date' => $request->eventdate,
+            'timing' => $request->eventtiming,
+            'city' => $request->eventcity,
+            'venue' => $request->eventvenue,
+            'category' => $request->eventcategory,
 
 
         ]);
@@ -59,15 +59,16 @@ class TicketController extends Controller
         $ticket = Ticket::find($ticket->id);
 
         $ticket =  $ticket->update([
-            'title' => $request->title,
-            'desc' => $request->desc,
-            'price' => $request->price,
-            'image' => $request->image,
-            'date' => $request->date,
-            'timing' => $request->timing,
-            'city' => $request->city,
-            'venue' => $request->venue,
-            'category' => $request->category,
+            'title' => $request-> eventtitle,
+            'desc' => $request-> eventdesc,
+            'price' => $request-> eventprice,
+            'image' => $request->eventimage,
+            'date' => $request->eventdate,
+            'timing' => $request->eventtiming,
+            'city' => $request->eventcity,
+            'venue' => $request->eventvenue,
+            'category' => $request->eventcategory,
+
         ]);
 
         return $ticket;

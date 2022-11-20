@@ -1,6 +1,7 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input, Output } from "@angular/core";
 import { AboutService } from "../../about/about.service";
 import { HttpClient, HttpErrorResponse } from "@angular/common/http";
+import { FormControl, FormGroup, Validators } from "@angular/forms";
 
 @Component({
   selector: "app-admin-about",
@@ -12,6 +13,7 @@ export class AdminAboutComponent implements OnInit {
   title: any;
   body: any;
   id: any;
+
   ngOnInit(): void {
     //fetching
     let that = this;
@@ -25,12 +27,18 @@ export class AdminAboutComponent implements OnInit {
     });
     this.deleteData, this.updateData, this.storeData;
   }
+  aboutform = new FormGroup({
+    titleinput: new FormControl(""),
+    bodyinput: new FormControl(""),
+    id:new FormControl("1"),
+  });
 
   deleteData(id: any) {
     this.myservice.deleteData(id).subscribe();
   }
-  updateData(id: any, dataedit: any) {
-    this.myservice.updateData(id, dataedit).subscribe();
+
+  updateData() {
+    this.myservice.updateData(this.aboutform.value,this.aboutform.value.id).subscribe();
   }
   storeData(newdata: any) {
     let that = this;

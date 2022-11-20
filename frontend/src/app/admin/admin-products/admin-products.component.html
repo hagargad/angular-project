@@ -14,7 +14,7 @@
         <th><h5>Category</h5></th>
         <th><h5>Edit</h5></th>
         <th><h5>Delete</h5></th>
-        <th><input (click)="openModal()" type="submit" value="ADD NEW PRODUCT" /></th>
+        <!-- <th><input (click)="openModal()" type="submit" value="ADD NEW PRODUCT" /></th> -->
       </tr>
 
       <tbody>
@@ -38,9 +38,60 @@
           <td>{{ p.venue }}</td>
           <td>{{ p.Category }}</td>
           <td><input  type="submit" value="EDIT" /></td>
-          <td><input (click)="delete( p.id )" type="submit" value="DELETE" /></td>
+          <td><input (click)="deleteTickets( p.id )" type="submit" value="DELETE" /></td>
         </tr>
       </tbody>
     </table>
+    <hr>
+    Create New Event
+    <hr>
+    <form [formGroup]="createEvent">
+    <label>Event's Title</label>
+    <br />
+    <input formGroupName="eventtitle" type="text" placeholder="Event's Title" />
+    <br />
+    <label>Event's Descriptions</label>
+    <br />
+    <textarea formGroupName="eventdesc" placeholder="Enter Event's Descriptions"></textarea>
+    <br />
+    <label>upload image</label>
+    <input  formGroupName="eventimage" type="file" placeholder="upload image" />
+    <br />
+    <label>Price</label>
+    <br />
+    <input formGroupName="eventprice" type="number" placeholder="Ticket's price" />
+    <br />
+    <label>Timing</label>
+    <br />
+    <input formGroupName="eventtiming" type="number" placeholder="Timing" />
+    <br />
+    <label>Event Date</label>
+    <input formGroupName="eventdate" type="date" />
+    <br />
+    <label>Event City:</label>
+    <select formGroupName="eventcity">
+      <option value="Alexandria">Alexandria</option>
+      <option value="Cairo">Cairo</option>
+      <option value="Luxor">Luxor</option>
+      <option value="Aswan">Aswan</option>
+    </select>
+    <br />
+    <label>Event Venue:</label>
+    <select formGroupName="eventvenue">
+      <option value="AUC Venue">AUC Venue</option>
+      <option value="Maadi Venue">Maadi Venue</option>
+      <option value="Cpital Venue">Capital Venue</option>
+      <option value="Opera Venue">Opera Venue</option>
+    </select>
+    <br />
+    <label>Event Category:</label>
+    <select formGroupName="eventcategory">
+      <option value="Arts & theater">Arts & theater</option>
+      <option value="Music">Music</option>
+      <option value="sports event">sports event</option>
+      <option value="opera classic">Opera Classic</option>
+    </select>
+   <input (click)="AddProduct()"type="submit" value="Create New Event" />
+  </form>
   </div>
 </div>

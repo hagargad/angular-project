@@ -28,14 +28,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('tickets', [TicketController::class,'index']);
 Route::get('tickets/{id}',[TicketController::class,'showTickets']);
 Route::post('tickets', [TicketController::class,'storeTickets']);
-Route::post('tickets/{id}/addTickets', [TicketController::class,'addTickets']);
+// Route::post('tickets/{id}/addTickets', [TicketController::class,'addTickets']);
 Route::delete('tickets/{id}', [TicketController::class,'deleteTickets']);
 // Route::post('tickets/{id}',[ TicketsController::class,'add_to_cart']);
 
 //About
-
 Route::get('about',[AboutController::class,'index']);
 // Route::get('about',[AboutController::class,'getData']);
-Route::post('about',[AboutController::class,'storeData']);
-Route::post('about/{id}',[AboutController::class,'updateData']);
+// Route::post('about',[AboutController::class,'storeData']);
+Route::put('about/{id}',[AboutController::class,'updateData']);
 Route::delete('about/{id}',[AboutController::class,'deleteData']);

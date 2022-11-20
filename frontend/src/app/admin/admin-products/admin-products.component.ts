@@ -1,18 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { AllproductsService } from '../../allproducts/allproducts.service';
-import { ModalComponent } from '../../modal/modal.component';
-import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
-
+// import { ModalComponent } from '../../modal/modal.component';
+// import { MdbModalRef, MdbModalService } from 'mdb-angular-ui-kit/modal';
+import { FormControl, FormGroup, Validators } from "@angular/forms";
 @Component({
   selector: 'app-admin-products',
   templateUrl: './admin-products.component.html',
   styleUrls: ['./admin-products.component.css'],
 })
 export class AdminProductsComponent implements OnInit {
-  modalRef: MdbModalRef<ModalComponent> | null = null;
+  // modalRef: MdbModalRef<ModalComponent> | null = null;
   constructor(
-    private service: AllproductsService,private modalService: MdbModalService
-  ) {}
+    private service: AllproductsService) {} // ,private modalService: MdbModalService
 
   products: any;
 
@@ -49,19 +48,32 @@ export class AdminProductsComponent implements OnInit {
     //   .get<any>('assets/db.json')
     //   .subscribe((data) => (this.products = data));
   }
-  openModal() {
-    this.modalRef = this.modalService.open(ModalComponent)
-  }
+  // openModal() {
+  //   this.modalRef = this.modalService.open(ModalComponent)
+  // }
+  createEvent = new FormGroup({
+    eventtitle: new FormControl(""),
+    eventdesc: new FormControl(""),
+    eventtiming: new FormControl(""),
+    eventprice: new FormControl(""),
+    eventdate: new FormControl(""),
+    eventimage: new FormControl(""),
+    eventcity: new FormControl(""),
+    eventvenue: new FormControl(""),
+    eventcategory: new FormControl(""),
 
 
-  delete(id: any) {
-    this.service.deleteProduct(id).subscribe();
+  });
+
+  deleteTickets(id: any) {
+    this.service.deleteTickets(id).subscribe();
     console.log(id);
   }
   edit(id: any, dataedit: any) {
     this.service.updateProduct(id, dataedit).subscribe();
   }
-  create(newdata: any) {
-    this.service.AddProduct(newdata).subscribe();
+  AddProduct() {
+    this.service.AddProduct(this.createEvent.value ).subscribe();
+    // console.log(this.createEvent.value);
   }
 }

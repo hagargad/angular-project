@@ -39,8 +39,11 @@ export class AboutService {
   }
 
   //update Data
-  updateData(id: number, updatedData: any) {
+  updateData(updatedData: any,id:any) {
+
     return this.http.put(`${this.Base_URL + "/about"}/${id}`, updatedData);
+
+
   }
 
 

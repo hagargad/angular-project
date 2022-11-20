@@ -53,14 +53,15 @@ class AboutController extends Controller
     //update data
     public function updateData(UpdateDataRequest $request, About $about)
     {
-        $about = About::find($about->id);
+        $about = About::find(1);
 
         $about = $about->update([
-            'title' => $request->title,
-            'body' => $request->body
+            'title' => $request->titleinput,
+            'body' => $request->bodyinput
         ]);
 
         return $about;
+
     }
 
 
