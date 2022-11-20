@@ -2,9 +2,12 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TicketsController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\api\ContactController;
+use App\Http\Controllers\api\AdminsController;
+use App\Http\Controllers\api\RegisterController;
 use App\Http\Controllers\TicketController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
