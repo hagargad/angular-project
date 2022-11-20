@@ -8,7 +8,7 @@ export class HomeSService {
 
   constructor(private homemodule:HttpClient) { }
 
-  baseUrl="http://localhost:3000/home"
+  baseUrl="http://127.0.0.1:8000/api/home"
 
   getallProuduct(){
    return this.homemodule.get(this.baseUrl)

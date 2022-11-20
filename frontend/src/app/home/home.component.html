@@ -1,300 +1,52 @@
 <div id="cntOutCont">
 <div id="cntInnCont"><input value="13" id="qtShowCategoryEvent" type="hidden">
-    <div id="showCategoryEvent" class="showSlideShow">
-        <div style="z-index: 1; display: none ;" id="slide_1" element="singleSlide" class="singleSlide">
-            <img alt="{{home[0].title}} Slider" class="image" id="13737" src="{{home[0].image}}"  width="1139" height="570">
+    <div  id="showCategoryEvent" class="showSlideShow">
+        <div  *ngFor="let item of home">
+        <div id="slide_1" element="singleSlide" class="singleSlide mah" *ngIf="item.id == i">
+            <img alt="{{item.title}} Slider" class="image" id="13737" src="{{item.image}}"  width="1139" height="570">
             <div class="info">
                 <div class="cdEventTemplateType">Hot event</div>
                 <div class="detail_1 borderBottom">
                     <span class="text_10">Date</span>
-                    <h3 class="text_28">18 November</h3>
+                    <h3 class="text_28">{{item.event_date}}</h3>
                 </div>
                 <div class="detail_2 borderBottom">
-                    <h4 class="text_10">{{home[0].type}}</h4>
-                    <h3 class="text_34">{{home[0].title}}</h3>
+                    <h4 class="text_10">{{item.type}}</h4>
+                    <h3 class="text_34">{{item.title}}</h3>
                 </div>
-                <a title="BUY IT {{home[0].title}} " href="/tickets/buy-tickets-2-cellos.html" class="btn_1">
+                <a title="BUY IT {{item.title}} " routerLink="checkout" class="btn_1">
                     <span class="arrow_yellow">BUY IT</span>
                 </a>
             </div>
         </div>
-        <div style="z-index: 2; display: none;" id="slide_2" element="singleSlide" class="singleSlide">
-            <img alt="{{home[1].title}}slider" class="image" id="13933"
-                src="{{home[1].image}}" width="1140" height="570">
-            <div class="info">
-                <div class="cdEventTemplateType">Hot event</div>
-                <div class="detail_1 borderBottom">
-                    <span class="text_10">Date</span>
-                    <h3 class="text_28">25 November</h3>
-                </div>
-                <div class="detail_2 borderBottom">
-                    <h4 class="text_10">{{home[1].type}}</h4>
-                    <h3 class="text_34">{{home[1].title}}</h3>
-                </div>
-                <a title="BUY IT {{home[1].title}}"
-                    href="/tickets/buy-tickets-hamaki-concert-at-al-burouj.html" class="btn_1">
-                    <span class="arrow_yellow">BUY IT</span>
-                </a>
-            </div>
-        </div>
-        <div style="z-index: 3; display: none;" id="slide_3" element="singleSlide" class="singleSlide">
-            <img alt="{{home[2].title}} Slider" class="image" id="14069"
-                src="{{home[2].image}}" width="1140" height="570">
-            <div class="info">
-                <div class="detail_1 borderBottom">
-                    <span class="text_10">Date</span>
-                    <h3 class="text_28">18 November</h3>
-                </div>
-                <div class="detail_2 borderBottom">
-                    <h4 class="text_10">{{home[2].type}}</h4>
-                    <h3 class="text_34">{{home[2].title}}</h3>
-                </div>
-                <a title="BUY IT {{home[2].title}}" href="/tickets/buy-tickets-zed-winter-fest-opening.html"
-                    class="btn_1">
-                    <span class="arrow_yellow">BUY IT</span>
-                </a>
-            </div>
-        </div>
-        <div style="z-index: 4; display: none;" id="slide_4" element="singleSlide" class="singleSlide">
-            <img alt="{{home[3].title}} Slider" class="image" id="14051" src="{{home[3].image}}" width="1140"
-                height="570">
-            <div class="info">
-                <div class="detail_1 borderBottom">
-                    <span class="text_10">Date</span>
-                    <h3 class="text_28">18 November</h3>
-                </div>
-                <div class="detail_2 borderBottom">
-                    <h4 class="text_10">{{home[3].type}}</h4>
-                    <h3 class="text_34">{{home[3].title}}</h3>
-                </div>
-                <a title="BUY IT {{home[3].title}}" href="/tickets/buy-tickets-the-elite-stand-up-comedy.html"
-                    class="btn_1">
-                    <span class="arrow_yellow">BUY IT</span>
-                </a>
-            </div>
-        </div>
-        <div style="z-index: 5; display: none;" id="slide_5" element="singleSlide" class="singleSlide">
-            <img alt="{{home[4].title}} silder" class="image" id="14000" src="{{home[4].image}}" width="1140"
-                height="570">
-            <div class="info">
-                <div class="cdEventTemplateType">Hot event</div>
-                <div class="detail_1 borderBottom">
-                    <span class="text_10">Date</span>
-                    <h3 class="text_28">02 December</h3>
-                </div>
-                <div class="detail_2 borderBottom">
-                    <h4 class="text_10">{{home[4].type}}</h4>
-                    <h3 class="text_34">{{home[4].title}}</h3>
-                </div>
-                <a title="BUY IT {{home[4].title}}" href="/tickets/buy-tickets-non-stop-music-angham.html"
-                    class="btn_1">
-                    <span class="arrow_yellow">BUY IT</span>
-                </a>
-            </div>
-        </div>
-        <div style="z-index: 6; display: none;" id="slide_6" element="singleSlide" class="singleSlide">
-            <img alt="{{home[5].title}} Slider" class="image" id="13781" src="{{home[5].image}}"
-                width="1140" height="570">
-            <div class="info">
-                <div class="cdEventTemplateType">Hot event</div>
-                <div class="detail_1 borderBottom">
-                    <div class="half">
-                        <span class="text_10">Date from</span>
-                        <h3 class="text_28">10 November</h3>
-                    </div>
-                    <div class="half">
-                        <span class="text_10">TO</span>
-                        <h3 class="text_28">19 November</h3>
-                    </div>
-                    <br clear="all">
-                </div>
-                <div class="detail_2 borderBottom">
-                    <h4 class="text_10">{{home[5].type}}</h4>
-                    <h3 class="text_34">{{home[5].title}} </h3>
-                </div>
-                <a title="BUY IT {{home[5].title}}" href="/anistoona_se_2428.html" class="btn_1">
-                    <span class="arrow_yellow">BUY IT</span>
-                </a>
-            </div>
-        </div>
-        <div style="z-index: 7; display: none;" id="slide_7" element="singleSlide" class="singleSlide">
-            <img alt="{{home[6].title}} slider" class="image" id="13783" src="{{home[6].image}}" width="1140"
-                height="570">
-            <div class="info">
-                <div class="cdEventTemplateType">Hot event</div>
-                <div class="detail_1 borderBottom">
-                    <span class="text_10">Date</span>
-                    <h3 class="text_28">18 November</h3>
-                </div>
-                <div class="detail_2 borderBottom">
-                    <h4 class="text_10">{{home[6].type}}</h4>
-                    <h3 class="text_34">{{home[6].title}} </h3>
-                </div>
-                <a title="BUY IT {{home[6].title}}"
-                    href="/tickets/buy-tickets-yama-fi-elgerab-ya-7awy-en-18560.html" class="btn_1">
-                    <span class="arrow_yellow">BUY IT</span>
-                </a>
-            </div>
-        </div>
-        <div style="z-index: 8; display: none;" id="slide_8" element="singleSlide" class="singleSlide">
-            <img alt="{{home[7].title}} Slider" class="image" id="14045" src="{{home[7].image}}" width="1140"
-                height="570">
-            <div class="info">
-                <div class="cdEventTemplateType">Hot event</div>
-                <div class="detail_1 borderBottom">
-                    <span class="text_10">Date</span>
-                    <h3 class="text_28">20 November</h3>
-                </div>
-                <div class="detail_2 borderBottom">
-                    <h4 class="text_10">{{home[7].type}}</h4>
-                    <h3 class="text_34">{{home[7].title}}</h3>
-                </div>
-                <a title="BUY IT {{home[7].title}}" href="#" class="btn_1">
-                    <span class="arrow_yellow">BUY IT</span>
-                </a>
-            </div>
-        </div>
-        <div style="z-index: 9; display: none;" id="slide_9" element="singleSlide" class="singleSlide">
-            <img alt="{{home[8].title}} slider" class="image" id="13927" src="{{home[8].image}}" width="1140"
-                height="570">
-            <div class="info">
-                <div class="detail_1 borderBottom">
-                    <div class="half">
-                        <span class="text_10">Date from</span>
-                        <h3 class="text_28">10 November</h3>
-                    </div>
-                    <div class="half">
-                        <span class="text_10">TO</span>
-                        <h3 class="text_28">12 November</h3>
-                    </div>
-                    <br clear="all">
-                </div>
-                <div class="detail_2 borderBottom">
-                    <h4 class="text_10">{{home[8].type}}</h4>
-                    <h3 class="text_34">{{home[8].title}}</h3>
-                </div>
-                <a title="BUY IT {{home[8].title}}" href="/elfit-2022-crossfit-championship_se_2010.html"
-                    class="btn_1">
-                    <span class="arrow_yellow">BUY IT</span>
-                </a>
-            </div>
-        </div>
-        <div style="z-index: 10; display: none;" id="slide_10" element="singleSlide" class="singleSlide">
-            <img alt="{{home[9].title}} SLider" class="image" id="14047"
-                src="{{home[9].image}}" width="1140" height="570">
-            <div class="info">
-                <div class="detail_1 borderBottom">
-                    <span class="text_10">Date</span>
-                    <h3 class="text_28">24 November</h3>
-                </div>
-                <div class="detail_2 borderBottom">
-                    <h4 class="text_10">{{home[9].type}}</h4>
-                    <h3 class="text_34">{{home[9].title}}</h3>
-                </div>
-                <a title="BUY IT {{home[9].title}}"
-                    href="/tickets/buy-tickets-forbes-middle-east-under-30-summit-el-gouna-en.html" class="btn_1">
-                    <span class="arrow_yellow">BUY IT</span>
-                </a>
-            </div>
-        </div>
-        <div style="z-index: 11;" id="slide_11" element="singleSlide" class="singleSlide">
-            <img alt="{{home[10].title}} Slider" class="image" id="13973" src="{{home[10].image}}" width="1140"
-                height="570">
-            <div class="info">
-                <div class="cdEventTemplateType">Hot event</div>
-                <div class="detail_1 borderBottom">
-                    <div class="half">
-                        <span class="text_10">type</span>
-                        <h3 class="text_28">01 December</h3>
-                    </div>
-                    <div class="half">
-                        <span class="text_10">TO</span>
-                        <h3 class="text_28">03 December</h3>
-                    </div>
-                    <br clear="all">
-                </div>
-                <div class="detail_2 borderBottom">
-                    <h4 class="text_10">{{home[10].type}}</h4>
-                    <h3 class="text_34">{{home[10].title}}</h3>
-                </div>
-                <a title="BUY IT {{home[10].title}}" href="/samajam-international-show_se_2452.html"
-                    class="btn_1">
-                    <span class="arrow_yellow">BUY IT</span>
-                </a>
-                
-
-            </div>
-        </div>
-        <div style="z-index: 12; display: none;" id="slide_12" element="singleSlide" class="singleSlide">
-            <img alt="{{home[11].title}} Slider" class="image" id="14004" src="{{home[11].image}}"
-                width="1140" height="570">
-            <div class="info">
-                <div class="cdEventTemplateType">Hot event</div>
-                <div class="detail_1 borderBottom">
-                    <span class="text_10">Date</span>
-                    <h3 class="text_28">10 December</h3>
-                </div>
-                <div class="detail_2 borderBottom">
-                    <h4 class="text_10">{{home[11].type}}</h4>
-                    <h3 class="text_34">{{home[11].title}}</h3>
-                </div>
-                <a title="BUY IT {{home[11].title}}"
-                    href="/tickets/buy-tickets-pyramids-half-marathon-2022-en.html" class="btn_1">
-                    <span class="arrow_yellow">BUY IT</span>
-                </a>
-            </div>
-        </div>
-        <div style="z-index: 13; display: none;" id="slide_13" element="singleSlide" class="singleSlide">
-            <img alt="{{home[12].title}} Slider" class="image" id="13251" src="{{home[12].image}}"
-                width="1139" height="570">
-            <div class="info">
-                <div class="detail_1 borderBottom">
-                    <div class="half">
-                        <span class="text_10">Date from</span>
-                        <h3 class="text_28">07 November</h3>
-                    </div>
-                    <div class="half">
-                        <span class="text_10">TO</span>
-                        <h3 class="text_28">17 November</h3>
-                    </div>
-                    <br clear="all">
-                </div>
-                <div class="detail_2 borderBottom">
-                    <h4 class="text_10">{{home[12].type}}</h4>
-                    <h3 class="text_34">{{home[12].title}}</h3>
-                </div>
-                <a title="BUY IT {{home[12].title}}" href="/zed-park_se_2357.html" class="btn_1">
-                    <span class="arrow_yellow">BUY IT</span>
-                </a>
-            </div>
         </div>
         <div class="controller">
             <div class="controllerInn no-user-select">
-                <span onclick="showSlide(1)" class="slideEmpty" element="singlePoint" id="singlePoint_1">
+                <span (click)="showSlide(1)" class="slideEmpty slideFull" element="singlePoint" id="singlePoint_1">
                     &nbsp;</span>
-                <span onclick="showSlide(2)" class="slideEmpty" element="singlePoint" id="singlePoint_2">
+                <span (click)="showSlide(2)" class="slideEmpty slideFull" element="singlePoint" id="singlePoint_2">
                     &nbsp;</span>
-                <span onclick="showSlide(3)" class="slideEmpty" element="singlePoint" id="singlePoint_3">
+                <span (click)="showSlide(3)" class="slideEmpty slideFull" element="singlePoint" id="singlePoint_3">
                     &nbsp;</span>
-                <span onclick="showSlide(4)" class="slideEmpty" element="singlePoint" id="singlePoint_4">
+                <span (click)="showSlide(4)" class="slideEmpty slideFull" element="singlePoint" id="singlePoint_4">
                     &nbsp;</span>
-                <span onclick="showSlide(5)" class="slideEmpty" element="singlePoint" id="singlePoint_5">
+                <span (click)="showSlide(5)" class="slideEmpty slideFull" element="singlePoint" id="singlePoint_5">
                     &nbsp;</span>
-                <span onclick="showSlide(6)" class="slideEmpty" element="singlePoint" id="singlePoint_6">
+                <span (click)="showSlide(6)" class="slideEmpty slideFull" element="singlePoint" id="singlePoint_6">
                     &nbsp;</span>
-                <span onclick="showSlide(7)" class="slideEmpty" element="singlePoint" id="singlePoint_7">
+                <span (click)="showSlide(7)" class="slideEmpty slideFull" element="singlePoint" id="singlePoint_7">
                     &nbsp;</span>
-                <span onclick="showSlide(8)" class="slideEmpty" element="singlePoint" id="singlePoint_8">
+                <span (click)="showSlide(8)" class="slideEmpty slideFull" element="singlePoint" id="singlePoint_8">
                     &nbsp;</span>
-                <span onclick="showSlide(9)" class="slideEmpty" element="singlePoint" id="singlePoint_9">
+                <span (click)="showSlide(9)" class="slideEmpty slideFull" element="singlePoint" id="singlePoint_9">
                     &nbsp;</span>
-                <span onclick="showSlide(10)" class="slideEmpty" element="singlePoint" id="singlePoint_10">
+                <span (click)="showSlide(10)" class="slideEmpty slideFull" element="singlePoint" id="singlePoint_10">
                     &nbsp;</span>
-                <span onclick="showSlide(11)" class="slideEmpty slideFull" element="singlePoint" id="singlePoint_11">
+                <span (click)="showSlide(11)" class="slideEmpty slideFull " element="singlePoint" id="singlePoint_11">
                     &nbsp;</span>
-                <span onclick="showSlide(12)" class="slideEmpty" element="singlePoint" id="singlePoint_12">
+                <span (click)="showSlide(12)" class="slideEmpty slideFull" element="singlePoint" id="singlePoint_12">
                     &nbsp;</span>
-                <span onclick="showSlide(13)" class="slideEmpty" element="singlePoint" id="singlePoint_13">
+                <span (click)="showSlide(13)" class="slideEmpty slideFull" element="singlePoint" id="singlePoint_13">
                     &nbsp;</span>
             </div>
         </div>

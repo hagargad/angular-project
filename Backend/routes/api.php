@@ -53,3 +53,7 @@ Route::post("admin-log", [AdminsCntroller::class, "Adminlogin"]);
 Route::get('contacts', [ContactController::class, 'index']);
 Route::get('contacts/{id}', [ContactController::class, 'show']);
 Route::post('contacts', [ContactController::class, 'store']);
+
+//Home Routes
+Route::get('home',[HomeController::class, 'index']);
+Route::get('home/{id}',[HomeController::class, 'show']);

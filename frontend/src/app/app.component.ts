@@ -10,10 +10,10 @@ export class AppComponent {
   title = 'Tickets Marche';
   show_footer:boolean=true;
   show_header:boolean=true;
-  
+
 
   constructor( private router: Router) {
-    
+
     this.router.events.subscribe(
           (event: any) => {
             console.log(event)
